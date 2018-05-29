@@ -76,7 +76,8 @@
 #define BOARD_RUMBA             80    // Rumba
 #define BOARD_BQ_ZUM_MEGA_3D    503   // bq ZUM Mega 3D
 #define BOARD_MAKEBOARD_MINI    431   // MakeBoard Mini v2.1.2 is a control board sold by MicroMake
-#define BOARD_TRIGORILLA        343   // TriGorilla Anycubic version 1.3 based on RAMPS EFB
+#define BOARD_TRIGORILLA_13     343   // TriGorilla Anycubic version 1.3 based on RAMPS EFB
+#define BOARD_TRIGORILLA_14     443   // TriGorilla Anycubic version 1.4 based on RAMPS EFB
 #define BOARD_RAMPS_ENDER_4     243   // Creality: Ender-4, CR-8
 
 //
@@ -124,6 +125,7 @@
 #define BOARD_MELZI_TRONXY      505   // Tronxy X5S
 #define BOARD_STB_11            64    // STB V1.1
 #define BOARD_AZTEEG_X1         65    // Azteeg X1
+#define BOARD_ANET_10           69    // Anet 1.0 (Melzi clone)
 
 //
 // Other ATmega644P, ATmega644, ATmega1284P
@@ -140,7 +142,6 @@
 #define BOARD_OMCA_A            90    // Alpha OMCA board
 #define BOARD_OMCA              91    // Final OMCA board
 #define BOARD_SETHI             20    // Sethi 3D_1
-#define BOARD_ANET_10           69    // Anet 1.0 (Melzi clone)
 
 //
 // Teensyduino - AT90USB1286, AT90USB1286P
