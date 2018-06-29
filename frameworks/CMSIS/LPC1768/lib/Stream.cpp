@@ -27,8 +27,8 @@
 
 #include "Stream.h"
 
-#define PARSE_TIMEOUT 1000  // default number of milli-seconds to wait
-#define NO_SKIP_CHAR  1  // a magic char not found in a valid ASCII numeric field
+#define  PARSE_TIMEOUT 1000  
+#define  NO_SKIP_CHAR  1  
 
 // private method to read stream with timeout
 int Stream::timedRead()

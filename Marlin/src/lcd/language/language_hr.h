@@ -30,13 +30,13 @@
 #ifndef LANGUAGE_HR_H
 #define LANGUAGE_HR_H
 
-#define DISPLAY_CHARSET_ISO10646_1 // use the better font on full graphic displays.
+#define  DISPLAY_CHARSET_ISO10646_1 
 #define CHARSIZE 2
 
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" spreman.")
 #define MSG_SD_INSERTED                     _UxGT("SD kartica umetnuta")
 #define MSG_SD_REMOVED                      _UxGT("SD kartica uklonjena")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstops") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstops") 
 #define MSG_MAIN                            _UxGT("Main")
 #define MSG_AUTOSTART                       _UxGT("Auto pokretanje")
 #define MSG_DISABLE_STEPPERS                _UxGT("Ugasi steppere")
@@ -166,7 +166,7 @@
 #define MSG_ZPROBE_OUT                      _UxGT("Z probe out. bed")
 #define MSG_BLTOUCH_SELFTEST                _UxGT("BLTouch Self-Test")
 #define MSG_BLTOUCH_RESET                   _UxGT("Reset BLTouch")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_FIRST                           _UxGT("first")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Z Offset")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -183,9 +183,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("PRINTER HALTED")
 #define MSG_PLEASE_RESET                    _UxGT("Please reset")
-#define MSG_SHORT_DAY                       _UxGT("d") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("d") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Grijanje...")
 #define MSG_BED_HEATING                     _UxGT("Grijanje Bed-a...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Delta Kalibracija")

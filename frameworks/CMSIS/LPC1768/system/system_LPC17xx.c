@@ -295,7 +295,7 @@
 #define CLOCK_SETUP           1
 #define SCS_Val               0x00000020
 #define CLKSRCSEL_Val         0x00000001
-#define PLL0_SETUP            1              // WARNING: NOT USED, see SystemInit() below
+#define  PLL0_SETUP            1              
 
 #    define PLL0CFG_Val           0x0000000B // WARNING: NOT USED, see SystemInit() below
 #    define PLL1_SETUP            0          // WARNING: NOT USED, see SystemInit() below

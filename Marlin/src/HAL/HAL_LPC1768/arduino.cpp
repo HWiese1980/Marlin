@@ -111,7 +111,7 @@ bool digitalRead(pin_t pin) {
 void analogWrite(pin_t pin, int pwm_value) {  // 1 - 254: pwm_value, 0: LOW, 255: HIGH
   if (!VALID_PIN(pin)) return;
 
-  #define MR0_MARGIN 200       // if channel value too close to MR0 the system locks up
+  #define  MR0_MARGIN 200       
 
   static bool out_of_PWM_slots = false;
 

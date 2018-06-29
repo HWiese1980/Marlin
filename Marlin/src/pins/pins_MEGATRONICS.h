@@ -53,13 +53,13 @@
 #define X_DIR_PIN          28
 #define X_ENABLE_PIN       24
 
-#define Y_STEP_PIN         60   // A6
-#define Y_DIR_PIN          61   // A7
+#define  Y_STEP_PIN         60   
+#define  Y_DIR_PIN          61   
 #define Y_ENABLE_PIN       22
 
-#define Z_STEP_PIN         54   // A0
-#define Z_DIR_PIN          55   // A1
-#define Z_ENABLE_PIN       56   // A2
+#define  Z_STEP_PIN         54   
+#define  Z_DIR_PIN          55   
+#define  Z_ENABLE_PIN       56   
 
 #define E0_STEP_PIN        31
 #define E0_DIR_PIN         32
@@ -73,12 +73,12 @@
 // Temperature Sensors
 //
 #if TEMP_SENSOR_0 == -1
-  #define TEMP_0_PIN        8   // Analog Input
+  #define  TEMP_0_PIN        8   
 #else
-  #define TEMP_0_PIN       13   // Analog Input
+  #define  TEMP_0_PIN       13   
 #endif
-#define TEMP_1_PIN         15   // Analog Input
-#define TEMP_BED_PIN       14   // Analog Input
+#define  TEMP_1_PIN         15   
+#define  TEMP_BED_PIN       14   
 
 //
 // Heaters / Fans
@@ -88,7 +88,7 @@
 #define HEATER_BED_PIN     10
 
 #ifndef FAN_PIN
-  #define FAN_PIN           7   // IO pin. Buffer needed
+  #define  FAN_PIN           7   
 #endif
 
 //
@@ -118,13 +118,13 @@
   #define BTN_EN2         64
   #define BTN_ENC         43
 
-  #define SD_DETECT_PIN   -1   // RAMPS doesn't use this
+  #define  SD_DETECT_PIN   -1   
 
 #endif // ULTRA_LCD && NEWPANEL
 
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN     3   // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup!
+#define  SPINDLE_LASER_PWM_PIN     3   
+#define  SPINDLE_LASER_ENABLE_PIN  4   
 #define SPINDLE_DIR_PIN          11

@@ -63,7 +63,7 @@
 #include "SoftwareSPI.h"
 #include "../Delay.h"
 
-#define SPI_SPEED 3  // About 1 MHz
+#define  SPI_SPEED 3  
 
 static pin_t SCK_pin_ST7920_HAL, MOSI_pin_ST7920_HAL_HAL;
 static uint8_t SPI_speed = 0;

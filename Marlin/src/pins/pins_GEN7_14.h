@@ -57,7 +57,7 @@
 
 #define BOARD_NAME "Gen7 v1.4"
 
-#define GEN7_VERSION 14   // v1.4
+#define  GEN7_VERSION 14   
 
 //
 // Limit switches
@@ -88,8 +88,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          1   // Analog Input
-#define TEMP_BED_PIN        0   // Analog Input
+#define  TEMP_0_PIN          1   
+#define  TEMP_BED_PIN        0   
 
 //
 // Heaters
@@ -101,7 +101,7 @@
 // Misc. Functions
 //
 #define PS_ON_PIN          15
-#define CASE_LIGHT_PIN     15    // MUST BE HARDWARE PWM
+#define  CASE_LIGHT_PIN     15    
 
 // A pin for debugging
 #define DEBUG_PIN           0
@@ -113,6 +113,6 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_ENABLE_PIN 20   // Pin should have a pullup/pulldown!
-#define SPINDLE_LASER_PWM_PIN    16   // MUST BE HARDWARE PWM
+#define  SPINDLE_LASER_ENABLE_PIN 20   
+#define  SPINDLE_LASER_PWM_PIN    16   
 #define SPINDLE_DIR_PIN          21

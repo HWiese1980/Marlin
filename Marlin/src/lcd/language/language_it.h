@@ -276,7 +276,7 @@
 #define MSG_BLTOUCH_RESET                   _UxGT("Resetta BLTouch")
 #define MSG_BLTOUCH_DEPLOY                  _UxGT("Estendi BLTouch")
 #define MSG_BLTOUCH_STOW                    _UxGT("Ritrai BLTouch")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_FIRST                           _UxGT("prima")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Z Offset")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -294,9 +294,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("STAMPANTE FERMATA")
 #define MSG_PLEASE_RESET                    _UxGT("Riavviare prego")
-#define MSG_SHORT_DAY                       _UxGT("g") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("g") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Riscaldamento...")
 #define MSG_COOLING                         _UxGT("Raffreddamento..")
 #define MSG_COOLING_COMPLETE                _UxGT("Raff.completato.")

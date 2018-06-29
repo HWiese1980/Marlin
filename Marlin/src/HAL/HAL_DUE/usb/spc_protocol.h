@@ -85,38 +85,38 @@ COMPILER_PACK_SET(1)
  */
 struct scsi_inquiry_data {
 	uint8_t pq_pdt; //!< Peripheral Qual / Peripheral Dev Type
-#define  SCSI_INQ_PQ_CONNECTED   0x00   //!< Peripheral connected
-#define  SCSI_INQ_PQ_NOT_CONN    0x20   //!< Peripheral not connected
-#define  SCSI_INQ_PQ_NOT_SUPP    0x60   //!< Peripheral not supported
-#define  SCSI_INQ_DT_DIR_ACCESS  0x00   //!< Direct Access (SBC)
-#define  SCSI_INQ_DT_SEQ_ACCESS  0x01   //!< Sequential Access
-#define  SCSI_INQ_DT_PRINTER     0x02   //!< Printer
-#define  SCSI_INQ_DT_PROCESSOR   0x03   //!< Processor device
-#define  SCSI_INQ_DT_WRITE_ONCE  0x04   //!< Write-once device
-#define  SCSI_INQ_DT_CD_DVD      0x05   //!< CD/DVD device
-#define  SCSI_INQ_DT_OPTICAL     0x07   //!< Optical Memory
-#define  SCSI_INQ_DT_MC          0x08   //!< Medium Changer
-#define  SCSI_INQ_DT_ARRAY       0x0C   //!< Storage Array Controller
-#define  SCSI_INQ_DT_ENCLOSURE   0x0D   //!< Enclosure Services
-#define  SCSI_INQ_DT_RBC         0x0E   //!< Simplified Direct Access
-#define  SCSI_INQ_DT_OCRW        0x0F   //!< Optical card reader/writer
-#define  SCSI_INQ_DT_BCC         0x10   //!< Bridge Controller Commands
-#define  SCSI_INQ_DT_OSD         0x11   //!< Object-based Storage
-#define  SCSI_INQ_DT_NONE        0x1F   //!< No Peripheral
+#define   SCSI_INQ_PQ_CONNECTED   0x00   
+#define   SCSI_INQ_PQ_NOT_CONN    0x20   
+#define   SCSI_INQ_PQ_NOT_SUPP    0x60   
+#define   SCSI_INQ_DT_DIR_ACCESS  0x00   
+#define   SCSI_INQ_DT_SEQ_ACCESS  0x01   
+#define   SCSI_INQ_DT_PRINTER     0x02   
+#define   SCSI_INQ_DT_PROCESSOR   0x03   
+#define   SCSI_INQ_DT_WRITE_ONCE  0x04   
+#define   SCSI_INQ_DT_CD_DVD      0x05   
+#define   SCSI_INQ_DT_OPTICAL     0x07   
+#define   SCSI_INQ_DT_MC          0x08   
+#define   SCSI_INQ_DT_ARRAY       0x0C   
+#define   SCSI_INQ_DT_ENCLOSURE   0x0D   
+#define   SCSI_INQ_DT_RBC         0x0E   
+#define   SCSI_INQ_DT_OCRW        0x0F   
+#define   SCSI_INQ_DT_BCC         0x10   
+#define   SCSI_INQ_DT_OSD         0x11   
+#define   SCSI_INQ_DT_NONE        0x1F   
 	uint8_t flags1; //!< Flags (byte 1)
-#define  SCSI_INQ_RMB            0x80   //!< Removable Medium
+#define   SCSI_INQ_RMB            0x80   
 	uint8_t version; //!< Version
-#define  SCSI_INQ_VER_NONE       0x00   //!< No standards conformance
-#define  SCSI_INQ_VER_SPC        0x03   //!< SCSI Primary Commands     (link to SBC)
-#define  SCSI_INQ_VER_SPC2       0x04   //!< SCSI Primary Commands - 2 (link to SBC-2)
-#define  SCSI_INQ_VER_SPC3       0x05   //!< SCSI Primary Commands - 3 (link to SBC-2)
-#define  SCSI_INQ_VER_SPC4       0x06   //!< SCSI Primary Commands - 4 (link to SBC-3)
+#define   SCSI_INQ_VER_NONE       0x00   
+#define   SCSI_INQ_VER_SPC        0x03   
+#define   SCSI_INQ_VER_SPC2       0x04   
+#define   SCSI_INQ_VER_SPC3       0x05   
+#define   SCSI_INQ_VER_SPC4       0x06   
 	uint8_t flags3; //!< Flags (byte 3)
-#define  SCSI_INQ_NORMACA        0x20   //!< Normal ACA Supported
-#define  SCSI_INQ_HISUP          0x10   //!< Hierarchal LUN addressing
-#define  SCSI_INQ_RSP_SPC2       0x02   //!< SPC-2 / SPC-3 response format
+#define   SCSI_INQ_NORMACA        0x20   
+#define   SCSI_INQ_HISUP          0x10   
+#define   SCSI_INQ_RSP_SPC2       0x02   
 	uint8_t addl_len; //!< Additional Length (n-4)
-#define  SCSI_INQ_ADDL_LEN(tot)  ((tot)-5) //!< Total length is \a tot
+#define   SCSI_INQ_ADDL_LEN(tot)  ((tot)-5) 
 	uint8_t flags5; //!< Flags (byte 5)
 #define  SCSI_INQ_SCCS           0x80
 	uint8_t flags6; //!< Flags (byte 6)
@@ -141,9 +141,9 @@ struct scsi_inquiry_data {
 struct scsi_request_sense_data {
 	/* 1st byte: REQUEST SENSE response flags*/
 	uint8_t valid_reponse_code;
-#define  SCSI_SENSE_VALID              0x80 //!< Indicates the INFORMATION field contains valid information
+#define   SCSI_SENSE_VALID              0x80 
 #define  SCSI_SENSE_RESPONSE_CODE_MASK 0x7F
-#define  SCSI_SENSE_CURRENT            0x70 //!< Response code 70h (current errors)
+#define   SCSI_SENSE_CURRENT            0x70 
 #define  SCSI_SENSE_DEFERRED           0x71
 
 	/* 2nd byte */
@@ -151,11 +151,11 @@ struct scsi_request_sense_data {
 
 	/* 3rd byte */
 	uint8_t sense_flag_key;
-#define  SCSI_SENSE_FILEMARK        0x80 //!< Indicates that the current command has read a filemark or setmark.
-#define  SCSI_SENSE_EOM             0x40 //!< Indicates that an end-of-medium condition exists.
-#define  SCSI_SENSE_ILI             0x20 //!< Indicates that the requested logical block length did not match the logical block length of the data on the medium.
-#define  SCSI_SENSE_RESERVED        0x10 //!< Reserved
-#define  SCSI_SENSE_KEY(x)          (x&0x0F) //!< Sense Key
+#define   SCSI_SENSE_FILEMARK        0x80 
+#define   SCSI_SENSE_EOM             0x40 
+#define   SCSI_SENSE_ILI             0x20 
+#define   SCSI_SENSE_RESERVED        0x10 
+#define   SCSI_SENSE_KEY(x)          (x&0x0F) 
 
 	/* 4th to 7th bytes - INFORMATION field */
 	uint8_t information[4];
@@ -178,7 +178,7 @@ struct scsi_request_sense_data {
 
 	/* 16th byte */
 	uint8_t SenseKeySpec[3];
-#define  SCSI_SENSE_SKSV            0x80 //!< Indicates the SENSE-KEY SPECIFIC field contains valid information
+#define   SCSI_SENSE_SKSV            0x80 
 };
 
 COMPILER_PACK_RESET()
@@ -254,12 +254,12 @@ struct spc_control_page_info_execpt {
 	uint8_t page_length;
 #define  SPC_MP_INFEXP_PAGE_LENGTH     0x0A
 	uint8_t flags1;
-#define  SPC_MP_INFEXP_PERF            (1<<7)   //!< Initiator Control
-#define  SPC_MP_INFEXP_EBF             (1<<5)   //!< Caching Analysis Permitted
-#define  SPC_MP_INFEXP_EWASC           (1<<4)   //!< Discontinuity
-#define  SPC_MP_INFEXP_DEXCPT          (1<<3)   //!< Size enable
-#define  SPC_MP_INFEXP_TEST            (1<<2)   //!< Writeback Cache Enable
-#define  SPC_MP_INFEXP_LOGERR          (1<<0)   //!< Log errors bit
+#define   SPC_MP_INFEXP_PERF            (1<<7)   
+#define   SPC_MP_INFEXP_EBF             (1<<5)   
+#define   SPC_MP_INFEXP_EWASC           (1<<4)   
+#define   SPC_MP_INFEXP_DEXCPT          (1<<3)   
+#define   SPC_MP_INFEXP_TEST            (1<<2)   
+#define   SPC_MP_INFEXP_LOGERR          (1<<0)   
 	uint8_t mrie;
 #define  SPC_MP_INFEXP_MRIE_NO_REPORT           0x00
 #define  SPC_MP_INFEXP_MRIE_ASYNC_EVENT         0x01
@@ -326,8 +326,8 @@ struct scsi_mode_param_header10 {
  */
 struct scsi_mode_page_0_header {
 	uint8_t page_code;
-#define  SCSI_PAGE_CODE_PS          (1 << 7)	//!< Parameters Saveable
-#define  SCSI_PAGE_CODE_SPF         (1 << 6)	//!< SubPage Format
+#define   SCSI_PAGE_CODE_PS          (1 << 7)	
+#define   SCSI_PAGE_CODE_SPF         (1 << 6)	
 	uint8_t page_length;	//!< Number of bytes after this
 #define  SCSI_MS_PAGE_LEN(total)   ((total) - 2)
 };

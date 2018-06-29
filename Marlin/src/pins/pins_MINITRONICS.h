@@ -57,13 +57,13 @@
 #define X_DIR_PIN          47
 #define X_ENABLE_PIN       49
 
-#define Y_STEP_PIN         39   // A6
-#define Y_DIR_PIN          40   // A0
+#define  Y_STEP_PIN         39   
+#define  Y_DIR_PIN          40   
 #define Y_ENABLE_PIN       38
 
-#define Z_STEP_PIN         42   // A2
-#define Z_DIR_PIN          43   // A6
-#define Z_ENABLE_PIN       41   // A1
+#define  Z_STEP_PIN         42   
+#define  Z_DIR_PIN          43   
+#define  Z_ENABLE_PIN       41   
 
 #define E0_STEP_PIN        45
 #define E0_DIR_PIN         44
@@ -76,16 +76,16 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          7   // Analog Input
-#define TEMP_1_PIN          6   // Analog Input
-#define TEMP_BED_PIN        6   // Analog Input
+#define  TEMP_0_PIN          7   
+#define  TEMP_1_PIN          6   
+#define  TEMP_BED_PIN        6   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN        7   // EXTRUDER 1
-#define HEATER_1_PIN        8   // EXTRUDER 2
-#define HEATER_BED_PIN      3   // BED
+#define  HEATER_0_PIN        7   
+#define  HEATER_1_PIN        8   
+#define  HEATER_BED_PIN      3   
 
 #ifndef FAN_PIN
   #define FAN_PIN           9
@@ -104,9 +104,9 @@
 
 #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-  #define LCD_PINS_RS      15   // CS chip select /SS chip slave select
-  #define LCD_PINS_ENABLE  11   // SID (MOSI)
-  #define LCD_PINS_D4      10   // SCK (CLK) clock
+  #define  LCD_PINS_RS      15   
+  #define  LCD_PINS_ENABLE  11   
+  #define  LCD_PINS_D4      10   
 
   #define BTN_EN1          18
   #define BTN_EN2          17
@@ -124,7 +124,7 @@
   #define BTN_EN2          -1
   #define BTN_ENC          -1
 
-  #define SD_DETECT_PIN    -1   // Minitronics doesn't use this
+  #define  SD_DETECT_PIN    -1   
 #endif
 
 //
@@ -135,10 +135,10 @@
   #undef TEMP_BED_PIN             // need to free up some pins but also need to
   #undef TEMP_0_PIN               // re-assign them (to unused pins) because Marlin
   #undef TEMP_1_PIN               // requires the presence of certain pins or else it
-  #define HEATER_BED_PIN      4   // won't compile
+  #define  HEATER_BED_PIN      4   
   #define TEMP_BED_PIN       50
   #define TEMP_0_PIN         51
-  #define SPINDLE_LASER_ENABLE_PIN      52   // using A6 because it already has a pullup
-  #define SPINDLE_LASER_PWM_PIN          3   // WARNING - LED & resistor pull up to +12/+24V stepper voltage
+  #define  SPINDLE_LASER_ENABLE_PIN      52   
+  #define  SPINDLE_LASER_PWM_PIN          3   
   #define SPINDLE_DIR_PIN               53
 #endif

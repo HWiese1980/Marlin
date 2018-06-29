@@ -27,7 +27,7 @@
 #define DEFAULT_MACHINE_NAME "The-Borge"
 #define BOARD_NAME "The-Borge"
 
-#define E2END 0xFFF   // EEPROM end address
+#define  E2END 0xFFF   
 
 // Ignore temp readings during develpment.
 #define BOGUS_TEMPERATURE_FAILSAFE_OVERRIDE
@@ -60,7 +60,7 @@
 //
 #define STEPPER_ENABLE_PIN PE0
 
-#define X_STEP_PIN         PC6   // 96, 39 in Arduino
+#define  X_STEP_PIN         PC6   
 #define X_DIR_PIN          PC7
 #define X_ENABLE_PIN       PC8
 
@@ -109,14 +109,14 @@
 // Temperature Sensors
 //
 
-#define TEMP_0_PIN         PC3   // Analog Input
-#define TEMP_1_PIN         PC2   // Analog Input
-#define TEMP_2_PIN         PC1   // Analog Input
-#define TEMP_3_PIN         PC0   // Analog Input
+#define  TEMP_0_PIN         PC3   
+#define  TEMP_1_PIN         PC2   
+#define  TEMP_2_PIN         PC1   
+#define  TEMP_3_PIN         PC0   
 
-#define TEMP_BED_PIN       PF10  // Analog Input
+#define  TEMP_BED_PIN       PF10  
 
-#define TEMP_5_PIN         PE12  // Analog Input, Probe temp
+#define  TEMP_5_PIN         PE12  
 
 //
 // Heaters / Fans
@@ -131,7 +131,7 @@
 #define FAN1_PIN           PA0
 #define FAN2_PIN           PA1
 
-#define ORIG_E0_AUTO_FAN_PIN  PA1   // Use this by NOT overriding E0_AUTO_FAN_PIN
+#define  ORIG_E0_AUTO_FAN_PIN  PA1   
 
 //
 // Misc. Functions
@@ -158,29 +158,29 @@
 
 #define SDSS               PA8
 #define SS_PIN             PA8
-#define LED_PIN            PA2   // Alive
+#define  LED_PIN            PA2   
 #define PS_ON_PIN          PA3
-#define KILL_PIN           -1 //PD5   // EXP2-10
-#define PWR_LOSS           PG5   // Power loss / nAC_FAULT
+#define  KILL_PIN           -1 
+#define  PWR_LOSS           PG5   
 
 //
 // MAX7219_DEBUG
 //
-#define MAX7219_CLK_PIN    PG10  // EXP1-1
-#define MAX7219_DIN_PIN    PD7   // EXP1-3
-#define MAX7219_LOAD_PIN   PD1   // EXP1-5
+#define  MAX7219_CLK_PIN    PG10  
+#define  MAX7219_DIN_PIN    PD7   
+#define  MAX7219_LOAD_PIN   PD1   
 
 //
 // LCD / Controller
 //
-//#define SD_DETECT_PIN      -1 //PB6)     // EXP2-4
-#define BEEPER_PIN         PG10  // EXP1-1
-#define LCD_PINS_RS        PG9   // EXP1-4
-#define LCD_PINS_ENABLE    PD7   // EXP1-3
-#define LCD_PINS_D4        PD1   // EXP1-5
-#define LCD_PINS_D5        PF0   // EXP1-6
-#define LCD_PINS_D6        PD3   // EXP1-7
-#define LCD_PINS_D7        PD4   // EXP1-8
-#define BTN_EN1            PD6   // EXP2-5
-#define BTN_EN2            PD0   // EXP2-3
-#define BTN_ENC            PG11  // EXP1-2
+//#define  SD_DETECT_PIN      -1 
+#define  BEEPER_PIN         PG10  
+#define  LCD_PINS_RS        PG9   
+#define  LCD_PINS_ENABLE    PD7   
+#define  LCD_PINS_D4        PD1   
+#define  LCD_PINS_D5        PF0   
+#define  LCD_PINS_D6        PD3   
+#define  LCD_PINS_D7        PD4   
+#define  BTN_EN1            PD6   
+#define  BTN_EN2            PD0   
+#define  BTN_ENC            PG11  

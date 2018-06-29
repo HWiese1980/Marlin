@@ -69,10 +69,10 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
   // Setup other button mappings of each panel
   //
   #if ENABLED(LCD_I2C_VIKI)
-    #define B_I2C_BTN_OFFSET 3 // (the first three bit positions reserved for EN_A, EN_B, EN_C)
+    #define  B_I2C_BTN_OFFSET 3 
 
     // button and encoder bit positions within 'buttons'
-    #define B_LE (BUTTON_LEFT   << B_I2C_BTN_OFFSET)    // The remaining normalized buttons are all read via I2C
+    #define  B_LE (BUTTON_LEFT   << B_I2C_BTN_OFFSET)    
     #define B_UP (BUTTON_UP     << B_I2C_BTN_OFFSET)
     #define B_MI (BUTTON_SELECT << B_I2C_BTN_OFFSET)
     #define B_DW (BUTTON_DOWN   << B_I2C_BTN_OFFSET)
@@ -81,8 +81,8 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
     #undef LCD_CLICKED
     #if BUTTON_EXISTS(ENC)
       // the pause/stop/restart button is connected to BTN_ENC when used
-      #define B_ST (EN_C)                            // Map the pause/stop/resume button into its normalized functional name
-      #define LCD_CLICKED (buttons & (B_MI|B_RI|B_ST)) // pause/stop button also acts as click until we implement proper pause/stop.
+      #define  B_ST (EN_C)                            
+      #define  LCD_CLICKED (buttons & (B_MI|B_RI|B_ST)) 
     #else
       #define LCD_CLICKED (buttons & (B_MI|B_RI))
     #endif
@@ -94,9 +94,9 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
 
     #if !BUTTON_EXISTS(ENC) // Use I2C if not directly connected to a pin
 
-      #define B_I2C_BTN_OFFSET 3 // (the first three bit positions reserved for EN_A, EN_B, EN_C)
+      #define  B_I2C_BTN_OFFSET 3 
 
-      #define B_MI (PANELOLU2_ENCODER_C << B_I2C_BTN_OFFSET) // requires LiquidTWI2 library v1.2.3 or later
+      #define  B_MI (PANELOLU2_ENCODER_C << B_I2C_BTN_OFFSET) 
 
       #undef LCD_CLICKED
       #define LCD_CLICKED (buttons & B_MI)
@@ -108,12 +108,12 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
 
   #elif DISABLED(NEWPANEL) // old style ULTIPANEL
     // Shift register bits correspond to buttons:
-    #define BL_LE 7   // Left
-    #define BL_UP 6   // Up
-    #define BL_MI 5   // Middle
-    #define BL_DW 4   // Down
-    #define BL_RI 3   // Right
-    #define BL_ST 2   // Red Button
+    #define  BL_LE 7   
+    #define  BL_UP 6   
+    #define  BL_MI 5   
+    #define  BL_DW 4   
+    #define  BL_RI 3   
+    #define  BL_ST 2   
     #define B_LE (_BV(BL_LE))
     #define B_UP (_BV(BL_UP))
     #define B_MI (_BV(BL_MI))
@@ -145,9 +145,9 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
 
 #elif ENABLED(LCD_I2C_TYPE_MCP23017)
   // For the LED indicators (which may be mapped to different events in lcd_implementation_update_indicators())
-  #define LED_A 0x04 //100
-  #define LED_B 0x02 //010
-  #define LED_C 0x01 //001
+  #define  LED_A 0x04 
+  #define  LED_B 0x02 
+  #define  LED_C 0x01 
 
   #define LCD_HAS_STATUS_INDICATORS
 

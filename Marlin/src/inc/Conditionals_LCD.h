@@ -70,9 +70,9 @@
 
 #elif ENABLED(miniVIKI) || ENABLED(VIKI2) || ENABLED(ELB_FULL_GRAPHIC_CONTROLLER) || ENABLED(AZSMZ_12864)
 
-  #define ULTRA_LCD  //general LCD support, also 16x2
-  #define DOGLCD  // Support for SPI LCD 128x64 (Controller ST7565R graphic Display Family)
-  #define ULTIMAKERCONTROLLER //as available from the Ultimaker online store.
+  #define  ULTRA_LCD  
+  #define  DOGLCD  
+  #define  ULTIMAKERCONTROLLER 
 
   #if ENABLED(miniVIKI)
     #define LCD_CONTRAST_MIN      75
@@ -107,7 +107,7 @@
 #elif ENABLED(RA_CONTROL_PANEL)
 
   #define LCD_I2C_TYPE_PCA8574
-  #define LCD_I2C_ADDRESS 0x27   // I2C Address of the port expander
+  #define  LCD_I2C_ADDRESS 0x27   
   #define ULTIPANEL
 
 #elif ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
@@ -154,7 +154,7 @@
 #if ENABLED(ULTI_CONTROLLER)
   #define U8GLIB_SSD1309
   #define REVERSE_ENCODER_DIRECTION
-  #define LCD_RESET_PIN LCD_PINS_D6 //  This controller need a reset pin
+  #define  LCD_RESET_PIN LCD_PINS_D6 
   #define LCD_CONTRAST_MIN 0
   #define LCD_CONTRAST_MAX 254
   #define DEFAULT_LCD_CONTRAST 127
@@ -164,8 +164,8 @@
 
 // Generic support for SSD1306 / SSD1309 / SH1106 OLED based LCDs.
 #if ENABLED(U8GLIB_SSD1306) || ENABLED(U8GLIB_SSD1309) || ENABLED(U8GLIB_SH1106)
-  #define ULTRA_LCD  //general LCD support, also 16x2
-  #define DOGLCD  // Support for I2C LCD 128x64 (Controller SSD1306 / SSD1309 / SH1106 graphic Display Family)
+  #define  ULTRA_LCD  
+  #define  DOGLCD  
 #endif
 
 #if ENABLED(PANEL_ONE) || ENABLED(U8GLIB_SH1106)
@@ -208,7 +208,7 @@
 #if ENABLED(LCD_SAINSMART_I2C_1602) || ENABLED(LCD_SAINSMART_I2C_2004)
 
   #define LCD_I2C_TYPE_PCF8575
-  #define LCD_I2C_ADDRESS 0x27   // I2C Address of the port expander
+  #define  LCD_I2C_ADDRESS 0x27   
 
   #if ENABLED(LCD_SAINSMART_I2C_2004)
     #define LCD_WIDTH 20
@@ -220,8 +220,8 @@
   // PANELOLU2 LCD with status LEDs, separate encoder and click inputs
 
   #define LCD_I2C_TYPE_MCP23017
-  #define LCD_I2C_ADDRESS 0x20 // I2C Address of the port expander
-  #define LCD_USE_I2C_BUZZER   // Enable buzzer on LCD (optional)
+  #define  LCD_I2C_ADDRESS 0x20 
+  #define  LCD_USE_I2C_BUZZER   
   #define ULTIPANEL
 
 #elif ENABLED(LCD_I2C_VIKI)
@@ -235,8 +235,8 @@
    *       BTN_ENC pin (or set BTN_ENC to -1 if not used)
    */
   #define LCD_I2C_TYPE_MCP23017
-  #define LCD_I2C_ADDRESS 0x20 // I2C Address of the port expander
-  #define LCD_USE_I2C_BUZZER   // Enable buzzer on LCD (requires LiquidTWI2 v1.2.3 or later)
+  #define  LCD_I2C_ADDRESS 0x20 
+  #define  LCD_USE_I2C_BUZZER   
   #define ULTIPANEL
 
   #define ENCODER_FEEDRATE_DEADZONE 4
@@ -282,7 +282,7 @@
 // https://bitbucket.org/fmalpartida/new-liquidcrystal/wiki/schematics#!shiftregister-connection
 
 #if ENABLED(SAV_3DLCD)
-  #define SR_LCD_2W_NL    // Non latching 2 wire shift register
+  #define  SR_LCD_2W_NL    
   #define ULTIPANEL
 #endif
 
@@ -304,7 +304,7 @@
 #endif
 
 #if ENABLED(ULTIPANEL)
-  #define NEWPANEL  // Disable this if you actually have no click-encoder panel
+  #define  NEWPANEL  
   #define ULTRA_LCD
   #ifndef LCD_WIDTH
     #define LCD_WIDTH 20
@@ -343,9 +343,9 @@
   #define LCD_STR_FILAM_MUL   "\xa4"
 #else
   // Custom characters defined in the first 8 characters of the LCD
-  #define LCD_BEDTEMP_CHAR     0x00  // Print only as a char. This will have 'unexpected' results when used in a string!
+  #define  LCD_BEDTEMP_CHAR     0x00  
   #define LCD_DEGREE_CHAR      0x01
-  #define LCD_STR_THERMOMETER "\x02" // Still used with string concatenation
+  #define  LCD_STR_THERMOMETER "\x02" 
   #define LCD_UPLEVEL_CHAR     0x03
   #define LCD_STR_REFRESH     "\x04"
   #define LCD_STR_FOLDER      "\x05"

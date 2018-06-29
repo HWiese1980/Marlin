@@ -42,7 +42,7 @@
 #define MSG_BACK                            _UxGT("Zpět")
 #define MSG_SD_INSERTED                     _UxGT("Karta vložena")
 #define MSG_SD_REMOVED                      _UxGT("Karta vyjmuta")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstopy") // max 8 znaku
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstopy") 
 #define MSG_MAIN                            _UxGT("Hlavní nabídka")
 #define MSG_AUTOSTART                       _UxGT("Autostart")
 #define MSG_DISABLE_STEPPERS                _UxGT("Uvolnit motory")
@@ -283,7 +283,7 @@
 #define MSG_BLTOUCH_RESET                   _UxGT("BLTouch Reset")
 #define MSG_BLTOUCH_DEPLOY                  _UxGT("BLTouch Vysunout")
 #define MSG_BLTOUCH_STOW                    _UxGT("BLTouch Zasunout")
-#define MSG_HOME                            _UxGT("Domů")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Domů")  
 #define MSG_FIRST                           _UxGT("první")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Z ofset")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")

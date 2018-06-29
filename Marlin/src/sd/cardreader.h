@@ -29,7 +29,7 @@
 
 #define SD_RESORT ENABLED(SDCARD_SORT_ALPHA) && ENABLED(SDSORT_DYNAMIC_RAM)
 
-#define MAX_DIR_DEPTH 10          // Maximum folder depth
+#define  MAX_DIR_DEPTH 10          
 
 #include "SdFile.h"
 

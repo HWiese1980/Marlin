@@ -20,7 +20,7 @@
  *
  */
 
-#define MAX_NAME_LENGTH  39    // one place to specify the format of all the sources of names
+#define  MAX_NAME_LENGTH  39    
                                // "-" left justify, "39" minimum width of name, pad with blanks
 
 /**

@@ -168,7 +168,7 @@
 #define MSG_CNG_SDCARD                      _UxGT("Canvia SD")
 #define MSG_ZPROBE_OUT                      _UxGT("Sonda Z fora")
 #define MSG_BLTOUCH_RESET                   _UxGT("Reinicia BLTouch")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_FIRST                           _UxGT("primer")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Decalatge Z")
 #define MSG_BABYSTEP_X                      _UxGT("Micropas X")
@@ -185,9 +185,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("IMPRESSORA PARADA")
 #define MSG_PLEASE_RESET                    _UxGT("Reinicieu")
-#define MSG_SHORT_DAY                       _UxGT("d") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("d") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Escalfant...")
 #define MSG_BED_HEATING                     _UxGT("Escalfant llit...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Calibratge Delta")

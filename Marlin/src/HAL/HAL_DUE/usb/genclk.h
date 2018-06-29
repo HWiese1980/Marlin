@@ -65,9 +65,9 @@ extern "C" {
 
 //! \name Programmable Clock Identifiers (PCK)
 //@{
-#define GENCLK_PCK_0      0 //!< PCK0 ID
-#define GENCLK_PCK_1      1 //!< PCK1 ID
-#define GENCLK_PCK_2      2 //!< PCK2 ID
+#define  GENCLK_PCK_0      0 
+#define  GENCLK_PCK_1      1 
+#define  GENCLK_PCK_2      2 
 //@}
 
 //! \name Programmable Clock Sources (PCK)

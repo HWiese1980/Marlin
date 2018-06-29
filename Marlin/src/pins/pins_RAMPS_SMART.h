@@ -74,27 +74,27 @@
 #define I2C_EEPROM
 #define E2END 0xFFF
 
-#define RESET_PIN          42   // Resets the board if the jumper is attached
+#define  RESET_PIN          42   
 
 //
 // Temperature Sensors
 //
 #undef TEMP_0_PIN
-#define TEMP_0_PIN          9   // Analog Input
+#define  TEMP_0_PIN          9   
 
 #undef TEMP_1_PIN
-#define TEMP_1_PIN         10   // Analog Input
+#define  TEMP_1_PIN         10   
 
 #undef TEMP_BED_PIN
-#define TEMP_BED_PIN       11   // Analog Input
+#define  TEMP_BED_PIN       11   
 
 // SPI for Max6675 or Max31855 Thermocouple
 #if DISABLED(SDSUPPORT)
   #undef MAX6675_SS
-  #define MAX6675_SS       67   // Do not use pin 53 if there is even the remote possibility of using Display/SD card
+  #define  MAX6675_SS       67   
 #else
   #undef MAX6675_SS
-  #define MAX6675_SS       67   // Do not use pin 49 as this is tied to the switch inside the SD card socket to detect if there is an SD card present
+  #define  MAX6675_SS       67   
 #endif
 
 //
@@ -102,12 +102,12 @@
 //
 // Support for AZSMZ 12864 LCD with SD Card 3D printer smart controller control panel
 #if ENABLED(AZSMZ_12864)
-  #define BEEPER_PIN       66   // Smart RAMPS 1.42 pinout diagram on RepRap WIKI erroneously says this should be pin 65
+  #define  BEEPER_PIN       66   
   #define DOGLCD_A0        59
   #define DOGLCD_CS        44
   #define BTN_EN1          58
   #define BTN_EN2          40
-  #define BTN_ENC          67   // Smart RAMPS 1.42 pinout diagram on RepRap WIKI erroneously says this should be pin 66
-  #define SD_DETECT_PIN    49   // Pin 49 for display sd interface, 72 for easy adapter board
+  #define  BTN_ENC          67   
+  #define  SD_DETECT_PIN    49   
   #define KILL_PIN         42
 #endif

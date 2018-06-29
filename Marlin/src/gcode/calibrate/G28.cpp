@@ -356,7 +356,7 @@ void GcodeSuite::G28(const bool always_home_all) {
   // Restore the active tool after homing
   #if HOTENDS > 1 && (DISABLED(DELTA) || ENABLED(DELTA_HOME_TO_SAFE_ZONE))
     #if ENABLED(PARKING_EXTRUDER)
-      #define NO_FETCH false // fetch the previous toolhead
+      #define  NO_FETCH false 
     #else
       #define NO_FETCH true
     #endif
@@ -368,9 +368,9 @@ void GcodeSuite::G28(const bool always_home_all) {
   report_current_position();
   #if ENABLED(NANODLP_Z_SYNC)
     #if ENABLED(NANODLP_ALL_AXIS)
-      #define _HOME_SYNC true                 // For any axis, output sync text.
+      #define  _HOME_SYNC true                 
     #else
-      #define _HOME_SYNC (home_all || homeZ)  // Only for Z-axis
+      #define  _HOME_SYNC (home_all || homeZ)  
     #endif
     if (_HOME_SYNC)
       SERIAL_ECHOLNPGM(MSG_Z_MOVE_COMP);

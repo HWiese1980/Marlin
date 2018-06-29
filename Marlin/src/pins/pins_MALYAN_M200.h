@@ -67,22 +67,22 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN         PA0   // Analog Input (HOTEND0 thermistor)
-#define TEMP_BED_PIN       PA1   // Analog Input (BED thermistor)
+#define  TEMP_0_PIN         PA0   
+#define  TEMP_BED_PIN       PA1   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       PB6   // HOTEND0 MOSFET
-#define HEATER_BED_PIN     PB7   // BED MOSFET
+#define  HEATER_0_PIN       PB6   
+#define  HEATER_BED_PIN     PB7   
 
 // FAN_PIN is commented out here because the M200 example
 // Configuration_adv.h does NOT override E0_AUTO_FAN_PIN.
 #ifndef FAN_PIN
-  //#define FAN_PIN        PB8   // FAN1 header on board - PRINT FAN
+  //#define  FAN_PIN        PB8   
 #endif
-#define FAN1_PIN           PB3   // FAN2 header on board - CONTROLLER FAN
-#define FAN2_PIN           -1    // FAN3 header on board - EXTRUDER0 FAN
+#define  FAN1_PIN           PB3   
+#define  FAN2_PIN           -1    
 
 // This board has only the controller fan and the extruder fan
 // If someone hacks to put a direct power fan on the controller, PB3 could

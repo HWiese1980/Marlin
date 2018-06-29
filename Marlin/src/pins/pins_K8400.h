@@ -33,7 +33,7 @@
 
 #define BOARD_NAME              "K8400"
 #define DEFAULT_MACHINE_NAME    "Vertex"
-#define DEFAULT_SOURCE_CODE_URL "https://github.com/birkett/Vertex-K8400-Firmware"
+#define  DEFAULT_SOURCE_CODE_URL "https:
 
 #include "pins_3DRAG.h"
 

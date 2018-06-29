@@ -1615,12 +1615,12 @@ void Temperature::disable_all_heaters() {
     uint32_t max6675_temp = 2000;
     #define MAX6675_ERROR_MASK 7
     #define MAX6675_DISCARD_BITS 18
-    #define MAX6675_SPEED_BITS 3  // (_BV(SPR1)) // clock ÷ 64
+    #define  MAX6675_SPEED_BITS 3  
   #else
     uint16_t max6675_temp = 2000;
     #define MAX6675_ERROR_MASK 4
     #define MAX6675_DISCARD_BITS 3
-    #define MAX6675_SPEED_BITS 2 // (_BV(SPR0)) // clock ÷ 16
+    #define  MAX6675_SPEED_BITS 2 
   #endif
 
   int Temperature::read_max6675() {
@@ -1880,7 +1880,7 @@ void Temperature::isr() {
      * For relay-driven heaters
      */
     #ifndef MIN_STATE_TIME
-      #define MIN_STATE_TIME 16 // MIN_STATE_TIME * 65.5 = time in milliseconds
+      #define  MIN_STATE_TIME 16 
     #endif
 
     // Macros for Slow PWM timer logic

@@ -31,7 +31,7 @@
 
 #ifndef BOARD_NAME
   #define BOARD_NAME "MKS SBASE"
-  #define DEFAULT_WEBSITE_URL "https://github.com/makerbase-mks/MKS-SBASE"
+  #define  DEFAULT_WEBSITE_URL "https:
 #endif
 
 // unused
@@ -40,25 +40,25 @@
 #define PIN_P0_28          P0_28
 */
 
-#define LED_PIN           P1_18 // LED2 P1_19, LED3 P1_20, LED4 P1_21
+#define  LED_PIN           P1_18 
 
 //
 // Servo pin
 //
-#define SERVO0_PIN         P1_23   // J8-3 (low jitter)
-#define SERVO1_PIN         P2_12   // J8-4
-#define SERVO2_PIN         P2_11   // J8-5
-#define SERVO3_PIN         P4_28   // J8-6
+#define  SERVO0_PIN         P1_23   
+#define  SERVO1_PIN         P2_12   
+#define  SERVO2_PIN         P2_11   
+#define  SERVO3_PIN         P4_28   
 
 //
 // Limit Switches
 //
-#define X_MIN_PIN          P1_24   // 10k pullup to 3.3V, 1K series
-#define X_MAX_PIN          P1_25   // 10k pullup to 3.3V, 1K series
-#define Y_MIN_PIN          P1_26   // 10k pullup to 3.3V, 1K series
-#define Y_MAX_PIN          P1_27   // 10k pullup to 3.3V, 1K series
-#define Z_MIN_PIN          P1_28   // The original Mks Sbase DIO19 has a 10k pullup to 3.3V or 5V, 1K series, so when using a Zprobe we must use DIO41 (J8 P1.22)
-#define Z_MAX_PIN          P1_29   // 10k pullup to 3.3V, 1K series
+#define  X_MIN_PIN          P1_24   
+#define  X_MAX_PIN          P1_25   
+#define  Y_MIN_PIN          P1_26   
+#define  Y_MAX_PIN          P1_27   
+#define  Z_MIN_PIN          P1_28   
+#define  Z_MAX_PIN          P1_29   
 
 //
 // Steppers
@@ -87,10 +87,10 @@
 // Temperature Sensors
 // 3.3V max when defined as an analog input
 //
-#define TEMP_BED_PIN        0   // A0 (TH1)
-#define TEMP_0_PIN          1   // A1 (TH2)
-#define TEMP_1_PIN          2   // A2 (TH3)
-#define TEMP_2_PIN          3   // A3 (TH4)
+#define  TEMP_BED_PIN        0   
+#define  TEMP_0_PIN          1   
+#define  TEMP_1_PIN          2   
+#define  TEMP_2_PIN          3   
 
 //
 // Heaters / Fans
@@ -129,16 +129,16 @@
 // Prusa i3 MK2 Multi Material Multiplexer Support
 //
 #if ENABLED(MK2_MULTIPLEXER)
-  #define E_MUX0_PIN         P1_23   // J8-3
-  #define E_MUX1_PIN         P2_12   // J8-4
-  #define E_MUX2_PIN         P2_11   // J8-5
+  #define  E_MUX0_PIN         P1_23   
+  #define  E_MUX1_PIN         P2_12   
+  #define  E_MUX2_PIN         P2_11   
 #endif
 
 //
 // Misc. Functions
 //
 #define PS_ON_PIN          P0_25
-#define LPC_SOFTWARE_SPI  // MKS_SBASE needs a software SPI because the
+#define  LPC_SOFTWARE_SPI  
                           // selected pins are not on a hardware SPI controller
 
 /**
@@ -155,38 +155,38 @@
  */
 
 #if ENABLED(ULTRA_LCD)
-  #define BEEPER_PIN       P1_31   // EXP1.1
-  #define BTN_ENC          P1_30   // EXP1.2
-  #define BTN_EN1          P3_26   // EXP2.5
-  #define BTN_EN2          P3_25   // EXP2.3
-  #define LCD_PINS_RS      P0_16   // EXP1.4
-  #define LCD_SDSS         P0_28   // EXP2.4
-  #define LCD_PINS_ENABLE  P0_18   // EXP1.3
-  #define LCD_PINS_D4      P0_15   // EXP1.5
+  #define  BEEPER_PIN       P1_31   
+  #define  BTN_ENC          P1_30   
+  #define  BTN_EN1          P3_26   
+  #define  BTN_EN2          P3_25   
+  #define  LCD_PINS_RS      P0_16   
+  #define  LCD_SDSS         P0_28   
+  #define  LCD_PINS_ENABLE  P0_18   
+  #define  LCD_PINS_D4      P0_15   
 #endif // ULTRA_LCD
 
 //
 // Ethernet pins
 //
 #ifndef ULTIPANEL
-  #define ENET_MDIO        P1_17   // J12-4
-  #define ENET_RX_ER       P1_14   // J12-6
-  #define ENET_RXD1        P1_10   // J12-8
+  #define  ENET_MDIO        P1_17   
+  #define  ENET_RX_ER       P1_14   
+  #define  ENET_RXD1        P1_10   
 #endif
-#define ENET_MOC           P1_16   // J12-3
-#define REF_CLK            P1_15   // J12-5
-#define ENET_RXD0          P1_09   // J12-7
-#define ENET_CRS           P1_08   // J12-9
-#define ENET_TX_EN         P1_04   // J12-10
-#define ENET_TXD0          P1_00   // J12-11
-#define ENET_TXD1          P1_01   // J12-12
+#define  ENET_MOC           P1_16   
+#define  REF_CLK            P1_15   
+#define  ENET_RXD0          P1_09   
+#define  ENET_CRS           P1_08   
+#define  ENET_TX_EN         P1_04   
+#define  ENET_TXD0          P1_00   
+#define  ENET_TXD1          P1_01   
 
 // A custom cable is needed. See the README file in the
 // Marlin\src\config\examples\Mks\Sbase directory
 
-#define SCK_PIN            P1_22   // J8-2 (moved from EXP2 P0.7)
-#define MISO_PIN           P1_23   // J8-3 (moved from EXP2 P0.8)
-#define MOSI_PIN           P2_12   // J8-4 (moved from EXP2 P0.5)
+#define  SCK_PIN            P1_22   
+#define  MISO_PIN           P1_23   
+#define  MOSI_PIN           P2_12   
 #define SS_PIN             P0_28
 #define SDSS               P0_06
 
@@ -200,7 +200,7 @@
  * If you can't find a pin to use for the LCD's SD_DETECT then comment out
  * SD_DETECT_PIN entirely and remove that wire from the the custom cable.
  */
-#define SD_DETECT_PIN      P2_11   // J8-5 (moved from EXP2 P0.27)
+#define  SD_DETECT_PIN      P2_11   
 
 
 /**

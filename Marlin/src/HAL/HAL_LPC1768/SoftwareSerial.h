@@ -43,7 +43,7 @@
 * Definitions
 ******************************************************************************/
 
-#define _SS_MAX_RX_BUFF 64 // RX buffer size
+#define  _SS_MAX_RX_BUFF 64 
 
 class SoftwareSerial : public Stream
 {

@@ -42,7 +42,7 @@
   #define min(a,b) ((a)<(b)?(a):(b))
 
   #undef NOT_A_PIN    // Override Teensyduino legacy CapSense define work-around
-  #define NOT_A_PIN 0 // For PINS_DEBUGGING
+  #define  NOT_A_PIN 0 
 #endif
 
 #define IS_SCARA (ENABLED(MORGAN_SCARA) || ENABLED(MAKERARM_SCARA))
@@ -404,10 +404,10 @@
 #define HAS_HOTEND_OFFSET_Z (HOTENDS > 1 && (ENABLED(DUAL_X_CARRIAGE) || ENABLED(SWITCHING_NOZZLE) || ENABLED(PARKING_EXTRUDER)))
 #if HOTENDS > 1
   #ifndef HOTEND_OFFSET_X
-    #define HOTEND_OFFSET_X { 0 } // X offsets for each extruder
+    #define  HOTEND_OFFSET_X { 0 } 
   #endif
   #ifndef HOTEND_OFFSET_Y
-    #define HOTEND_OFFSET_Y { 0 } // Y offsets for each extruder
+    #define  HOTEND_OFFSET_Y { 0 } 
   #endif
   #if HAS_HOTEND_OFFSET_Z && !defined(HOTEND_OFFSET_Z)
     #define HOTEND_OFFSET_Z { 0 }
@@ -1175,8 +1175,8 @@
   #else
     // Boundaries for Cartesian probing based on set limits
     #if ENABLED(AUTO_BED_LEVELING_UBL)
-      #define _MESH_MIN_X (MAX(X_MIN_BED + MESH_INSET, X_MIN_POS))  // UBL is careful not to probe off the bed.  It does not
-      #define _MESH_MIN_Y (MAX(Y_MIN_BED + MESH_INSET, Y_MIN_POS))  // need *_PROBE_OFFSET_FROM_EXTRUDER in the mesh dimensions
+      #define  _MESH_MIN_X (MAX(X_MIN_BED + MESH_INSET, X_MIN_POS))  
+      #define  _MESH_MIN_Y (MAX(Y_MIN_BED + MESH_INSET, Y_MIN_POS))  
       #define _MESH_MAX_X (MIN(X_MAX_BED - (MESH_INSET), X_MAX_POS))
       #define _MESH_MAX_Y (MIN(Y_MAX_BED - (MESH_INSET), Y_MAX_POS))
     #else
@@ -1410,7 +1410,7 @@
 // Force SDCARD_SORT_ALPHA to be enabled for Graphical LCD on LPC1768
 // because of a bug in the shared SPI implementation. (See #8122)
 #if defined(TARGET_LPC1768) && ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
-  #define SDCARD_SORT_ALPHA         // Keeps one directory level in RAM. Changing
+  #define  SDCARD_SORT_ALPHA         
                                     // directory levels still glitches the screen,
                                     // but the following LCD update cleans it up.
   #undef SDSORT_LIMIT

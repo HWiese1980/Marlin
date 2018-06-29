@@ -55,7 +55,7 @@
 #endif
 
 // Registers used by MarlinSerial class (expanded depending on selected serial port)
-#define M_UCSRxA           SERIAL_REGNAME(UCSR,SERIAL_PORT,A) // defines M_UCSRxA to be UCSRnA where n is the serial port number
+#define  M_UCSRxA           SERIAL_REGNAME(UCSR,SERIAL_PORT,A) 
 #define M_UCSRxB           SERIAL_REGNAME(UCSR,SERIAL_PORT,B)
 #define M_RXENx            SERIAL_REGNAME(RXEN,SERIAL_PORT,)
 #define M_TXENx            SERIAL_REGNAME(TXEN,SERIAL_PORT,)

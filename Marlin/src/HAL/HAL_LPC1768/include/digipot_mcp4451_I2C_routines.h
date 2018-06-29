@@ -26,7 +26,7 @@
 #ifndef _DIGIPOT_MCP4451_I2C_ROUTINES_H_
 #define _DIGIPOT_MCP4451_I2C_ROUTINES_H_
 
-#define USEDI2CDEV_M  1  // use I2C1 controller
+#define  USEDI2CDEV_M  1  
 
 #if USEDI2CDEV_M == 0
   #define I2CDEV_M LPC_I2C0

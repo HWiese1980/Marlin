@@ -71,12 +71,12 @@
  * operating systems like Windows XP.
  */
 //@{
-#define  MSC_SUBCLASS_RBC           0x01	//!< Reduced Block Commands
-#define  MSC_SUBCLASS_ATAPI         0x02	//!< CD/DVD devices
-#define  MSC_SUBCLASS_QIC_157       0x03	//!< Tape devices
-#define  MSC_SUBCLASS_UFI           0x04	//!< Floppy disk drives
-#define  MSC_SUBCLASS_SFF_8070I     0x05	//!< Floppy disk drives
-#define  MSC_SUBCLASS_TRANSPARENT   0x06	//!< Determined by INQUIRY
+#define   MSC_SUBCLASS_RBC           0x01	
+#define   MSC_SUBCLASS_ATAPI         0x02	
+#define   MSC_SUBCLASS_QIC_157       0x03	
+#define   MSC_SUBCLASS_UFI           0x04	
+#define   MSC_SUBCLASS_SFF_8070I     0x05	
+#define   MSC_SUBCLASS_TRANSPARENT   0x06	
 //@}
 
 /**
@@ -84,9 +84,9 @@
  * \note Only the BULK protocol should be used in new designs.
  */
 //@{
-#define  MSC_PROTOCOL_CBI           0x00	//!< Command/Bulk/Interrupt
-#define  MSC_PROTOCOL_CBI_ALT       0x01	//!< W/o command completion
-#define  MSC_PROTOCOL_BULK          0x50	//!< Bulk-only
+#define   MSC_PROTOCOL_CBI           0x00	
+#define   MSC_PROTOCOL_CBI_ALT       0x01	
+#define   MSC_PROTOCOL_BULK          0x50	
 //@}
 
 
@@ -115,11 +115,11 @@ struct usb_msc_cbw {
 	uint8_t CDB[16];	//!< SCSI Command Descriptor Block
 };
 
-#define  USB_CBW_SIGNATURE          0x55534243	//!< dCBWSignature value
-#define  USB_CBW_DIRECTION_IN       (1<<7)	//!< Data from device to host
-#define  USB_CBW_DIRECTION_OUT      (0<<7)	//!< Data from host to device
-#define  USB_CBW_LUN_MASK           0x0F	//!< Valid bits in bCBWLUN
-#define  USB_CBW_LEN_MASK           0x1F	//!< Valid bits in bCBWCBLength
+#define   USB_CBW_SIGNATURE          0x55534243	
+#define   USB_CBW_DIRECTION_IN       (1<<7)	
+#define   USB_CBW_DIRECTION_OUT      (0<<7)	
+#define   USB_CBW_LUN_MASK           0x0F	
+#define   USB_CBW_LEN_MASK           0x1F	
 //@}
 
 
@@ -134,10 +134,10 @@ struct usb_msc_csw {
 	uint8_t bCSWStatus;	//!< Status code
 };
 
-#define  USB_CSW_SIGNATURE          0x55534253	//!< dCSWSignature value
-#define  USB_CSW_STATUS_PASS        0x00	//!< Command Passed
-#define  USB_CSW_STATUS_FAIL        0x01	//!< Command Failed
-#define  USB_CSW_STATUS_PE          0x02	//!< Phase Error
+#define   USB_CSW_SIGNATURE          0x55534253	
+#define   USB_CSW_STATUS_PASS        0x00	
+#define   USB_CSW_STATUS_FAIL        0x01	
+#define   USB_CSW_STATUS_PE          0x02	
 //@}
 
 COMPILER_PACK_RESET()

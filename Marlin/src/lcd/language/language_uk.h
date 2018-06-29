@@ -36,7 +36,7 @@
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" готовий.")
 #define MSG_SD_INSERTED                     _UxGT("Картка вставлена")
 #define MSG_SD_REMOVED                      _UxGT("Картка видалена")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Кінцевик") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Кінцевик") 
 #define MSG_MAIN                            _UxGT("Меню")
 #define MSG_AUTOSTART                       _UxGT("Автостарт")
 #define MSG_DISABLE_STEPPERS                _UxGT("Вимк. двигуни")
@@ -158,7 +158,7 @@
 #define MSG_ZPROBE_OUT                      _UxGT("Z дет. не в межах")
 #define MSG_BLTOUCH_SELFTEST                _UxGT("BLTouch Само-Тест")
 #define MSG_BLTOUCH_RESET                   _UxGT("Скинути BLTouch")
-#define MSG_HOME                            _UxGT("Дім")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Дім")  
 #define MSG_FIRST                           _UxGT("перший")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Зміщення Z")
 #define MSG_BABYSTEP_X                      _UxGT("Мікрокрок X")
@@ -170,9 +170,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("ПРИНТЕР ЗУПИНЕНО")
 #define MSG_PLEASE_RESET                    _UxGT("Перезавантажте")
-#define MSG_SHORT_DAY                       _UxGT("д") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("г") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("х") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("д") 
+#define  MSG_SHORT_HOUR                      _UxGT("г") 
+#define  MSG_SHORT_MINUTE                    _UxGT("х") 
 #define MSG_HEATING                         _UxGT("Нагрівання...")
 #define MSG_BED_HEATING                     _UxGT("Нагрівання столу...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Калібр. Delta")

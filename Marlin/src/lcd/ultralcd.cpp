@@ -352,7 +352,7 @@ uint16_t max_display_update_time = 0;
     bool encoderRateMultiplierEnabled;
     #define ENCODER_RATE_MULTIPLY(F) (encoderRateMultiplierEnabled = F)
 
-    //#define ENCODER_RATE_MULTIPLIER_DEBUG  // If defined, output the encoder steps per second value
+    //#define  ENCODER_RATE_MULTIPLIER_DEBUG  
 
     /**
      * MENU_MULTIPLIER_ITEM generates drawing and handling code for a multiplier menu item

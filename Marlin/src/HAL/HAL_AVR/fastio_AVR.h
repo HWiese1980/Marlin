@@ -267,13 +267,13 @@ enum ClockSource2 : char {
 
 #ifdef NUM_SERVOS
   #if AVR_ATmega2560_FAMILY
-    #define PWM_CHK_SERVO(p) (p == 5 || (NUM_SERVOS > 12 && p == 6) || (NUM_SERVOS > 24 && p == 46))  // PWMS 3A, 4A & 5A
+    #define  PWM_CHK_SERVO(p) (p == 5 || (NUM_SERVOS > 12 && p == 6) || (NUM_SERVOS > 24 && p == 46))  
   #elif AVR_ATmega2561_FAMILY
-    #define PWM_CHK_SERVO(p)   (p == 5)  // PWM3A
+    #define  PWM_CHK_SERVO(p)   (p == 5)  
   #elif AVR_ATmega1284_FAMILY
     #define PWM_CHK_SERVO(p)   false
   #elif AVR_AT90USB1286_FAMILY
-    #define PWM_CHK_SERVO(p)   (p == 16) // PWM3A
+    #define  PWM_CHK_SERVO(p)   (p == 16) 
   #elif AVR_ATmega328_FAMILY
     #define PWM_CHK_SERVO(p)   false
   #endif

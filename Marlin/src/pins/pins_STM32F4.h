@@ -29,7 +29,7 @@
 
 //#define I2C_EEPROM
 
-#define E2END 0xFFF // EEPROM end address (4kB)
+#define  E2END 0xFFF 
 
 // Ignore temp readings during develpment.
 //#define BOGUS_TEMPERATURE_FAILSAFE_OVERRIDE
@@ -103,9 +103,9 @@
 // Temperature Sensors
 //
 
-#define TEMP_0_PIN         PC0   // Analog Input
-#define TEMP_1_PIN         PC1   // Analog Input
-#define TEMP_BED_PIN       PC2   // Analog Input
+#define  TEMP_0_PIN         PC0   
+#define  TEMP_1_PIN         PC1   
+#define  TEMP_BED_PIN       PC2   
 
 //
 // Heaters / Fans
@@ -121,7 +121,7 @@
 #define FAN1_PIN           PC7
 #define FAN2_PIN           PC8
 
-#define ORIG_E0_AUTO_FAN_PIN  FAN1_PIN // Use this by NOT overriding E0_AUTO_FAN_PIN
+#define  ORIG_E0_AUTO_FAN_PIN  FAN1_PIN 
 
 //
 // Misc. Functions
@@ -148,10 +148,10 @@
 
 #define SDSS               PE7
 #define SS_PIN             PE7
-#define LED_PIN            PB7         //Alive
+#define  LED_PIN            PB7         
 #define PS_ON_PIN          PA10
 #define KILL_PIN           PA8
-#define PWR_LOSS           PA4         //Power loss / nAC_FAULT
+#define  PWR_LOSS           PA4         
 
 //
 // LCD / Controller

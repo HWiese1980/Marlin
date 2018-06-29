@@ -76,8 +76,8 @@
   #define US_TO_PULSE_WIDTH(p) p
   #define PULSE_WIDTH_TO_US(p) p
   #define TRIM_DURATION 0
-  #define SERVO_MIN() MIN_PULSE_WIDTH  // minimum value in uS for this servo
-  #define SERVO_MAX() MAX_PULSE_WIDTH  // maximum value in uS for this servo
+  #define  SERVO_MIN() MIN_PULSE_WIDTH  
+  #define  SERVO_MAX() MAX_PULSE_WIDTH  
 
   Servo::Servo() {
     if (ServoCount < MAX_SERVOS) {

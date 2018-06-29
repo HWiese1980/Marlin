@@ -48,8 +48,8 @@ typedef uint32_t hal_timer_t;
 #define FTM0_TIMER_PRESCALE_BITS 0b011
 #define FTM1_TIMER_PRESCALE_BITS 0b010
 
-#define FTM0_TIMER_RATE (F_BUS / FTM0_TIMER_PRESCALE) // 60MHz / 8 = 7500kHz
-#define FTM1_TIMER_RATE (F_BUS / FTM1_TIMER_PRESCALE) // 60MHz / 4 = 15MHz
+#define  FTM0_TIMER_RATE (F_BUS / FTM0_TIMER_PRESCALE) 
+#define  FTM1_TIMER_RATE (F_BUS / FTM1_TIMER_PRESCALE) 
 
 #define HAL_TIMER_RATE         (FTM0_TIMER_RATE)
 
@@ -63,7 +63,7 @@ typedef uint32_t hal_timer_t;
 #define STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000)
 #define STEPPER_TIMER_PRESCALE (CYCLES_PER_MICROSECOND / STEPPER_TIMER_TICKS_PER_US)
 
-#define PULSE_TIMER_RATE       STEPPER_TIMER_RATE   // frequency of pulse timer
+#define  PULSE_TIMER_RATE       STEPPER_TIMER_RATE   
 #define PULSE_TIMER_PRESCALE   STEPPER_TIMER_PRESCALE
 #define PULSE_TIMER_TICKS_PER_US STEPPER_TIMER_TICKS_PER_US
 
@@ -74,8 +74,8 @@ typedef uint32_t hal_timer_t;
 #define ENABLE_TEMPERATURE_INTERRUPT() HAL_timer_enable_interrupt(TEMP_TIMER_NUM)
 #define DISABLE_TEMPERATURE_INTERRUPT() HAL_timer_disable_interrupt(TEMP_TIMER_NUM)
 
-#define HAL_STEP_TIMER_ISR  extern "C" void ftm0_isr(void) //void TC3_Handler()
-#define HAL_TEMP_TIMER_ISR  extern "C" void ftm1_isr(void) //void TC4_Handler()
+#define  HAL_STEP_TIMER_ISR  extern "C" void ftm0_isr(void) 
+#define  HAL_TEMP_TIMER_ISR  extern "C" void ftm1_isr(void) 
 
 void HAL_timer_start(const uint8_t timer_num, const uint32_t frequency);
 

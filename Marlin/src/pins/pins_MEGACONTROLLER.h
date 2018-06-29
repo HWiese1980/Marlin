@@ -62,17 +62,17 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         62   // A8
-#define X_DIR_PIN          63   // A9
-#define X_ENABLE_PIN       61   // A7
+#define  X_STEP_PIN         62   
+#define  X_DIR_PIN          63   
+#define  X_ENABLE_PIN       61   
 
-#define Y_STEP_PIN         65   // A11
-#define Y_DIR_PIN          66   // A12
-#define Y_ENABLE_PIN       64   // A10
+#define  Y_STEP_PIN         65   
+#define  Y_DIR_PIN          66   
+#define  Y_ENABLE_PIN       64   
 
-#define Z_STEP_PIN         68   // A14
-#define Z_DIR_PIN          69   // A15
-#define Z_ENABLE_PIN       67   // A13
+#define  Z_STEP_PIN         68   
+#define  Z_DIR_PIN          69   
+#define  Z_ENABLE_PIN       67   
 
 #define E0_STEP_PIN        23
 #define E0_DIR_PIN         24
@@ -86,23 +86,23 @@
 // Temperature Sensors
 //
 #if TEMP_SENSOR_0 == -1
-  #define TEMP_0_PIN        4   // Analog Input
+  #define  TEMP_0_PIN        4   
 #else
-  #define TEMP_0_PIN        0   // Analog Input
+  #define  TEMP_0_PIN        0   
 #endif
 
 #if TEMP_SENSOR_1 == -1
-  #define TEMP_1_PIN        5   // Analog Input
+  #define  TEMP_1_PIN        5   
 #else
-  #define TEMP_1_PIN        2   // Analog Input
+  #define  TEMP_1_PIN        2   
 #endif
 
-#define TEMP_2_PIN          3   // Analog Input
+#define  TEMP_2_PIN          3   
 
 #if TEMP_SENSOR_BED == -1
-  #define TEMP_BED_PIN      6   // Analog Input
+  #define  TEMP_BED_PIN      6   
 #else
-  #define TEMP_BED_PIN      1   // Analog Input
+  #define  TEMP_BED_PIN      1   
 #endif
 
 //
@@ -140,7 +140,7 @@
   // Pins for DOGM SPI LCD Support
   #define DOGLCD_A0        47
   #define DOGLCD_CS        45
-  #define LCD_BACKLIGHT_PIN 44   // backlight LED on PA3
+  #define  LCD_BACKLIGHT_PIN 44   
 
   #define KILL_PIN         12
   // GLCD features
@@ -161,6 +161,6 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN     6   // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN  7   // Pin should have a pullup!
+#define  SPINDLE_LASER_PWM_PIN     6   
+#define  SPINDLE_LASER_ENABLE_PIN  7   
 #define SPINDLE_DIR_PIN           8

@@ -37,7 +37,7 @@
 #endif
 
 #define DEFAULT_MACHINE_NAME    "Ultimaker"
-#define DEFAULT_SOURCE_CODE_URL "https://github.com/Ultimaker/Marlin"
+#define  DEFAULT_SOURCE_CODE_URL "https:
 #define BOARD_NAME              "Ultimaker 2.x"
 
 //
@@ -82,9 +82,9 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          8   // Analog Input
-#define TEMP_1_PIN          9   // Analog Input
-#define TEMP_BED_PIN       10   // Analog Input
+#define  TEMP_0_PIN          8   
+#define  TEMP_1_PIN          9   
+#define  TEMP_BED_PIN       10   
 
 //
 // Heaters / Fans
@@ -103,8 +103,8 @@
 #define SDSS               53
 #define SD_DETECT_PIN      39
 #define LED_PIN             8
-#define SAFETY_TRIGGERED_PIN     28   // PIN to detect the safety circuit has triggered
-#define MAIN_VOLTAGE_MEASURE_PIN 14   // ANALOG PIN to measure the main voltage, with a 100k - 4k7 resitor divider.
+#define  SAFETY_TRIGGERED_PIN     28   
+#define  MAIN_VOLTAGE_MEASURE_PIN 14   
 
 //
 // LCD / Controller
@@ -129,8 +129,8 @@
 #if ENABLED(SPINDLE_LASER_ENABLE)   // use the LED_PIN for spindle speed control or case light
   #undef LED_PIN
   #define SPINDLE_DIR_PIN          16
-  #define SPINDLE_LASER_ENABLE_PIN 17   // Pin should have a pullup!
-  #define SPINDLE_LASER_PWM_PIN     8   // MUST BE HARDWARE PWM
+  #define  SPINDLE_LASER_ENABLE_PIN 17   
+  #define  SPINDLE_LASER_PWM_PIN     8   
 #else
   #undef LED_PIN
   #define CASE_LIGHT_PIN            8

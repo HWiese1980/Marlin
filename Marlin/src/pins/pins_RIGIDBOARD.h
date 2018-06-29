@@ -30,14 +30,14 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  19    // Z-MAX pin J14 End Stops
+  #define  Z_MIN_PROBE_PIN  19    
 #endif
 
 //
 // MOSFET changes
 //
-#define RAMPS_D10_PIN       9   // EXTRUDER 1
-#define MOSFET_D_PIN       12   // EXTRUDER 2 or FAN
+#define  RAMPS_D10_PIN       9   
+#define  MOSFET_D_PIN       12   
 
 #include "pins_RAMPS.h"
 
@@ -59,7 +59,7 @@
 #define E1_DIR_PIN         28
 #define E1_ENABLE_PIN      24
 
-#define STEPPER_RESET_PIN  41   // Stepper drivers have a reset on RigidBot
+#define  STEPPER_RESET_PIN  41   
 
 //
 // Temperature Sensors
@@ -67,16 +67,16 @@
 #undef TEMP_0_PIN
 #undef TEMP_1_PIN
 #undef TEMP_BED_PIN
-#define TEMP_0_PIN         14   // Analog Input
-#define TEMP_1_PIN         13   // Analog Input
-#define TEMP_BED_PIN       15   // Analog Input
+#define  TEMP_0_PIN         14   
+#define  TEMP_1_PIN         13   
+#define  TEMP_BED_PIN       15   
 
 // SPI for Max6675 or Max31855 Thermocouple
 #undef MAX6675_SS
 #if DISABLED(SDSUPPORT)
-  #define MAX6675_SS       53   // Don't use pin 53 if there is even the remote possibility of using Display/SD card
+  #define  MAX6675_SS       53   
 #else
-  #define MAX6675_SS       49   // Don't use pin 49 as this is tied to the switch inside the SD card socket to detect if there is an SD card present
+  #define  MAX6675_SS       49   
 #endif
 
 //
@@ -86,7 +86,7 @@
 #define HEATER_BED_PIN     10
 
 #ifndef FAN_PIN
-  #define FAN_PIN           8   // Same as RAMPS_13_EEF
+  #define  FAN_PIN           8   
 #endif
 
 //

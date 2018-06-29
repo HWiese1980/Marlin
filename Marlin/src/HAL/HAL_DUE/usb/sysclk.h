@@ -156,34 +156,34 @@ extern "C" {
 
 //! \name Master Clock Sources (MCK)
 //@{
-#define SYSCLK_SRC_SLCK_RC              0       //!< Internal 32kHz RC oscillator as master source clock
-#define SYSCLK_SRC_SLCK_XTAL            1       //!< External 32kHz crystal oscillator as master source clock
-#define SYSCLK_SRC_SLCK_BYPASS          2       //!< External 32kHz bypass oscillator as master source clock
-#define SYSCLK_SRC_MAINCK_4M_RC         3       //!< Internal 4MHz RC oscillator as master source clock
-#define SYSCLK_SRC_MAINCK_8M_RC         4       //!< Internal 8MHz RC oscillator as master source clock
-#define SYSCLK_SRC_MAINCK_12M_RC        5       //!< Internal 12MHz RC oscillator as master source clock
-#define SYSCLK_SRC_MAINCK_XTAL          6       //!< External crystal oscillator as master source clock
-#define SYSCLK_SRC_MAINCK_BYPASS        7       //!< External bypass oscillator as master source clock
-#define SYSCLK_SRC_PLLACK               8       //!< Use PLLACK as master source clock
-#define SYSCLK_SRC_UPLLCK               9       //!< Use UPLLCK as master source clock
+#define  SYSCLK_SRC_SLCK_RC              0       
+#define  SYSCLK_SRC_SLCK_XTAL            1       
+#define  SYSCLK_SRC_SLCK_BYPASS          2       
+#define  SYSCLK_SRC_MAINCK_4M_RC         3       
+#define  SYSCLK_SRC_MAINCK_8M_RC         4       
+#define  SYSCLK_SRC_MAINCK_12M_RC        5       
+#define  SYSCLK_SRC_MAINCK_XTAL          6       
+#define  SYSCLK_SRC_MAINCK_BYPASS        7       
+#define  SYSCLK_SRC_PLLACK               8       
+#define  SYSCLK_SRC_UPLLCK               9       
 //@}
 
 //! \name Master Clock Prescalers (MCK)
 //@{
-#define SYSCLK_PRES_1           PMC_MCKR_PRES_CLK_1     //!< Set master clock prescaler to 1
-#define SYSCLK_PRES_2           PMC_MCKR_PRES_CLK_2     //!< Set master clock prescaler to 2
-#define SYSCLK_PRES_4           PMC_MCKR_PRES_CLK_4     //!< Set master clock prescaler to 4
-#define SYSCLK_PRES_8           PMC_MCKR_PRES_CLK_8     //!< Set master clock prescaler to 8
-#define SYSCLK_PRES_16          PMC_MCKR_PRES_CLK_16    //!< Set master clock prescaler to 16
-#define SYSCLK_PRES_32          PMC_MCKR_PRES_CLK_32    //!< Set master clock prescaler to 32
-#define SYSCLK_PRES_64          PMC_MCKR_PRES_CLK_64    //!< Set master clock prescaler to 64
-#define SYSCLK_PRES_3           PMC_MCKR_PRES_CLK_3     //!< Set master clock prescaler to 3
+#define  SYSCLK_PRES_1           PMC_MCKR_PRES_CLK_1     
+#define  SYSCLK_PRES_2           PMC_MCKR_PRES_CLK_2     
+#define  SYSCLK_PRES_4           PMC_MCKR_PRES_CLK_4     
+#define  SYSCLK_PRES_8           PMC_MCKR_PRES_CLK_8     
+#define  SYSCLK_PRES_16          PMC_MCKR_PRES_CLK_16    
+#define  SYSCLK_PRES_32          PMC_MCKR_PRES_CLK_32    
+#define  SYSCLK_PRES_64          PMC_MCKR_PRES_CLK_64    
+#define  SYSCLK_PRES_3           PMC_MCKR_PRES_CLK_3     
 //@}
 
 //! \name USB Clock Sources
 //@{
-#define USBCLK_SRC_PLL0       0     //!< Use PLLA
-#define USBCLK_SRC_UPLL       1     //!< Use UPLL
+#define  USBCLK_SRC_PLL0       0     
+#define  USBCLK_SRC_UPLL       1     
 //@}
 
 /**

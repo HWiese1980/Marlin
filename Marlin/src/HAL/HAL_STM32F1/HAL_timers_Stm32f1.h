@@ -47,27 +47,27 @@
 typedef uint16_t hal_timer_t;
 #define HAL_TIMER_TYPE_MAX 0xFFFF
 
-#define HAL_TIMER_RATE         (F_CPU)  // frequency of timers peripherals
+#define  HAL_TIMER_RATE         (F_CPU)  
 
-#define STEP_TIMER_CHAN 1 // Channel of the timer to use for compare and interrupts
-#define TEMP_TIMER_CHAN 1 // Channel of the timer to use for compare and interrupts
+#define  STEP_TIMER_CHAN 1 
+#define  TEMP_TIMER_CHAN 1 
 
 #if defined(MCU_STM32F103CB) || defined(MCU_STM32F103C8)
-  #define STEP_TIMER_NUM 4 // For C8/CB boards, use timer 4
+  #define  STEP_TIMER_NUM 4 
 #else
-  #define STEP_TIMER_NUM 5 // for other boards, five is fine.
+  #define  STEP_TIMER_NUM 5 
 #endif
-#define TEMP_TIMER_NUM 2  // index of timer to use for temperature
+#define  TEMP_TIMER_NUM 2  
 #define PULSE_TIMER_NUM STEP_TIMER_NUM
 
-#define TEMP_TIMER_PRESCALE     1000 // prescaler for setting Temp timer, 72Khz
-#define TEMP_TIMER_FREQUENCY    1000 // temperature interrupt frequency
+#define  TEMP_TIMER_PRESCALE     1000 
+#define  TEMP_TIMER_FREQUENCY    1000 
 
-#define STEPPER_TIMER_PRESCALE 18             // prescaler for setting stepper timer, 4Mhz
-#define STEPPER_TIMER_RATE     (HAL_TIMER_RATE / STEPPER_TIMER_PRESCALE)   // frequency of stepper timer
-#define STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000) // stepper timer ticks per µs
+#define  STEPPER_TIMER_PRESCALE 18             
+#define  STEPPER_TIMER_RATE     (HAL_TIMER_RATE / STEPPER_TIMER_PRESCALE)   
+#define  STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000) 
 
-#define PULSE_TIMER_RATE       STEPPER_TIMER_RATE   // frequency of pulse timer
+#define  PULSE_TIMER_RATE       STEPPER_TIMER_RATE   
 #define PULSE_TIMER_PRESCALE   STEPPER_TIMER_PRESCALE
 #define PULSE_TIMER_TICKS_PER_US STEPPER_TIMER_TICKS_PER_US
 

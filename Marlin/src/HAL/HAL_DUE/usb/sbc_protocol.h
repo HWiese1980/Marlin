@@ -90,8 +90,8 @@ enum scsi_sbc_mode {
 
 //! \name SBC-2 Device-Specific Parameter
 //@{
-#define SCSI_MS_SBC_WP              0x80	//!< Write Protected
-#define SCSI_MS_SBC_DPOFUA          0x10	//!< DPO and FUA supported
+#define  SCSI_MS_SBC_WP              0x80	
+#define  SCSI_MS_SBC_DPOFUA          0x10	
 //@}
 
 /**
@@ -100,7 +100,7 @@ enum scsi_sbc_mode {
 struct sbc_slba_block_desc {
 	be32_t nr_blocks;	//!< Number of Blocks
 	be32_t block_len;	//!< Block Length
-#define SBC_SLBA_BLOCK_LEN_MASK   0x00FFFFFFU	//!< Mask reserved bits
+#define  SBC_SLBA_BLOCK_LEN_MASK   0x00FFFFFFU	
 };
 
 /**
@@ -110,24 +110,24 @@ struct sbc_caching_mode_page {
 	uint8_t page_code;
 	uint8_t page_length;
 	uint8_t flags2;
-#define  SBC_MP_CACHE_IC      (1 << 7)	//!< Initiator Control
-#define  SBC_MP_CACHE_ABPF    (1 << 6)	//!< Abort Pre-Fetch
-#define  SBC_MP_CACHE_CAP     (1 << 5)	//!< Catching Analysis Permitted
-#define  SBC_MP_CACHE_DISC    (1 << 4)	//!< Discontinuity
-#define  SBC_MP_CACHE_SIZE    (1 << 3)	//!< Size enable
-#define  SBC_MP_CACHE_WCE     (1 << 2)	//!< Write back Cache Enable
-#define  SBC_MP_CACHE_MF      (1 << 1)	//!< Multiplication Factor
-#define  SBC_MP_CACHE_RCD     (1 << 0)	//!< Read Cache Disable
+#define   SBC_MP_CACHE_IC      (1 << 7)	
+#define   SBC_MP_CACHE_ABPF    (1 << 6)	
+#define   SBC_MP_CACHE_CAP     (1 << 5)	
+#define   SBC_MP_CACHE_DISC    (1 << 4)	
+#define   SBC_MP_CACHE_SIZE    (1 << 3)	
+#define   SBC_MP_CACHE_WCE     (1 << 2)	
+#define   SBC_MP_CACHE_MF      (1 << 1)	
+#define   SBC_MP_CACHE_RCD     (1 << 0)	
 	uint8_t retention;
 	be16_t dis_pf_transfer_len;
 	be16_t min_prefetch;
 	be16_t max_prefetch;
 	be16_t max_prefetch_ceil;
 	uint8_t flags12;
-#define  SBC_MP_CACHE_FSW     (1 << 7)	//!< Force Sequential Write
-#define  SBC_MP_CACHE_LBCSS   (1 << 6)	//!< Logical Blk Cache Seg Sz
-#define  SBC_MP_CACHE_DRA     (1 << 5)	//!< Disable Read-Ahead
-#define  SBC_MP_CACHE_NV_DIS  (1 << 0)	//!< Non-Volatile Cache Disable
+#define   SBC_MP_CACHE_FSW     (1 << 7)	
+#define   SBC_MP_CACHE_LBCSS   (1 << 6)	
+#define   SBC_MP_CACHE_DRA     (1 << 5)	
+#define   SBC_MP_CACHE_NV_DIS  (1 << 0)	
 	uint8_t nr_cache_segments;
 	be16_t cache_segment_size;
 	uint8_t reserved[4];

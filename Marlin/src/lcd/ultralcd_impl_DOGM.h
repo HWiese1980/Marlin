@@ -564,8 +564,8 @@ void lcd_implementation_clear() { } // Automatically cleared by Picture Loop
     /**
      * UBL LCD "radar" map data
      */
-    #define MAP_UPPER_LEFT_CORNER_X 35  // These probably should be moved to the .h file  But for now,
-    #define MAP_UPPER_LEFT_CORNER_Y  8  // it is easier to play with things having them here
+    #define  MAP_UPPER_LEFT_CORNER_X 35  
+    #define  MAP_UPPER_LEFT_CORNER_Y  8  
     #define MAP_MAX_PIXELS_X        53
     #define MAP_MAX_PIXELS_Y        49
 

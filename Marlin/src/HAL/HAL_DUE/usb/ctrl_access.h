@@ -124,7 +124,7 @@ typedef enum
 /*! \name LUN IDs
  */
 //! @{
-#define LUN_ID_0        (0)                 //!< First static LUN.
+#define  LUN_ID_0        (0)                 
 #define LUN_ID_1        (LUN_ID_0 + LUN_0)
 #define LUN_ID_2        (LUN_ID_1 + LUN_1)
 #define LUN_ID_3        (LUN_ID_2 + LUN_2)
@@ -132,8 +132,8 @@ typedef enum
 #define LUN_ID_5        (LUN_ID_4 + LUN_4)
 #define LUN_ID_6        (LUN_ID_5 + LUN_5)
 #define LUN_ID_7        (LUN_ID_6 + LUN_6)
-#define MAX_LUN         (LUN_ID_7 + LUN_7)  //!< Number of static LUNs.
-#define LUN_ID_USB      (MAX_LUN)           //!< First dynamic LUN (USB host mass storage).
+#define  MAX_LUN         (LUN_ID_7 + LUN_7)  
+#define  LUN_ID_USB      (MAX_LUN)           
 //! @}
 
 

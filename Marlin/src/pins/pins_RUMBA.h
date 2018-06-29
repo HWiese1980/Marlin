@@ -88,31 +88,31 @@
 // Temperature Sensors
 //
 #if TEMP_SENSOR_0 == -1
-  #define TEMP_0_PIN        6   // Analog Input (connector *K1* on RUMBA thermocouple ADD ON is used)
+  #define  TEMP_0_PIN        6   
 #else
-  #define TEMP_0_PIN       15   // Analog Input (default connector for thermistor *T0* on rumba board is used)
+  #define  TEMP_0_PIN       15   
 #endif
 
 #if TEMP_SENSOR_1 == -1
-  #define TEMP_1_PIN        5   // Analog Input (connector *K2* on RUMBA thermocouple ADD ON is used)
+  #define  TEMP_1_PIN        5   
 #else
-  #define TEMP_1_PIN       14   // Analog Input (default connector for thermistor *T1* on rumba board is used)
+  #define  TEMP_1_PIN       14   
 #endif
 
 #if TEMP_SENSOR_2 == -1
-  #define TEMP_2_PIN        7   // Analog Input (connector *K3* on RUMBA thermocouple ADD ON is used <-- this can't be used when TEMP_SENSOR_BED is defined as thermocouple)
+  #define  TEMP_2_PIN        7   
 #else
-  #define TEMP_2_PIN       13   // Analog Input (default connector for thermistor *T2* on rumba board is used)
+  #define  TEMP_2_PIN       13   
 #endif
 
 // optional for extruder 4 or chamber:
-//#define TEMP_X_PIN         12   // Analog Input (default connector for thermistor *T3* on rumba board is used)
-//#define TEMP_CHAMBER_PIN   12   // Analog Input (default connector for thermistor *T3* on rumba board is used)
+//#define  TEMP_X_PIN         12   
+//#define  TEMP_CHAMBER_PIN   12   
 
 #if TEMP_SENSOR_BED == -1
-  #define TEMP_BED_PIN      7   // Analog Input (connector *K3* on RUMBA thermocouple ADD ON is used <-- this can't be used when TEMP_SENSOR_2 is defined as thermocouple)
+  #define  TEMP_BED_PIN      7   
 #else
-  #define TEMP_BED_PIN     11   // Analog Input (default connector for thermistor *THB* on rumba board is used)
+  #define  TEMP_BED_PIN     11   
 #endif
 
 //
@@ -142,10 +142,10 @@
 // M3/M4/M5 - Spindle/Laser Control
 //
 #ifndef SPINDLE_LASER_PWM_PIN
-  #define SPINDLE_LASER_PWM_PIN     4   // MUST BE HARDWARE PWM. Pin 4 interrupts OC0* and OC1* always in use?
+  #define  SPINDLE_LASER_PWM_PIN     4   
 #endif
 #ifndef SPINDLE_LASER_ENABLE_PIN
-  #define SPINDLE_LASER_ENABLE_PIN 14   // Pin should have a pullup!
+  #define  SPINDLE_LASER_ENABLE_PIN 14   
 #endif
 #ifndef SPINDLE_DIR_PIN
   #define SPINDLE_DIR_PIN          15
@@ -162,8 +162,8 @@
 #define BTN_ENC            43
 
 #if ENABLED(MKS_12864OLED) || ENABLED(MKS_12864OLED_SSD1306)
-  #define LCD_PINS_DC      38 // Set as output on init
-  #define LCD_PINS_RS      41 // Pull low for 1s to init
+  #define  LCD_PINS_DC      38 
+  #define  LCD_PINS_RS      41 
   // DOGM SPI LCD Support
   #define DOGLCD_CS        19
   #define DOGLCD_MOSI      42

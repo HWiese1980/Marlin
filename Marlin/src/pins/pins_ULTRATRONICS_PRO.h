@@ -85,11 +85,11 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // Analog Input
-#define TEMP_1_PIN          2   // Analog Input
-#define TEMP_2_PIN          3   // Analog Input
-#define TEMP_3_PIN          4   // Analog Input
-#define TEMP_BED_PIN        1   // Analog Input
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          2   
+#define  TEMP_2_PIN          3   
+#define  TEMP_3_PIN          4   
+#define  TEMP_BED_PIN        1   
 
 //
 // Heaters / Fans
@@ -117,7 +117,7 @@
 // SPI Buses
 //
 
-#define DAC0_SYNC          53   // PB14
+#define  DAC0_SYNC          53   
 #define SPI_CHAN_DAC        1
 
 #define SPI_CHAN_EEPROM1   -1
@@ -142,9 +142,9 @@
 
 #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-  #define LCD_PINS_RS      A8     // CS chip select / SS chip slave select
-  #define LCD_PINS_ENABLE  MOSI   // SID (MOSI)
-  #define LCD_PINS_D4      SCK    // SCK (CLK) clock
+  #define  LCD_PINS_RS      A8     
+  #define  LCD_PINS_ENABLE  MOSI   
+  #define  LCD_PINS_D4      SCK    
 
   #define BTN_EN1          20
   #define BTN_EN2          21

@@ -38,13 +38,13 @@
 #define MSG_BACK                            _UxGT("Zurück")
 #define MSG_SD_INSERTED                     _UxGT("SD-Karte erkannt")
 #define MSG_SD_REMOVED                      _UxGT("SD-Karte entfernt")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstopp") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstopp") 
 #define MSG_MAIN                            _UxGT("Hauptmenü")
 #define MSG_AUTOSTART                       _UxGT("Autostart")
-#define MSG_DISABLE_STEPPERS                _UxGT("Motoren deaktivieren") // M84
+#define  MSG_DISABLE_STEPPERS                _UxGT("Motoren deaktivieren") 
 #define MSG_DEBUG_MENU                      _UxGT("Debug Menü")
 #define MSG_PROGRESS_BAR_TEST               _UxGT("Fortschrittsb. Test")
-#define MSG_AUTO_HOME                       _UxGT("Home") // G28
+#define  MSG_AUTO_HOME                       _UxGT("Home") 
 #define MSG_AUTO_HOME_X                     _UxGT("Home X")
 #define MSG_AUTO_HOME_Y                     _UxGT("Home Y")
 #define MSG_AUTO_HOME_Z                     _UxGT("Home Z")
@@ -55,7 +55,7 @@
 #define MSG_Z_FADE_HEIGHT                   _UxGT("Ausblendhöhe")
 #define MSG_SET_HOME_OFFSETS                _UxGT("Setze Homeversatz")
 #define MSG_HOME_OFFSETS_APPLIED            _UxGT("Homeversatz aktiv")
-#define MSG_SET_ORIGIN                      _UxGT("Setze Nullpunkt") //"G92 X0 Y0 Z0" commented out in ultralcd.cpp
+#define  MSG_SET_ORIGIN                      _UxGT("Setze Nullpunkt") 
 #define MSG_PREHEAT_1                       _UxGT("Vorwärmen PLA")
 #define MSG_PREHEAT_1_N                     _UxGT("Vorwärmen PLA ")
 #define MSG_PREHEAT_1_ALL                   _UxGT("Vorw. PLA Alle")
@@ -121,11 +121,11 @@
 #endif
 #define MSG_VE_JERK                         _UxGT("V E Jerk")
 #define MSG_VELOCITY                        _UxGT("Geschwindigkeit")
-#define MSG_VMAX                            _UxGT("V max ") // space by purpose
+#define  MSG_VMAX                            _UxGT("V max ") 
 #define MSG_VMIN                            _UxGT("V min")
 #define MSG_VTRAV_MIN                       _UxGT("V min Leerfahrt")
 #define MSG_ACCELERATION                    _UxGT("Beschleunigung")
-#define MSG_AMAX                            _UxGT("A max ") // space by purpose
+#define  MSG_AMAX                            _UxGT("A max ") 
 #define MSG_A_RETRACT                       _UxGT("A Retract")
 #define MSG_A_TRAVEL                        _UxGT("A Leerfahrt")
 #define MSG_STEPS_PER_MM                    _UxGT("Steps/mm")
@@ -186,8 +186,8 @@
 #define MSG_FILAMENTLOAD                    _UxGT("Filament laden")
 #define MSG_FILAMENTUNLOAD                  _UxGT("Filament entladen")
 #define MSG_FILAMENTUNLOAD_ALL              _UxGT("Alles entladen")
-#define MSG_INIT_SDCARD                     _UxGT("SD-Karte erkennen")  // Manually initialize the SD-card via user interface
-#define MSG_CNG_SDCARD                      _UxGT("SD-Karte getauscht") // SD-card changed by user. For machines with no autocarddetect. Both send "M21"
+#define  MSG_INIT_SDCARD                     _UxGT("SD-Karte erkennen")  
+#define  MSG_CNG_SDCARD                      _UxGT("SD-Karte getauscht") 
 #define MSG_ZPROBE_OUT                      _UxGT("Sensor ausserhalb")
 #define MSG_SKEW_FACTOR                     _UxGT("Skew Faktor")
 #define MSG_BLTOUCH                         _UxGT("BLTouch")
@@ -195,7 +195,7 @@
 #define MSG_BLTOUCH_RESET                   _UxGT("BLTouch Reset")
 #define MSG_BLTOUCH_DEPLOY                  _UxGT("BLTouch ausfahren")
 #define MSG_BLTOUCH_STOW                    _UxGT("BLTouch einfahren")
-#define MSG_HOME                            _UxGT("Vorher")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Vorher")  
 #define MSG_FIRST                           _UxGT("homen")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Z Versatz")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -213,9 +213,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("DRUCKER STOPP")
 #define MSG_PLEASE_RESET                    _UxGT("Bitte Resetten")
-#define MSG_SHORT_DAY                       _UxGT("t") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("t") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Extr. heizt...")
 #define MSG_BED_HEATING                     _UxGT("Bett heizt...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Delta kalibrieren")

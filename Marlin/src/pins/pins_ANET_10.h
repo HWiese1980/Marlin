@@ -125,14 +125,14 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          7   // Analog Input (pin 33 extruder)
-#define TEMP_BED_PIN        6   // Analog Input (pin 34 bed)
+#define  TEMP_0_PIN          7   
+#define  TEMP_BED_PIN        6   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       13   // (extruder)
-#define HEATER_BED_PIN     12   // (bed)
+#define  HEATER_0_PIN       13   
+#define  HEATER_BED_PIN     12   
 
 #ifndef FAN_PIN
   #define FAN_PIN           4
@@ -156,7 +156,7 @@
 #if ENABLED(ULTRA_LCD) && ENABLED(NEWPANEL)
   #define LCD_SDSS           28
   #if ENABLED(ADC_KEYPAD)
-    #define SERVO0_PIN       27   // free for BLTouch/3D-Touch
+    #define  SERVO0_PIN       27   
     #define LCD_PINS_RS      28
     #define LCD_PINS_ENABLE  29
     #define LCD_PINS_D4      10
@@ -171,7 +171,7 @@
     // Pin definitions for the Anet A6 Full Graphics display and the RepRapDiscount Full Graphics
     // display using an adapter board  // https://go.aisler.net/benlye/anet-lcd-adapter/pcb
     // See below for alternative pin definitions for use with https://www.thingiverse.com/thing:2103748
-    #define SERVO0_PIN       29   // free for BLTouch/3D-Touch
+    #define  SERVO0_PIN       29   
     #define BEEPER_PIN       17
     #define LCD_PINS_RS      27
     #define LCD_PINS_ENABLE  28
@@ -204,7 +204,7 @@
  * published by oderwat on Thingiverse at https://www.thingiverse.com/thing:2103748.
  *
  * Using that adapter requires changing the pin definition as follows:
- *   #define SERVO0_PIN        27   // free for BLTouch/3D-Touch
+ *   #define  SERVO0_PIN        27   
  *   #define BEEPER_PIN        28
  *   #define LCD_PINS_RS       30
  *   #define LCD_PINS_ENABLE   29

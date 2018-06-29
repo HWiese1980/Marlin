@@ -55,27 +55,27 @@
 
 // Macros
 
-#define MIN_PULSE_WIDTH       544     // the shortest pulse sent to a servo
-#define MAX_PULSE_WIDTH      2400     // the longest pulse sent to a servo
-#define DEFAULT_PULSE_WIDTH  1500     // default pulse width when servo is attached
-#define REFRESH_INTERVAL    20000     // minimum time to refresh servos in microseconds
+#define  MIN_PULSE_WIDTH       544     
+#define  MAX_PULSE_WIDTH      2400     
+#define  DEFAULT_PULSE_WIDTH  1500     
+#define  REFRESH_INTERVAL    20000     
 
-#define SERVOS_PER_TIMER       12     // the maximum number of servos controlled by one timer
+#define  SERVOS_PER_TIMER       12     
 #define MAX_SERVOS   (_Nbr_16timers  * SERVOS_PER_TIMER)
 
-#define INVALID_SERVO         255     // flag indicating an invalid servo index
+#define  INVALID_SERVO         255     
 
 //
-#define usToTicks(_us)    (( clockCyclesPerMicrosecond()* _us) / PRESCALER)     // converts microseconds to tick (PRESCALER depends on architecture)
-#define ticksToUs(_ticks) (( (unsigned)_ticks * PRESCALER)/ clockCyclesPerMicrosecond() ) // converts from ticks back to microseconds
+#define  usToTicks(_us)    (( clockCyclesPerMicrosecond()* _us) / PRESCALER)     
+#define  ticksToUs(_ticks) (( (unsigned)_ticks * PRESCALER)/ clockCyclesPerMicrosecond() ) 
 
 //#define NBR_TIMERS        ((MAX_SERVOS) / (SERVOS_PER_TIMER))
 
 // convenience macros
-#define SERVO_INDEX_TO_TIMER(_servo_nbr) ((timer16_Sequence_t)(_servo_nbr / (SERVOS_PER_TIMER))) // returns the timer controlling this servo
-#define SERVO_INDEX_TO_CHANNEL(_servo_nbr) (_servo_nbr % (SERVOS_PER_TIMER))       // returns the index of the servo on this timer
-#define SERVO_INDEX(_timer,_channel)  ((_timer*(SERVOS_PER_TIMER)) + _channel)     // macro to access servo index by timer and channel
-#define SERVO(_timer,_channel)  (servo_info[SERVO_INDEX(_timer,_channel)])       // macro to access servo class by timer and channel
+#define  SERVO_INDEX_TO_TIMER(_servo_nbr) ((timer16_Sequence_t)(_servo_nbr / (SERVOS_PER_TIMER))) 
+#define  SERVO_INDEX_TO_CHANNEL(_servo_nbr) (_servo_nbr % (SERVOS_PER_TIMER))       
+#define  SERVO_INDEX(_timer,_channel)  ((_timer*(SERVOS_PER_TIMER)) + _channel)     
+#define  SERVO(_timer,_channel)  (servo_info[SERVO_INDEX(_timer,_channel)])       
 
 // Types
 

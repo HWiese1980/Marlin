@@ -49,12 +49,12 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // Analog Input
-#define TEMP_1_PIN          9   // Analog Input.  9 for tool2 -> 13 for chambertemp
-#define TEMP_2_PIN         13   // Analog Input. 10 for tool3 -> 13 for chambertemp
-#define TEMP_3_PIN         11   // Analog Input. 11 for tool4 -> 13 for chambertemp
-#define TEMP_BED_PIN       14   // Analog Input
-//#define TEMP_CHAMBER_PIN   13   // Analog Input
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          9   
+#define  TEMP_2_PIN         13   
+#define  TEMP_3_PIN         11   
+#define  TEMP_BED_PIN       14   
+//#define  TEMP_CHAMBER_PIN   13   
 
 //
 // Heaters / Fans
@@ -66,7 +66,7 @@
 #define HEATER_BED_PIN     24
 
 #ifndef FAN_PIN
-  #define FAN_PIN           5   // 5 is PWMtool3 -> 7 is common PWM pin for all tools
+  #define  FAN_PIN           5   
 #endif
 
 #define ORIG_E0_AUTO_FAN_PIN 7
@@ -83,9 +83,9 @@
 // Tools
 
 //#define TOOL_0_PIN         56
-//#define TOOL_0_PWM_PIN     10   // red warning led at dual extruder
+//#define  TOOL_0_PWM_PIN     10   
 //#define TOOL_1_PIN         59
-//#define TOOL_1_PWM_PIN      8   // lights at dual extruder
+//#define  TOOL_1_PWM_PIN      8   
 //#define TOOL_2_PIN          4
 //#define TOOL_2_PWM_PIN      5
 //#define TOOL_3_PIN         14
@@ -126,4 +126,4 @@
 //#define UI2              37
 
 #define STAT_LED_BLUE_PIN  -1
-#define STAT_LED_RED_PIN   10   // TOOL_0_PWM_PIN
+#define  STAT_LED_RED_PIN   10   

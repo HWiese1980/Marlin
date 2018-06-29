@@ -66,9 +66,9 @@
 #include <pinmapping.h>
 #include <lpc17xx_clkpwr.h>
 
-#define LPC_PWM1_MR0 19999  // base repetition rate minus one count - 20mS
-#define LPC_PWM1_PCLKSEL0 CLKPWR_PCLKSEL_CCLK_DIV_4 // select clock divider for prescaler - defaults to 4 on power up
-#define MR0_MARGIN 200      // if channel value too close to MR0 the system locks up
+#define  LPC_PWM1_MR0 19999  
+#define  LPC_PWM1_PCLKSEL0 CLKPWR_PCLKSEL_CCLK_DIV_4 
+#define  MR0_MARGIN 200      
 
 void LPC1768_PWM_init(void);
 bool LPC1768_PWM_attach_pin(pin_t pin, uint32_t min=1, uint32_t max=(LPC_PWM1_MR0 - (MR0_MARGIN)), uint8_t servo_index=0xFF);

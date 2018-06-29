@@ -574,7 +574,7 @@ void GcodeSuite::G33() {
        *  - definition of the matrix scaling parameters
        *  - matrices for 4 and 7 point calibration
        */
-      #define ZP(N,I) ((N) * z_at_pt[I] / 4.0) // 4.0 = divider to normalize to integers
+      #define  ZP(N,I) ((N) * z_at_pt[I] / 4.0) 
       #define Z12(I) ZP(12, I)
       #define Z4(I) ZP(4, I)
       #define Z2(I) ZP(2, I)

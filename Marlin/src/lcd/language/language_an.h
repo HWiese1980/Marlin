@@ -36,7 +36,7 @@
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" parada.")
 #define MSG_SD_INSERTED                     _UxGT("Tarcheta mesa")
 #define MSG_SD_REMOVED                      _UxGT("Tarcheta sacada")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstops") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstops") 
 #define MSG_MAIN                            _UxGT("Menu prencipal")
 #define MSG_AUTOSTART                       _UxGT("Inicio automatico")
 #define MSG_DISABLE_STEPPERS                _UxGT("Amortar motors")
@@ -167,7 +167,7 @@
 #define MSG_ZPROBE_OUT                      _UxGT("Sonda Z fuera")
 #define MSG_BLTOUCH_SELFTEST                _UxGT("BLTouch Auto-Test")
 #define MSG_BLTOUCH_RESET                   _UxGT("Reset BLTouch")
-#define MSG_HOME                            _UxGT("Home") // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home") 
 #define MSG_FIRST                           _UxGT("first")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Desfase Z")
 #define MSG_BABYSTEP_X                      _UxGT("Micropaso X")

@@ -94,10 +94,10 @@
 #define USE_SOFTWARE_SPI 0
 
 // Define software SPI pins so Mega can use unmodified 168/328 shields
-#define SOFT_SPI_CS_PIN   10 // Software SPI chip select pin for the SD
-#define SOFT_SPI_MOSI_PIN 11 // Software SPI Master Out Slave In pin
-#define SOFT_SPI_MISO_PIN 12 // Software SPI Master In Slave Out pin
-#define SOFT_SPI_SCK_PIN  13 // Software SPI Clock pin
+#define  SOFT_SPI_CS_PIN   10 
+#define  SOFT_SPI_MOSI_PIN 11 
+#define  SOFT_SPI_MISO_PIN 12 
+#define  SOFT_SPI_SCK_PIN  13 
 
 /**
  * The __cxa_pure_virtual function is an error handler that is invoked when
@@ -109,7 +109,7 @@
  * Defines for 8.3 and long (vfat) filenames
  */
 
-#define FILENAME_LENGTH 13 // Number of UTF-16 characters per entry
+#define  FILENAME_LENGTH 13 
 
 // Total bytes needed to store a single long filename
 #define LONG_FILENAME_LENGTH (FILENAME_LENGTH * MAX_VFAT_ENTRIES + 1)

@@ -42,5 +42,5 @@
 #endif
 
 #ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN      5   // Analog Input on AUX2
+  #define  FILWIDTH_PIN      5   
 #endif

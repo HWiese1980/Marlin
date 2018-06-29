@@ -73,27 +73,27 @@ extern "C" {
  * thus XMEGA can support up to 7 CDC interfaces.
  */
 //@{
-#define  UDI_CDC_DATA_EP_IN_0          ( 1 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_0         ( 2 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_0             ( 2 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_1          ( 3 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_1         ( 4 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_1             ( 4 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_2          ( 5 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_2         ( 6 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_2             ( 6 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_3          ( 7 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_3         ( 8 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_3             ( 8 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_4          ( 9 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_4         (10 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_4             (10 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_5          (11 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_5         (12 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_5             (12 | USB_EP_DIR_IN)  // Notify endpoint
-#define  UDI_CDC_DATA_EP_IN_6          (13 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_6         (14 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_6             (14 | USB_EP_DIR_IN)  // Notify endpoint
+#define   UDI_CDC_DATA_EP_IN_0          ( 1 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_0         ( 2 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_0             ( 2 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_1          ( 3 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_1         ( 4 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_1             ( 4 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_2          ( 5 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_2         ( 6 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_2             ( 6 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_3          ( 7 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_3         ( 8 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_3             ( 8 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_4          ( 9 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_4         (10 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_4             (10 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_5          (11 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_5         (12 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_5             (12 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_IN_6          (13 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_6         (14 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_6             (14 | USB_EP_DIR_IN)  
 //! 2 endpoints numbers used per CDC interface
 #define  USB_DEVICE_MAX_EP             (2*UDI_CDC_PORT_NB)
 //@}
@@ -108,9 +108,9 @@ extern "C" {
 #  if UDI_CDC_PORT_NB > 2
 #    error USBB, UDP, UDPHS and UOTGHS interfaces have not enought endpoints.
 #  endif
-#define  UDI_CDC_DATA_EP_IN_0          (1 | USB_EP_DIR_IN)  // TX
-#define  UDI_CDC_DATA_EP_OUT_0         (2 | USB_EP_DIR_OUT) // RX
-#define  UDI_CDC_COMM_EP_0             (3 | USB_EP_DIR_IN)  // Notify endpoint
+#define   UDI_CDC_DATA_EP_IN_0          (1 | USB_EP_DIR_IN)  
+#define   UDI_CDC_DATA_EP_OUT_0         (2 | USB_EP_DIR_OUT) 
+#define   UDI_CDC_COMM_EP_0             (3 | USB_EP_DIR_IN)  
 #  if SAM3U
      /* For 3U max endpoint size of 4 is 64, use 5 and 6 as bulk tx and rx */
 #    define  UDI_CDC_DATA_EP_IN_1          (6 | USB_EP_DIR_IN)  // TX

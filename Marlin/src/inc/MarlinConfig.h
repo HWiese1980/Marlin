@@ -30,7 +30,7 @@
 #include "../pins/pins.h"
 
 #if defined(__AVR__) && !defined(USBCON)
-  #define HardwareSerial_h // trick to disable the standard HWserial
+  #define  HardwareSerial_h 
 #endif
 
 #include "Conditionals_post.h"

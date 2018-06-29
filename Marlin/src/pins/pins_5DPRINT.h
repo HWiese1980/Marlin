@@ -85,61 +85,61 @@
 //
 // Limit Switches
 //
-#define X_STOP_PIN         37   // E5
-#define Y_STOP_PIN         36   // E4
-#define Z_STOP_PIN         19   // E7
+#define  X_STOP_PIN         37   
+#define  Y_STOP_PIN         36   
+#define  Z_STOP_PIN         19   
 
 //
 // Steppers
 //
-#define X_STEP_PIN         28   // A0
-#define X_DIR_PIN          29   // A1
-#define X_ENABLE_PIN       17   // C7
+#define  X_STEP_PIN         28   
+#define  X_DIR_PIN          29   
+#define  X_ENABLE_PIN       17   
 
-#define Y_STEP_PIN         30   // A2
-#define Y_DIR_PIN          31   // A3
-#define Y_ENABLE_PIN       13   // C3
+#define  Y_STEP_PIN         30   
+#define  Y_DIR_PIN          31   
+#define  Y_ENABLE_PIN       13   
 
-#define Z_STEP_PIN         32   // A4
-#define Z_DIR_PIN          33   // A5
-#define Z_ENABLE_PIN       12   // C2
+#define  Z_STEP_PIN         32   
+#define  Z_DIR_PIN          33   
+#define  Z_ENABLE_PIN       12   
 
-#define E0_STEP_PIN        34   // A6
-#define E0_DIR_PIN         35   // A7
-#define E0_ENABLE_PIN      11   // C1
+#define  E0_STEP_PIN        34   
+#define  E0_DIR_PIN         35   
+#define  E0_ENABLE_PIN      11   
 
 //
 // Digital Microstepping
 //
-#define X_MS1_PIN          25   // B5
-#define X_MS2_PIN          26   // B6
-#define Y_MS1_PIN           9   // E1
-#define Y_MS2_PIN           8   // E0
-#define Z_MS1_PIN           7   // D7
-#define Z_MS2_PIN           6   // D6
-#define E0_MS1_PIN          5   // D5
-#define E0_MS2_PIN          4   // D4
+#define  X_MS1_PIN          25   
+#define  X_MS2_PIN          26   
+#define  Y_MS1_PIN           9   
+#define  Y_MS2_PIN           8   
+#define  Z_MS1_PIN           7   
+#define  Z_MS2_PIN           6   
+#define  E0_MS1_PIN          5   
+#define  E0_MS2_PIN          4   
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          1   // F1  Analog Input
-#define TEMP_BED_PIN        0   // F0  Analog Input
+#define  TEMP_0_PIN          1   
+#define  TEMP_BED_PIN        0   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       15   // C5
-#define HEATER_BED_PIN     14   // C4
+#define  HEATER_0_PIN       15   
+#define  HEATER_BED_PIN     14   
 
 #ifndef FAN_PIN
-  #define FAN_PIN          16   // C6  PWM3A
+  #define  FAN_PIN          16   
 #endif
 
 //
 // Misc. Functions
 //
-#define SDSS               20   // B0
+#define  SDSS               20   
 
 //DIGIPOTS slave addresses
-#define DIGIPOT_I2C_ADDRESS_A 0x2C   // unshifted slave address for DIGIPOT 0x2C (0x58 <- 0x2C << 1)
+#define  DIGIPOT_I2C_ADDRESS_A 0x2C   

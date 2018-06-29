@@ -29,7 +29,7 @@
 
 #include <Wire.h>
 
-#define defaultVDD     DAC_STEPPER_MAX //was 5000 but differs with internal Vref
+#define  defaultVDD     DAC_STEPPER_MAX 
 #define BASE_ADDR      0x60
 #define RESET          0b00000110
 #define WAKE           0b00001001

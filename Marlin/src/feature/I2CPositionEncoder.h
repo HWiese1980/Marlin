@@ -31,14 +31,14 @@
 
 //=========== Advanced / Less-Common Encoder Configuration Settings ==========
 
-#define I2CPE_EC_THRESH_PROPORTIONAL                    // if enabled adjusts the error correction threshold
+#define  I2CPE_EC_THRESH_PROPORTIONAL                    
                                                         // proportional to the current speed of the axis allows
                                                         // for very small error margin at low speeds without
                                                         // stuttering due to reading latency at high speeds
 
-#define I2CPE_DEBUG                                     // enable encoder-related debug serial echos
+#define  I2CPE_DEBUG                                     
 
-#define I2CPE_REBOOT_TIME             5000              // time we wait for an encoder module to reboot
+#define  I2CPE_REBOOT_TIME             5000              
                                                         // after changing address.
 
 #define I2CPE_MAG_SIG_GOOD            0

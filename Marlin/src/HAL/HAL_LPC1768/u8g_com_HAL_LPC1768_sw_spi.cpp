@@ -62,7 +62,7 @@
 #include <U8glib.h>
 #include "SoftwareSPI.h"
 
-#define SPI_SPEED 2  // About 2 MHz
+#define  SPI_SPEED 2  
 
 static uint8_t SPI_speed = 0;
 

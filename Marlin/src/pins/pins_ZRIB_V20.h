@@ -33,7 +33,7 @@
 #define ORIG_E3_AUTO_FAN_PIN ZRIB_V20_D9_PIN
 
 #ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN 11   // Analog Input
+  #define  FILWIDTH_PIN 11   
 #endif
 
 #include "pins_MKS_GEN_13.h"

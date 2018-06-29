@@ -33,9 +33,9 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_ENABLE_PIN 66   // Pin should have a pullup/pulldown!
+#define  SPINDLE_LASER_ENABLE_PIN 66   
 #define SPINDLE_DIR_PIN          67
-#define SPINDLE_LASER_PWM_PIN    44   // MUST BE HARDWARE PWM
+#define  SPINDLE_LASER_PWM_PIN    44   
 
 #include "pins_RAMPS.h"
 
@@ -44,5 +44,5 @@
 //
 #undef TEMP_0_PIN
 #undef TEMP_1_PIN
-#define TEMP_0_PIN          9   // Analog Input
-#define TEMP_1_PIN         11   // Analog Input
+#define  TEMP_0_PIN          9   
+#define  TEMP_1_PIN         11   

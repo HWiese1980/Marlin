@@ -349,17 +349,17 @@ usb_iface_desc_t UDC_DESC_STORAGE *udc_get_interface_desc(void);
  * -# Ensure that conf_usb.h is available and contains the following configuration
  * which is the main USB device configuration:
  *   - \code // Vendor ID provided by USB org (ATMEL 0x03EB)
-	#define USB_DEVICE_VENDOR_ID 0x03EB // Type Word
+	#define  USB_DEVICE_VENDOR_ID 0x03EB 
 	// Product ID (Atmel PID referenced in usb_atmel.h)
-	#define USB_DEVICE_PRODUCT_ID 0xXXXX // Type Word
+	#define  USB_DEVICE_PRODUCT_ID 0xXXXX 
 	// Major version of the device
-	#define USB_DEVICE_MAJOR_VERSION 1 // Type Byte
+	#define  USB_DEVICE_MAJOR_VERSION 1 
 	// Minor version of the device
-	#define USB_DEVICE_MINOR_VERSION 0 // Type Byte
+	#define  USB_DEVICE_MINOR_VERSION 0 
 	// Maximum device power (mA)
-	#define USB_DEVICE_POWER 100 // Type 9-bits
+	#define  USB_DEVICE_POWER 100 
 	// USB attributes to enable features
-	#define USB_DEVICE_ATTR USB_CONFIG_ATTR_BUS_POWERED // Flags \endcode
+	#define  USB_DEVICE_ATTR USB_CONFIG_ATTR_BUS_POWERED 
  * -# Call the USB device stack start function to enable stack and start USB:
  *   - \code udc_start(); \endcode
  *     \note In case of USB dual roles (Device and Host) managed through USB OTG connector
@@ -390,14 +390,14 @@ usb_iface_desc_t UDC_DESC_STORAGE *udc_get_interface_desc(void);
 	#define CONFIG_PLL1_MUL             8
 	#define CONFIG_PLL1_DIV             2
 	#define CONFIG_USBCLK_SOURCE        USBCLK_SRC_PLL1
-	#define CONFIG_USBCLK_DIV           1 // Fusb = Fsys/(2 ^ USB_div)
+	#define  CONFIG_USBCLK_DIV           1 
 \endcode
  *
  * Content of conf_clock.h for AT32UC3A3, AT32UC3A4 devices (USBB with high speed support):
  * \code
 	// Configuration based on 12MHz external OSC:
 	#define CONFIG_USBCLK_SOURCE        USBCLK_SRC_OSC0
-	#define CONFIG_USBCLK_DIV           1 // Fusb = Fsys/(2 ^ USB_div)
+	#define  CONFIG_USBCLK_DIV           1 
 \endcode
  *
  * Content of conf_clock.h for AT32UC3C, ATUCXXD, ATUCXXL3U, ATUCXXL4U devices (USBC):
@@ -407,7 +407,7 @@ usb_iface_desc_t UDC_DESC_STORAGE *udc_get_interface_desc(void);
 	#define CONFIG_PLL1_MUL             8
 	#define CONFIG_PLL1_DIV             2
 	#define CONFIG_USBCLK_SOURCE        USBCLK_SRC_PLL1
-	#define CONFIG_USBCLK_DIV           1 // Fusb = Fsys/(2 ^ USB_div)
+	#define  CONFIG_USBCLK_DIV           1 
 	// CPU clock need of clock > 25MHz to run with USBC
 	#define CONFIG_SYSCLK_SOURCE        SYSCLK_SRC_PLL1
 \endcode
@@ -675,9 +675,9 @@ usb_iface_desc_t UDC_DESC_STORAGE *udc_get_interface_desc(void);
  * \subsection udc_use_case_6_usage_flow Workflow
  * -# Ensure that conf_usb.h is available and contains the following parameters
  * required to enable a USB serial number strings dynamically:
- *   - \code #define  USB_DEVICE_SERIAL_NAME // Define this empty
-	#define  USB_DEVICE_GET_SERIAL_NAME_POINTER serial_number // Give serial array pointer
-	#define  USB_DEVICE_GET_SERIAL_NAME_LENGTH  12 // Give size of serial array
+ *   - \code #define   USB_DEVICE_SERIAL_NAME 
+	#define   USB_DEVICE_GET_SERIAL_NAME_POINTER serial_number 
+	#define   USB_DEVICE_GET_SERIAL_NAME_LENGTH  12 
 	extern uint8_t serial_number[]; // Declare external serial array \endcode
  * -# Before start USB stack, initialize the serial array
  *   - \code

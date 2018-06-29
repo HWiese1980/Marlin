@@ -37,13 +37,13 @@
 #endif
 
 #define DEFAULT_MACHINE_NAME    "Ultimaker"
-#define DEFAULT_SOURCE_CODE_URL "https://github.com/Ultimaker/Marlin"
+#define  DEFAULT_SOURCE_CODE_URL "https:
 #define BOARD_NAME              "Ultimaker"
 
 //
 // Servos
 //
-#define SERVO0_PIN         13   // UNTESTED
+#define  SERVO0_PIN         13   
 
 //
 // Limit Switches
@@ -88,9 +88,9 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          8   // Analog Input
-#define TEMP_1_PIN          9   // Analog Input
-#define TEMP_BED_PIN       10   // Analog Input
+#define  TEMP_0_PIN          8   
+#define  TEMP_1_PIN          9   
+#define  TEMP_BED_PIN       10   
 
 //
 // Heaters / Fans
@@ -109,7 +109,7 @@
 #define SDSS               53
 #define LED_PIN            13
 #define PS_ON_PIN          12
-#define SUICIDE_PIN        54   // PIN that has to be turned on right after start, to keep power flowing.
+#define  SUICIDE_PIN        54   
 #define CASE_LIGHT_PIN      8
 
 //
@@ -159,6 +159,6 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN     9   // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN 10   // Pin should have a pullup!
-#define SPINDLE_DIR_PIN          11   // use the EXP3 PWM header
+#define  SPINDLE_LASER_PWM_PIN     9   
+#define  SPINDLE_LASER_ENABLE_PIN 10   
+#define  SPINDLE_DIR_PIN          11   

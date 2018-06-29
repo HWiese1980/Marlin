@@ -33,8 +33,8 @@
 #include "leds.h"
 #include <Wire.h>
 
-#define PCA9632_MODE1_VALUE   0b00000001 //(ALLCALL)
-#define PCA9632_MODE2_VALUE   0b00010101 //(DIMMING, INVERT, CHANGE ON STOP,TOTEM)
+#define  PCA9632_MODE1_VALUE   0b00000001 
+#define  PCA9632_MODE2_VALUE   0b00010101 
 #define PCA9632_LEDOUT_VALUE  0b00101010
 
 /* Register addresses */

@@ -36,39 +36,39 @@
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" έτοιμο.")
 #define MSG_SD_INSERTED                     _UxGT("Εισαγωγή κάρτας")
 #define MSG_SD_REMOVED                      _UxGT("Αφαίρεση κάρτας")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstops") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstops") 
 #define MSG_MAIN                            _UxGT("Βασική Οθόνη")
 #define MSG_AUTOSTART                       _UxGT("Αυτόματη εκκίνηση")
 #define MSG_DISABLE_STEPPERS                _UxGT("Απενεργοποίηση Μοτέρ")
-#define MSG_AUTO_HOME                       _UxGT("Αυτομ. επαναφορά στο αρχικό σημείο") //SHORTEN
+#define  MSG_AUTO_HOME                       _UxGT("Αυτομ. επαναφορά στο αρχικό σημείο") 
 #define MSG_AUTO_HOME_X                     _UxGT("Αρχικό σημείο X")
 #define MSG_AUTO_HOME_Y                     _UxGT("Αρχικό σημείο Y")
 #define MSG_AUTO_HOME_Z                     _UxGT("Αρχικό σημείο Z")
-#define MSG_LEVEL_BED_HOMING                _UxGT("Επαναφορά Επ. Εκτύπωσης") //SHORTEN
-#define MSG_LEVEL_BED_WAITING               _UxGT("Επιπεδοποίηση επ. Εκτύπωσης περιμενει") //SHORTEN
+#define  MSG_LEVEL_BED_HOMING                _UxGT("Επαναφορά Επ. Εκτύπωσης") 
+#define  MSG_LEVEL_BED_WAITING               _UxGT("Επιπεδοποίηση επ. Εκτύπωσης περιμενει") 
 #define MSG_LEVEL_BED_NEXT_POINT            _UxGT("Επόμενο σημείο")
-#define MSG_LEVEL_BED_DONE                  _UxGT("Ολοκλήρωση επιπεδοποίησης!") //SHORTEN
-#define MSG_SET_HOME_OFFSETS                _UxGT("Ορισμός βασικών μετατοπίσεων") //SHORTEN
-#define MSG_HOME_OFFSETS_APPLIED            _UxGT("Εφαρμόστηκαν οι μετατοπίσεις") //SHORTEN
+#define  MSG_LEVEL_BED_DONE                  _UxGT("Ολοκλήρωση επιπεδοποίησης!") 
+#define  MSG_SET_HOME_OFFSETS                _UxGT("Ορισμός βασικών μετατοπίσεων") 
+#define  MSG_HOME_OFFSETS_APPLIED            _UxGT("Εφαρμόστηκαν οι μετατοπίσεις") 
 #define MSG_SET_ORIGIN                      _UxGT("Ορισμός προέλευσης")
 #define MSG_PREHEAT_1                       _UxGT("Προθέρμανση PLA")
 #define MSG_PREHEAT_1_N                     MSG_PREHEAT_1 _UxGT(" ")
 #define MSG_PREHEAT_1_ALL                   MSG_PREHEAT_1 _UxGT(" όλα")
-#define MSG_PREHEAT_1_BEDONLY               MSG_PREHEAT_1 _UxGT(" bed") //SHORTEN
-#define MSG_PREHEAT_1_SETTINGS              MSG_PREHEAT_1 _UxGT(" επιβεβαίωση") //SHORTEN
+#define  MSG_PREHEAT_1_BEDONLY               MSG_PREHEAT_1 _UxGT(" bed") 
+#define  MSG_PREHEAT_1_SETTINGS              MSG_PREHEAT_1 _UxGT(" επιβεβαίωση") 
 #define MSG_PREHEAT_2                       _UxGT("Προθέρμανση ABS")
 #define MSG_PREHEAT_2_N                     MSG_PREHEAT_2 _UxGT(" ")
 #define MSG_PREHEAT_2_ALL                   MSG_PREHEAT_2 _UxGT(" όλα")
-#define MSG_PREHEAT_2_BEDONLY               MSG_PREHEAT_2 _UxGT(" bed") //SHORTEN
-#define MSG_PREHEAT_2_SETTINGS              MSG_PREHEAT_2 _UxGT(" επιβεβαίωση") //SHORTEN
+#define  MSG_PREHEAT_2_BEDONLY               MSG_PREHEAT_2 _UxGT(" bed") 
+#define  MSG_PREHEAT_2_SETTINGS              MSG_PREHEAT_2 _UxGT(" επιβεβαίωση") 
 #define MSG_COOLDOWN                        _UxGT("Μειωση θερμοκρασιας")
 #define MSG_SWITCH_PS_ON                    _UxGT("Ενεργοποίηση")
 #define MSG_SWITCH_PS_OFF                   _UxGT("Απενεργοποίηση")
 #define MSG_EXTRUDE                         _UxGT("Εξώθηση")
 #define MSG_RETRACT                         _UxGT("Ανάσυρση")
 #define MSG_MOVE_AXIS                       _UxGT("Μετακίνηση άξονα")
-#define MSG_BED_LEVELING                    _UxGT("Επιπεδοποίηση Επ. Εκτύπωσης") //SHORTEN
-#define MSG_LEVEL_BED                       _UxGT("Επιπεδοποίηση Επ. Εκτύπωσης") //SHORTEN
+#define  MSG_BED_LEVELING                    _UxGT("Επιπεδοποίηση Επ. Εκτύπωσης") 
+#define  MSG_LEVEL_BED                       _UxGT("Επιπεδοποίηση Επ. Εκτύπωσης") 
 #define MSG_MOVE_X                          _UxGT("Μετακίνηση X")
 #define MSG_MOVE_Y                          _UxGT("Μετακίνηση Y")
 #define MSG_MOVE_Z                          _UxGT("Μετακίνηση Z")
@@ -86,7 +86,7 @@
 #define MSG_MIN                             _UxGT(" ") LCD_STR_THERMOMETER _UxGT(" Min")
 #define MSG_MAX                             _UxGT(" ") LCD_STR_THERMOMETER _UxGT(" Max")
 #define MSG_FACTOR                          _UxGT(" ") LCD_STR_THERMOMETER _UxGT(" Fact")
-#define MSG_AUTOTEMP                        _UxGT("Αυτομ ρύθμιση θερ/σίας") //SHORTEN
+#define  MSG_AUTOTEMP                        _UxGT("Αυτομ ρύθμιση θερ/σίας") 
 #define MSG_ON                              _UxGT("Ενεργοποιημένο")
 #define MSG_OFF                             _UxGT("Απενεργοποιημένο")
 #define MSG_PID_P                           _UxGT("PID-P")
@@ -136,7 +136,7 @@
 #define MSG_CONTRAST                        _UxGT("Κοντράστ LCD")
 #define MSG_STORE_EEPROM                    _UxGT("Αποθήκευση")
 #define MSG_LOAD_EEPROM                     _UxGT("Φόρτωση")
-#define MSG_RESTORE_FAILSAFE                _UxGT("Επαναφορά ασφαλούς αντιγράφου") //SHORTEN
+#define  MSG_RESTORE_FAILSAFE                _UxGT("Επαναφορά ασφαλούς αντιγράφου") 
 #define MSG_REFRESH                         _UxGT("Ανανέωση")
 #define MSG_WATCH                           _UxGT("Οθόνη πληροφόρησης")
 #define MSG_PREPARE                         _UxGT("Προετοιμασία")
@@ -148,12 +148,12 @@
 #define MSG_NO_CARD                         _UxGT("Δεν βρέθηκε SD")
 #define MSG_DWELL                           _UxGT("Αναστολή λειτουργίας")
 #define MSG_USERWAIT                        _UxGT("Αναμονή για χρήστη")
-#define MSG_PRINT_ABORTED                   _UxGT("Διακόπτεται η εκτύπωση") //SHORTEN
+#define  MSG_PRINT_ABORTED                   _UxGT("Διακόπτεται η εκτύπωση") 
 #define MSG_NO_MOVE                         _UxGT("Καμία κίνηση.")
 #define MSG_KILLED                          _UxGT("ΤΕΡΜΑΤΙΣΜΟΣ. ")
 #define MSG_STOPPED                         _UxGT("ΔΙΑΚΟΠΗ. ")
 #define MSG_CONTROL_RETRACT                 _UxGT("Ανάσυρση μμ")
-#define MSG_CONTROL_RETRACT_SWAP            _UxGT("Εναλλαγή ανάσυρσης μμ")  //SHORTEN
+#define  MSG_CONTROL_RETRACT_SWAP            _UxGT("Εναλλαγή ανάσυρσης μμ")  
 #define MSG_CONTROL_RETRACTF                _UxGT("Ανάσυρση V")
 #define MSG_CONTROL_RETRACT_ZLIFT           _UxGT("Μεταπήδηση μμ")
 #define MSG_CONTROL_RETRACT_RECOVER         _UxGT("UnRet mm")
@@ -161,10 +161,10 @@
 #define MSG_CONTROL_RETRACT_RECOVERF        _UxGT("UnRet  V")
 #define MSG_AUTORETRACT                     _UxGT("Αυτόματη ανάσυρση")
 #define MSG_FILAMENTCHANGE                  _UxGT("Αλλαγή νήματος")
-#define MSG_INIT_SDCARD                     _UxGT("Προετοιμασία κάρτας SD")  //SHORTEN
+#define  MSG_INIT_SDCARD                     _UxGT("Προετοιμασία κάρτας SD")  
 #define MSG_CNG_SDCARD                      _UxGT("Αλλαγή κάρτας SD")
-#define MSG_ZPROBE_OUT                      _UxGT("Διερεύνηση Z εκτός Επ.Εκτύπωσης") //SHORTEN
-#define MSG_YX_UNHOMED                      _UxGT("Επαναφορά Χ/Υ πριν από Ζ") //SHORTEN
+#define  MSG_ZPROBE_OUT                      _UxGT("Διερεύνηση Z εκτός Επ.Εκτύπωσης") 
+#define  MSG_YX_UNHOMED                      _UxGT("Επαναφορά Χ/Υ πριν από Ζ") 
 #define MSG_XYZ_UNHOMED                     _UxGT("Επαναφορά ΧΥΖ πρώτα")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Μετατόπιση Ζ")
 #define MSG_BABYSTEP_X                      _UxGT("Μικρό βήμα Χ")
@@ -175,12 +175,12 @@
 #define MSG_ERR_REDUNDANT_TEMP              _UxGT("ΠΛΕΟΝΑΖΟΥΣΑ ΘΕΡΜΟΤΗΤΑ")
 #define MSG_THERMAL_RUNAWAY                 _UxGT("ΔΙΑΦΥΓΗ ΘΕΡΜΟΚΡΑΣΙΑΣ")
 #define MSG_ERR_MAXTEMP                     _UxGT("ΠΕΡΙΤΗ ΘΕΡΜΟΚΡΑΣΙΑ")
-#define MSG_ERR_MINTEMP                     _UxGT("ΜΗ ΕΠΑΡΚΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ") //SHORTEN
-#define MSG_ERR_MAXTEMP_BED                 _UxGT("ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑΣ ΕΠ. ΕΚΤΥΠΩΣΗΣ") //SHORTEN
-#define MSG_ERR_MINTEMP_BED                 _UxGT("ΕΛΑΧΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑΣ ΕΠ. ΕΚΤΥΠΩΣΗΣ") //SHORTEN
+#define  MSG_ERR_MINTEMP                     _UxGT("ΜΗ ΕΠΑΡΚΗΣ ΘΕΡΜΟΚΡΑΣΙΑΣ") 
+#define  MSG_ERR_MAXTEMP_BED                 _UxGT("ΜΕΓΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑΣ ΕΠ. ΕΚΤΥΠΩΣΗΣ") 
+#define  MSG_ERR_MINTEMP_BED                 _UxGT("ΕΛΑΧΙΣΤΗ ΘΕΡΜΟΚΡΑΣΙΑΣ ΕΠ. ΕΚΤΥΠΩΣΗΣ") 
 #define MSG_HALTED                          _UxGT("H εκτύπωση διακόπηκε")
 #define MSG_HEATING                         _UxGT("Θερμαίνεται…")
-#define MSG_BED_HEATING                     _UxGT("Θέρμανση ΕΠ. Εκτύπωσης") //SHORTEN
+#define  MSG_BED_HEATING                     _UxGT("Θέρμανση ΕΠ. Εκτύπωσης") 
 #define MSG_DELTA_CALIBRATE                 _UxGT("Βαθμονόμηση Delta")
 #define MSG_DELTA_CALIBRATE_X               _UxGT("Βαθμονόμηση X")
 #define MSG_DELTA_CALIBRATE_Y               _UxGT("Βαθμονόμηση Y")

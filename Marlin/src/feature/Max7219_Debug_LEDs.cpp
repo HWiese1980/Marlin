@@ -39,7 +39,7 @@
 
 #if ENABLED(MAX7219_DEBUG)
 
-#define MAX7219_ERRORS // Disable to save 406 bytes of Program Memory
+#define  MAX7219_ERRORS 
 
 #include "Max7219_Debug_LEDs.h"
 

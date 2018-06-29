@@ -63,7 +63,7 @@
 #define  USB_DEVICE_PRODUCT_ID            0x2424 /* MSC / CDC */
 #define  USB_DEVICE_MAJOR_VERSION         1
 #define  USB_DEVICE_MINOR_VERSION         0
-#define  USB_DEVICE_POWER                 100 // Consumption on Vbus line (mA)
+#define   USB_DEVICE_POWER                 100 
 #define  USB_DEVICE_ATTR                  \
   (USB_CONFIG_ATTR_SELF_POWERED)
 // (USB_CONFIG_ATTR_BUS_POWERED)

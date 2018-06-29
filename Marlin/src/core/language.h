@@ -319,7 +319,7 @@
  && DISABLED(DISPLAY_CHARSET_ISO10646_PL) \
  && DISABLED(DISPLAY_CHARSET_ISO10646_CZ) \
  && DISABLED(DISPLAY_CHARSET_ISO10646_SK)
-  #define DISPLAY_CHARSET_ISO10646_1 // use the better font on full graphic displays.
+  #define  DISPLAY_CHARSET_ISO10646_1 
 #endif
 
 #include "../lcd/language/language_en.h"

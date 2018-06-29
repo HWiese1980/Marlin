@@ -163,13 +163,13 @@ extern "C" {
 
 // UART state bitmap values (Serial state notification).
 // (usbcdc11.pdf, 6.3.5, Table 69)
-#define CDC_SERIAL_STATE_OVERRUN                (1 << 6)  // receive data overrun error has occurred
-#define CDC_SERIAL_STATE_PARITY                 (1 << 5)  // parity error has occurred
-#define CDC_SERIAL_STATE_FRAMING                (1 << 4)  // framing error has occurred
-#define CDC_SERIAL_STATE_RING                   (1 << 3)  // state of ring signal detection
-#define CDC_SERIAL_STATE_BREAK                  (1 << 2)  // state of break detection
-#define CDC_SERIAL_STATE_TX_CARRIER             (1 << 1)  // state of transmission carrier
-#define CDC_SERIAL_STATE_RX_CARRIER             (1 << 0)  // state of receiver carrier
+#define  CDC_SERIAL_STATE_OVERRUN                (1 << 6)  
+#define  CDC_SERIAL_STATE_PARITY                 (1 << 5)  
+#define  CDC_SERIAL_STATE_FRAMING                (1 << 4)  
+#define  CDC_SERIAL_STATE_RING                   (1 << 3)  
+#define  CDC_SERIAL_STATE_BREAK                  (1 << 2)  
+#define  CDC_SERIAL_STATE_TX_CARRIER             (1 << 1)  
+#define  CDC_SERIAL_STATE_RX_CARRIER             (1 << 0)  
 
 // capabilities callmgmt
 #define CDC_CALLMGMT_CAP_CALLMGMT 0x01

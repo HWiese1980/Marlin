@@ -92,9 +92,9 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // Analog Input
-#define TEMP_1_PIN          1   // Analog Input
-#define TEMP_BED_PIN        2   // Analog Input
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          1   
+#define  TEMP_BED_PIN        2   
 
 //
 // Heaters / Fans
@@ -124,8 +124,8 @@
 // M3/M4/M5 - Spindle/Laser Control
 //
 // use P1 connector for spindle pins
-#define SPINDLE_LASER_PWM_PIN     9   // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN 18   // Pin should have a pullup!
+#define  SPINDLE_LASER_PWM_PIN     9   
+#define  SPINDLE_LASER_ENABLE_PIN 18   
 #define SPINDLE_DIR_PIN          19
 
 //
@@ -134,7 +134,7 @@
 #define E_MUX0_PIN         17
 #define E_MUX1_PIN         16
 #if !MB(MINIRAMBO_10A)
-  #define E_MUX2_PIN       78   // 84 in MK2 Firmware, with BEEPER as 78
+  #define  E_MUX2_PIN       78   
 #endif
 
 //

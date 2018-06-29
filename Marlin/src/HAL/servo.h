@@ -85,7 +85,7 @@
     #error "This library only supports boards with an AVR or SAM3X processor."
   #endif
 
-  #define Servo_VERSION           2     // software version of this library
+  #define  Servo_VERSION           2     
 
   class Servo {
     public:

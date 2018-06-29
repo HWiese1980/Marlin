@@ -108,7 +108,7 @@
 #define CPU_32_BIT
 
 //default values
-#define INITIAL_MICROSTEPPING 0x3ul //32th microstepping
+#define  INITIAL_MICROSTEPPING 0x3ul 
 
 SPIClass SPI_6(SPI6, SPI6_MOSI_PIN, SPI6_MISO_PIN, SPI6_SCK_PIN);
 

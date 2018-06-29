@@ -56,7 +56,7 @@
 #define BOARD_NAME "Sethi 3D_1"
 
 #ifndef GEN7_VERSION
-  #define GEN7_VERSION 12   // v1.x
+  #define  GEN7_VERSION 12   
 #endif
 
 //
@@ -89,8 +89,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          1   // Analog Input
-#define TEMP_BED_PIN        2   // Analog Input
+#define  TEMP_0_PIN          1   
+#define  TEMP_BED_PIN        2   
 
 //
 // Heaters / Fans

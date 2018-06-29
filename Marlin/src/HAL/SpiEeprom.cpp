@@ -31,9 +31,9 @@
 
 #include HAL_PATH(., HAL.h)
 
-#define CMD_WREN  6   // WREN
-#define CMD_READ  2   // WRITE
-#define CMD_WRITE 2   // WRITE
+#define  CMD_WREN  6   
+#define  CMD_READ  2   
+#define  CMD_WRITE 2   
 
 uint8_t eeprom_read_byte(uint8_t* pos) {
   uint8_t v;

@@ -782,7 +782,7 @@
 
   #else  // U8G compatible hardware SPI
 
-    #define SPI_MODE_0_DUE_HW 2  // DUE CPHA control bit is inverted
+    #define  SPI_MODE_0_DUE_HW 2  
     #define SPI_MODE_1_DUE_HW 3
     #define SPI_MODE_2_DUE_HW 0
     #define SPI_MODE_3_DUE_HW 1

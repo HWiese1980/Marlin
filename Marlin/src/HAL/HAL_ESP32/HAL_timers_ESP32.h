@@ -39,22 +39,22 @@
 typedef uint64_t hal_timer_t;
 #define HAL_TIMER_TYPE_MAX 0xFFFFFFFFFFFFFFFFULL
 
-#define STEP_TIMER_NUM 0  // index of timer to use for stepper
-#define TEMP_TIMER_NUM 1  // index of timer to use for temperature
+#define  STEP_TIMER_NUM 0  
+#define  TEMP_TIMER_NUM 1  
 #define PULSE_TIMER_NUM STEP_TIMER_NUM
 
-#define HAL_TIMER_RATE APB_CLK_FREQ // frequency of timer peripherals
+#define  HAL_TIMER_RATE APB_CLK_FREQ 
 
 #define STEPPER_TIMER_PRESCALE     40
-#define STEPPER_TIMER_RATE         (HAL_TIMER_RATE / STEPPER_TIMER_PRESCALE) // frequency of stepper timer, 2MHz
-#define STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000)          // stepper timer ticks per µs
+#define  STEPPER_TIMER_RATE         (HAL_TIMER_RATE / STEPPER_TIMER_PRESCALE) 
+#define  STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000)          
 
-#define STEP_TIMER_MIN_INTERVAL   8 // minimum time in µs between stepper interrupts
+#define  STEP_TIMER_MIN_INTERVAL   8 
 
-#define TEMP_TIMER_PRESCALE    1000 // prescaler for setting Temp timer, 72Khz
-#define TEMP_TIMER_FREQUENCY   1000 // temperature interrupt frequency
+#define  TEMP_TIMER_PRESCALE    1000 
+#define  TEMP_TIMER_FREQUENCY   1000 
 
-#define PULSE_TIMER_RATE         STEPPER_TIMER_RATE   // frequency of pulse timer
+#define  PULSE_TIMER_RATE         STEPPER_TIMER_RATE   
 #define PULSE_TIMER_PRESCALE     STEPPER_TIMER_PRESCALE
 #define PULSE_TIMER_TICKS_PER_US STEPPER_TIMER_TICKS_PER_US
 

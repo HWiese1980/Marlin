@@ -78,10 +78,10 @@
 #if ENABLED(ULTRA_LCD) && DISABLED(REPRAPWORLD_GRAPHICAL_LCD) && (DISABLED(NEWPANEL) || DISABLED(PANEL_ONE)) && DISABLED(CR10_STOCKDISPLAY)
   #if DISABLED(MKS_12864OLED) || ENABLED(MKS_12864OLED_SSD1306)
     #undef LCD_PINS_RS
-    #define LCD_PINS_RS     42   // 3DYMY boards pin 16 -> 42
+    #define  LCD_PINS_RS     42   
     #undef LCD_PINS_ENABLE
-    #define LCD_PINS_ENABLE 44   // 3DYMY boards pin 17 -> 44
+    #define  LCD_PINS_ENABLE 44   
   #endif
   #undef LCD_PINS_D7
-  #define LCD_PINS_D7       53   // 3DYMY boards pin 29 -> 53
+  #define  LCD_PINS_D7       53   
 #endif

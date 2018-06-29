@@ -72,7 +72,7 @@
 #define ST7565_ON(N)             (0xAE | ((N) & 0x1))
 #define ST7565_OUT_MODE(N)       (0xC0 | ((N) & 0x1) << 3)
 #define ST7565_POWER_CONTROL(N)  (0x28 | (N))
-#define ST7565_V0_RATIO(N)       (0x10 | ((N) & 0x7)) // Specific to Displaytech 64128N? (ST7565 is 0x20 | N)
+#define  ST7565_V0_RATIO(N)       (0x10 | ((N) & 0x7)) 
 #define ST7565_CONTRAST(N)       (0x81), (N)
 
 #define ST7565_COLUMN_ADR(N)     (0x10 | (((N) >> 4) & 0xF)), ((N) & 0xF)

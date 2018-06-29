@@ -105,12 +105,12 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          1   // Analog Input
-#define TEMP_1_PIN          2   // Analog Input
-#define TEMP_2_PIN          3   // Analog Input
-#define TEMP_3_PIN         -1   // fewer compiler warnings
-#define TEMP_4_PIN         -1   // fewer compiler warnings
-#define TEMP_BED_PIN        0   // Analog Input
+#define  TEMP_0_PIN          1   
+#define  TEMP_1_PIN          2   
+#define  TEMP_2_PIN          3   
+#define  TEMP_3_PIN         -1   
+#define  TEMP_4_PIN         -1   
+#define  TEMP_BED_PIN        0   
 
 // SPI for Max6675 or Max31855 Thermocouple
 #if DISABLED(SDSUPPORT)
@@ -170,9 +170,9 @@
     #define STAT_LED_BLUE_PIN   29
     #define STAT_LED_RED_PIN    23
     #define DOGLCD_CS           17
-    #define DOGLCD_SCK          76 //SCK_PIN   - required so that the DUE hardware SPI will be used
-    #define DOGLCD_MOSI         75 //MOSI_PIN  - required so that the DUE hardware SPI will be used
-    #define DOGLCD_MISO         74 //MISO_PIN
+    #define  DOGLCD_SCK          76 
+    #define  DOGLCD_MOSI         75 
+    #define  DOGLCD_MISO         74 
   #endif
 
 
@@ -203,8 +203,8 @@
 //
 #if ENABLED(SPINDLE_LASER_ENABLE) && !PIN_EXISTS(SPINDLE_LASER_ENABLE)
   #if HOTENDS < 3
-    #define SPINDLE_LASER_ENABLE_PIN  45   // Use E2 ENA
-    #define SPINDLE_LASER_PWM_PIN     12   // MUST BE HARDWARE PWM
-    #define SPINDLE_DIR_PIN           47   // Use E2 DIR
+    #define  SPINDLE_LASER_ENABLE_PIN  45   
+    #define  SPINDLE_LASER_PWM_PIN     12   
+    #define  SPINDLE_DIR_PIN           47   
   #endif
 #endif

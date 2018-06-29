@@ -107,7 +107,7 @@ extern "C" {
 }
 
 // timers
-#define HAL_TIMER_RATE          ((F_CPU) / 8)    // i.e., 2MHz or 2.5MHz
+#define  HAL_TIMER_RATE          ((F_CPU) / 8)    
 
 #define STEP_TIMER_NUM          1
 #define TEMP_TIMER_NUM          0
@@ -117,9 +117,9 @@ extern "C" {
 
 #define STEPPER_TIMER_RATE      HAL_TIMER_RATE
 #define STEPPER_TIMER_PRESCALE  8
-#define STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000) // Cannot be of type double
+#define  STEPPER_TIMER_TICKS_PER_US ((STEPPER_TIMER_RATE) / 1000000) 
 
-#define PULSE_TIMER_RATE       STEPPER_TIMER_RATE   // frequency of pulse timer
+#define  PULSE_TIMER_RATE       STEPPER_TIMER_RATE   
 #define PULSE_TIMER_PRESCALE   STEPPER_TIMER_PRESCALE
 #define PULSE_TIMER_TICKS_PER_US STEPPER_TIMER_TICKS_PER_US
 

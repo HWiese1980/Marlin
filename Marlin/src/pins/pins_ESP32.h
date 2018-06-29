@@ -51,7 +51,7 @@
 #define Z_STEP_PIN         14
 #define Z_DIR_PIN          12
 #define Z_ENABLE_PIN       X_ENABLE_PIN
-//#define Z_CS_PIN            5 // SS_PIN
+//#define  Z_CS_PIN            5 
 
 #define E0_STEP_PIN        16
 #define E0_DIR_PIN         17
@@ -61,8 +61,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN         36   // Analog Input
-#define TEMP_BED_PIN       39   // Analog Input
+#define  TEMP_0_PIN         36   
+#define  TEMP_BED_PIN       39   
 
 //
 // Heaters / Fans

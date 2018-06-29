@@ -649,7 +649,7 @@ iram_size_t udi_cdc_multi_write_buf(uint8_t port, const void* buf, iram_size_t s
  * \subsection udi_cdc_basic_use_case_setup_flow Workflow
  * -# Ensure that conf_usb.h is available and contains the following configuration,
  * which is the USB device CDC configuration:
- *   - \code #define USB_DEVICE_SERIAL_NAME  "12...EF" // Disk SN for CDC \endcode
+ *   - \code #define  USB_DEVICE_SERIAL_NAME  "12...EF" 
  *     \note The USB serial number is mandatory when a CDC interface is used.
  *   - \code #define UDI_CDC_ENABLE_EXT(port) my_callback_cdc_enable()
 	 extern bool my_callback_cdc_enable(void); \endcode
@@ -717,9 +717,9 @@ iram_size_t udi_cdc_multi_write_buf(uint8_t port, const void* buf, iram_size_t s
 	 #define USB_DEVICE_NB_INTERFACE (X+2)
 	 #define USB_DEVICE_MAX_EP (X+3)
 
-	 #define  UDI_CDC_DATA_EP_IN_0          (1 | USB_EP_DIR_IN)  // TX
-	 #define  UDI_CDC_DATA_EP_OUT_0         (2 | USB_EP_DIR_OUT) // RX
-	 #define  UDI_CDC_COMM_EP_0             (3 | USB_EP_DIR_IN)  // Notify endpoint
+	 #define   UDI_CDC_DATA_EP_IN_0          (1 | USB_EP_DIR_IN)  
+	 #define   UDI_CDC_DATA_EP_OUT_0         (2 | USB_EP_DIR_OUT) 
+	 #define   UDI_CDC_COMM_EP_0             (3 | USB_EP_DIR_IN)  
 	 #define  UDI_CDC_COMM_IFACE_NUMBER_0   X+0
 	 #define  UDI_CDC_DATA_IFACE_NUMBER_0   X+1
 
@@ -762,9 +762,9 @@ iram_size_t udi_cdc_multi_write_buf(uint8_t port, const void* buf, iram_size_t s
  * composite device:
  *   - \code // The endpoint numbers chosen by you for the CDC.
 	// The endpoint numbers starting from 1.
-	#define  UDI_CDC_DATA_EP_IN_0            (1 | USB_EP_DIR_IN)  // TX
-	#define  UDI_CDC_DATA_EP_OUT_0           (2 | USB_EP_DIR_OUT) // RX
-	#define  UDI_CDC_COMM_EP_0               (3 | USB_EP_DIR_IN)  // Notify endpoint
+	#define   UDI_CDC_DATA_EP_IN_0            (1 | USB_EP_DIR_IN)  
+	#define   UDI_CDC_DATA_EP_OUT_0           (2 | USB_EP_DIR_OUT) 
+	#define   UDI_CDC_COMM_EP_0               (3 | USB_EP_DIR_IN)  
 	// The interface index of an interface starting from 0
 	#define  UDI_CDC_COMM_IFACE_NUMBER_0     X+0
 	#define  UDI_CDC_DATA_IFACE_NUMBER_0     X+1 \endcode

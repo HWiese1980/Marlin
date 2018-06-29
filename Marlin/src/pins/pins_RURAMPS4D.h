@@ -60,15 +60,15 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         37   // Support Extension Board
+#define  X_STEP_PIN         37   
 #define X_DIR_PIN          36
 #define X_ENABLE_PIN       38
 
-#define Y_STEP_PIN         32   // Support Extension Board
+#define  Y_STEP_PIN         32   
 #define Y_DIR_PIN          35
 #define Y_ENABLE_PIN       34
 
-#define Z_STEP_PIN         30   // Support Extension Board
+#define  Z_STEP_PIN         30   
 #define Z_DIR_PIN           2
 #define Z_ENABLE_PIN       33
 
@@ -84,7 +84,7 @@
 #define E2_DIR_PIN         23
 #define E2_ENABLE_PIN      27
 
-#define E3_STEP_PIN        15   // Only For Extension Board
+#define  E3_STEP_PIN        15   
 #define E3_DIR_PIN         14
 #define E3_ENABLE_PIN      61
 
@@ -100,9 +100,9 @@
 //#define E3_MS1_PIN         ?
 //#define E3_MS2_PIN         ?
 //#define E3_MS3_PIN         ?
-//#define Z2_MS1_PIN         ?   // shared with E3_MS1_PIN
-//#define Z2_MS2_PIN         ?   // shared with E3_MS2_PIN
-//#define Z2_MS3_PIN         ?   // shared with E3_MS3_PIN
+//#define  Z2_MS1_PIN         ?   
+//#define  Z2_MS2_PIN         ?   
+//#define  Z2_MS3_PIN         ?   
 
 #if DISABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
   #define Z_MIN_PROBE_PIN  49
@@ -120,7 +120,7 @@
 #define HEATER_0_PIN       13
 #define HEATER_1_PIN       12
 #define HEATER_2_PIN       11
-#define HEATER_BED_PIN      7   // BED H1
+#define  HEATER_BED_PIN      7   
 
 #ifndef FAN_PIN
   #define FAN_PIN           9
@@ -131,15 +131,15 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // ANALOG A0
-#define TEMP_1_PIN          1   // ANALOG A1
-#define TEMP_2_PIN          2   // ANALOG A2
-#define TEMP_3_PIN          3   // ANALOG A2
-#define TEMP_BED_PIN        4   // ANALOG A3
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          1   
+#define  TEMP_2_PIN          2   
+#define  TEMP_3_PIN          3   
+#define  TEMP_BED_PIN        4   
 //Thermocouple Use Analog Pins
 #if ENABLED(VER_WITH_THERMOCOUPLE) // If Nead, define is in Configuration.h
-  #define TEMP_4_PIN        5   // A5
-  #define TEMP_5_PIN        6   // A6 (Marlin 2.0 not support)
+  #define  TEMP_4_PIN        5   
+  #define  TEMP_5_PIN        6   
 #endif
 
 // SPI for Max6675 or Max31855 Thermocouple
@@ -160,9 +160,9 @@
 //
 // Misc. Functions
 //
-#define SDSS                4   // 4,10,52 if using HW SPI.
-#define LED_PIN            -1   // 13 - HEATER_0_PIN
-#define PS_ON_PIN          -1   // 65
+#define  SDSS                4   
+#define  LED_PIN            -1   
+#define  PS_ON_PIN          -1   
 
 // MKS TFT / Nextion Use internal USART-1
 #define TFT_LCD_MODULE_COM        1
@@ -177,10 +177,10 @@
 //
 // EEPROM
 //
-#define E2END 0x7FFF  // 32Kb (24lc256)
-#define I2C_EEPROM    // EEPROM on I2C-0
-//#define EEPROM_SD   // EEPROM on SDCARD
-//#define SPI_EEPROM  // EEPROM on SPI-0
+#define  E2END 0x7FFF  
+#define  I2C_EEPROM    
+//#define  EEPROM_SD   
+//#define  SPI_EEPROM  
 //#define SPI_CHAN_EEPROM1        ?
 //#define SPI_EEPROM1_CS          ?
 // 2K EEPROM
@@ -241,12 +241,12 @@
 
     //http://doku.radds.org/dokumentation/other-electronics/sparklcd/
     #error "Oops! SPARK_FULL_GRAPHICS not supported with RURAMPS4D."
-    //#define LCD_PINS_D4     29//?
-    //#define LCD_PINS_ENABLE 27//?
-    //#define LCD_PINS_RS     25//?
-    //#define BTN_EN1         35//?
-    //#define BTN_EN2         33//?
-    //#define BTN_ENC         37//?
+    //#define  LCD_PINS_D4     29
+    //#define  LCD_PINS_ENABLE 27
+    //#define  LCD_PINS_RS     25
+    //#define  BTN_EN1         35
+    //#define  BTN_EN2         33
+    //#define  BTN_ENC         37
 
   #endif // SPARK_FULL_GRAPHICS
 

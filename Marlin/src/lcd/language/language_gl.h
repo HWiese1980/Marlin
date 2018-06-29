@@ -164,7 +164,7 @@
 #define MSG_INIT_SDCARD                     _UxGT("Iniciando SD")
 #define MSG_CNG_SDCARD                      _UxGT("Cambiar SD")
 #define MSG_ZPROBE_OUT                      _UxGT("Sonda-Z sen cama")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_BLTOUCH_SELFTEST                _UxGT("Comprobar BLTouch")
 #define MSG_BLTOUCH_RESET                   _UxGT("Iniciar BLTouch")
 #define MSG_FIRST                           _UxGT("first")
@@ -183,9 +183,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("SISTEMA MORTO")
 #define MSG_PLEASE_RESET                    _UxGT("Debe reiniciar!")
-#define MSG_SHORT_DAY                       _UxGT("d") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("d") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Quentando...")
 #define MSG_BED_HEATING                     _UxGT("Quentando cama...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Calibracion Delta")

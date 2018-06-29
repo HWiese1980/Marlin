@@ -49,12 +49,12 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // Analog Input
-#define TEMP_1_PIN          3   // Analog Input.  3 for tool2 -> 2 for chambertemp
-#define TEMP_2_PIN          2   // Analog Input.  9 for tool3 -> 2 for chambertemp
-#define TEMP_3_PIN         11   // Analog Input. 11 for tool4 -> 2 for chambertemp
-#define TEMP_BED_PIN        1   // Analog Input
-//#define TEMP_CHAMBER_PIN    2   // Analog Input
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          3   
+#define  TEMP_2_PIN          2   
+#define  TEMP_3_PIN         11   
+#define  TEMP_BED_PIN        1   
+//#define  TEMP_CHAMBER_PIN    2   
 
 //
 // Heaters / Fans
@@ -66,7 +66,7 @@
 #define HEATER_BED_PIN      2
 
 #ifndef FAN_PIN
-  //#define FAN_PIN         7   // common PWM pin for all tools
+  //#define  FAN_PIN         7   
 #endif
 
 #define ORIG_E0_AUTO_FAN_PIN 7
@@ -86,7 +86,7 @@
 //#define TOOL_1_PIN          59
 //#define TOOL_2_PIN           8
 //#define TOOL_3_PIN          30
-//#define TOOL_PWM_PIN         7   // common PWM pin for all tools
+//#define  TOOL_PWM_PIN         7   
 
 // Common I/O
 

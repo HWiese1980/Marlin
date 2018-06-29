@@ -61,8 +61,8 @@
  */
 
 //! Value for field bcdUSB
-#define  USB_V2_0    0x0200 //!< USB Specification version 2.00
-#define  USB_V2_1    0x0201 //!< USB Specification version 2.01
+#define   USB_V2_0    0x0200 
+#define   USB_V2_1    0x0201 
 
 /*! \name Generic definitions (Class, subclass and protocol)
  */
@@ -83,26 +83,26 @@
 /**
  * \brief USB request data transfer direction (bmRequestType)
  */
-#define  USB_REQ_DIR_OUT         (0<<7) //!< Host to device
-#define  USB_REQ_DIR_IN          (1<<7) //!< Device to host
-#define  USB_REQ_DIR_MASK        (1<<7) //!< Mask
+#define   USB_REQ_DIR_OUT         (0<<7) 
+#define   USB_REQ_DIR_IN          (1<<7) 
+#define   USB_REQ_DIR_MASK        (1<<7) 
 
 /**
  * \brief USB request types (bmRequestType)
  */
-#define  USB_REQ_TYPE_STANDARD   (0<<5) //!< Standard request
-#define  USB_REQ_TYPE_CLASS      (1<<5) //!< Class-specific request
-#define  USB_REQ_TYPE_VENDOR     (2<<5) //!< Vendor-specific request
-#define  USB_REQ_TYPE_MASK       (3<<5) //!< Mask
+#define   USB_REQ_TYPE_STANDARD   (0<<5) 
+#define   USB_REQ_TYPE_CLASS      (1<<5) 
+#define   USB_REQ_TYPE_VENDOR     (2<<5) 
+#define   USB_REQ_TYPE_MASK       (3<<5) 
 
 /**
  * \brief USB recipient codes (bmRequestType)
  */
-#define  USB_REQ_RECIP_DEVICE    (0<<0) //!< Recipient device
-#define  USB_REQ_RECIP_INTERFACE (1<<0) //!< Recipient interface
-#define  USB_REQ_RECIP_ENDPOINT  (2<<0) //!< Recipient endpoint
-#define  USB_REQ_RECIP_OTHER     (3<<0) //!< Recipient other
-#define  USB_REQ_RECIP_MASK      (0x1F) //!< Mask
+#define   USB_REQ_RECIP_DEVICE    (0<<0) 
+#define   USB_REQ_RECIP_INTERFACE (1<<0) 
+#define   USB_REQ_RECIP_ENDPOINT  (2<<0) 
+#define   USB_REQ_RECIP_OTHER     (3<<0) 
+#define   USB_REQ_RECIP_MASK      (0x1F) 
 
 /**
  * \brief Standard USB requests (bRequest)
@@ -427,12 +427,12 @@ typedef struct {
 } usb_conf_desc_t;
 
 
-#define  USB_CONFIG_ATTR_MUST_SET         (1 << 7) //!< Must always be set
-#define  USB_CONFIG_ATTR_BUS_POWERED      (0 << 6) //!< Bus-powered
-#define  USB_CONFIG_ATTR_SELF_POWERED     (1 << 6) //!< Self-powered
-#define  USB_CONFIG_ATTR_REMOTE_WAKEUP    (1 << 5) //!< remote wakeup supported
+#define   USB_CONFIG_ATTR_MUST_SET         (1 << 7) 
+#define   USB_CONFIG_ATTR_BUS_POWERED      (0 << 6) 
+#define   USB_CONFIG_ATTR_SELF_POWERED     (1 << 6) 
+#define   USB_CONFIG_ATTR_REMOTE_WAKEUP    (1 << 5) 
 
-#define  USB_CONFIG_MAX_POWER(ma)         (((ma) + 1) / 2) //!< Max power in mA
+#define   USB_CONFIG_MAX_POWER(ma)         (((ma) + 1) / 2) 
 
 /**
  * \brief Standard USB association descriptor structure

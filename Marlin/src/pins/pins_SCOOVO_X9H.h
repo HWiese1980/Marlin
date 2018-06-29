@@ -33,10 +33,10 @@
 //
 // Servos
 //
-#define SERVO0_PIN 22   // Motor header MX1
-#define SERVO1_PIN 23   // Motor header MX2
-#define SERVO2_PIN 24   // Motor header MX3
-#define SERVO3_PIN  5   // PWM header pin 5
+#define  SERVO0_PIN 22   
+#define  SERVO1_PIN 23   
+#define  SERVO2_PIN 24   
+#define  SERVO3_PIN  5   
 
 //
 // Limit Switches
@@ -91,13 +91,13 @@
 #define E1_MS2_PIN          64
 
 #define DIGIPOTSS_PIN       38
-#define DIGIPOT_CHANNELS {4,5,3,0,1}   // X Y Z E0 E1 digipot channels to stepper driver mapping
+#define  DIGIPOT_CHANNELS {4,5,3,0,1}   
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN           0   // Analog Input
-#define TEMP_BED_PIN         7   // Analog Input
+#define  TEMP_0_PIN           0   
+#define  TEMP_BED_PIN         7   
 
 //
 // Heaters / Fans
@@ -120,27 +120,27 @@
 #define PS_ON_PIN            4
 
 #ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN       3   // Analog Input
+  #define  FILWIDTH_PIN       3   
 #endif
 
 //
 // LCD / Controller
 //
-#define LCD_PINS_RS         70   // Ext2_5
-#define LCD_PINS_ENABLE     71   // Ext2_7
-#define LCD_PINS_D4         72   // Ext2_9 ?
-#define LCD_PINS_D5         73   // Ext2_11 ?
-#define LCD_PINS_D6         74   // Ext2_13
-#define LCD_PINS_D7         75   // Ext2_15 ?
+#define  LCD_PINS_RS         70   
+#define  LCD_PINS_ENABLE     71   
+#define  LCD_PINS_D4         72   
+#define  LCD_PINS_D5         73   
+#define  LCD_PINS_D6         74   
+#define  LCD_PINS_D7         75   
 #define BEEPER_PIN          -1
 
-#define BTN_HOME            80   // Ext_16
-#define BTN_CENTER          81   // Ext_14
+#define  BTN_HOME            80   
+#define  BTN_CENTER          81   
 #define BTN_ENC             BTN_CENTER
-#define BTN_RIGHT           82   // Ext_12
-#define BTN_LEFT            83   // Ext_10
-#define BTN_UP              84   // Ext2_8
-#define BTN_DOWN            85   // Ext2_6
+#define  BTN_RIGHT           82   
+#define  BTN_LEFT            83   
+#define  BTN_UP              84   
+#define  BTN_DOWN            85   
 
 #define HOME_PIN            BTN_HOME
 
@@ -151,7 +151,7 @@
   #define DOGLCD_CS         71
   #define LCD_SCREEN_ROT_180
 
-  #define SD_DETECT_PIN     -1   // Pin 72 if using easy adapter board
+  #define  SD_DETECT_PIN     -1   
 
   #define STAT_LED_RED_PIN  22
   #define STAT_LED_BLUE_PIN 32

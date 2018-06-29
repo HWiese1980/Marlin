@@ -64,7 +64,7 @@
   #define IS_ANALOG(P) ((P) >= analogInputToDigitalPin(0) && ((P) <= analogInputToDigitalPin(15) || (P) <= analogInputToDigitalPin(7)))
 #endif
 #define GET_ARRAY_PIN(p) pgm_read_byte(&pin_array[p].pin)
-#define MULTI_NAME_PAD 26 // space needed to be pretty if not first name assigned to a pin
+#define  MULTI_NAME_PAD 26 
 
 void PRINT_ARRAY_NAME(uint8_t x) {
   char *name_mem_pointer = (char*)pgm_read_ptr(&pin_array[x].name);
@@ -84,7 +84,7 @@ void PRINT_ARRAY_NAME(uint8_t x) {
 
 #if defined(__AVR_ATmega1284P__)  // 1284 IDE extensions set this to the number of
   #undef NUM_DIGITAL_PINS         // digital only pins while all other CPUs have it
-  #define NUM_DIGITAL_PINS 32     // set to digital only + digital/analog
+  #define  NUM_DIGITAL_PINS 32     
 #endif
 
 #define PWM_PRINT(V) do{ sprintf_P(buffer, PSTR("PWM:  %4d"), V); SERIAL_ECHO(buffer); }while(0)

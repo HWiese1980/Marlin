@@ -63,7 +63,7 @@
 
 #define NUMBER_PINS_TOTAL PINS_COUNT
 
-#define digitalRead_mod(p)  digitalRead(p)  // AVR digitalRead disabled PWM before it read the pin
+#define  digitalRead_mod(p)  digitalRead(p)  
 #define PRINT_PORT(p)
 #define NAME_FORMAT(p) PSTR("%-##p##s")
 #define PRINT_ARRAY_NAME(x)  do {sprintf_P(buffer, PSTR("%-" STRINGIFY(MAX_NAME_LENGTH) "s"), pin_array[x].name); SERIAL_ECHO(buffer);} while (0)
@@ -74,7 +74,7 @@
 #define IS_ANALOG(P) (((P) >= analogInputToDigitalPin(0)) && ((P) <= analogInputToDigitalPin(NUM_ANALOG_INPUTS - 1)))
 #define pwm_status(pin) (((g_pinStatus[pin] & 0xF) == PIN_STATUS_PWM) && \
                         ((g_APinDescription[pin].ulPinAttribute & PIN_ATTR_PWM) == PIN_ATTR_PWM))
-#define MULTI_NAME_PAD 14 // space needed to be pretty if not first name assigned to a pin
+#define  MULTI_NAME_PAD 14 
 
 bool GET_PINMODE(int8_t pin) {  // 1: output, 0: input
   volatile Pio* port = g_APinDescription[pin].pPort;

@@ -54,7 +54,7 @@
  */
 //! @{
 
-#define LUN_0                ENABLE    //!< SD/MMC Card over MCI Slot 0.
+#define  LUN_0                ENABLE    
 #define LUN_1                DISABLE
 #define LUN_2                DISABLE
 #define LUN_3                DISABLE
@@ -98,18 +98,18 @@
 /*! \name Activation of Interface Features
  */
 //! @{
-#define ACCESS_USB           true    //!< MEM <-> USB interface.
-#define ACCESS_MEM_TO_RAM    false   //!< MEM <-> RAM interface.
-#define ACCESS_STREAM        false   //!< Streaming MEM <-> MEM interface.
-#define ACCESS_STREAM_RECORD false   //!< Streaming MEM <-> MEM interface in record mode.
-#define ACCESS_MEM_TO_MEM    false   //!< MEM <-> MEM interface.
-#define ACCESS_CODEC         false   //!< Codec interface.
+#define  ACCESS_USB           true    
+#define  ACCESS_MEM_TO_RAM    false   
+#define  ACCESS_STREAM        false   
+#define  ACCESS_STREAM_RECORD false   
+#define  ACCESS_MEM_TO_MEM    false   
+#define  ACCESS_CODEC         false   
 //! @}
 
 /*! \name Specific Options for Access Control
  */
 //! @{
-#define GLOBAL_WR_PROTECT    false   //!< Management of a global write protection.
+#define  GLOBAL_WR_PROTECT    false   
 //! @}
 
 

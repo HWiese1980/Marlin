@@ -36,11 +36,11 @@
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" er klar")
 #define MSG_SD_INSERTED                     _UxGT("Kort isat")
 #define MSG_SD_REMOVED                      _UxGT("Kort fjernet")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Endstops") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Endstops") 
 #define MSG_MAIN                            _UxGT("Menu")
 #define MSG_AUTOSTART                       _UxGT("Autostart")
 #define MSG_DISABLE_STEPPERS                _UxGT("Slå alle steppere fra")
-#define MSG_AUTO_HOME                       _UxGT("Auto Home") // G28
+#define  MSG_AUTO_HOME                       _UxGT("Auto Home") 
 #define MSG_AUTO_HOME_X                     _UxGT("Home X")
 #define MSG_AUTO_HOME_Y                     _UxGT("Home Y")
 #define MSG_AUTO_HOME_Z                     _UxGT("Home Z")
@@ -167,7 +167,7 @@
 #define MSG_ZPROBE_OUT                      _UxGT("Probe udenfor plade")
 #define MSG_BLTOUCH_SELFTEST                _UxGT("BLTouch Selv-Test")
 #define MSG_BLTOUCH_RESET                   _UxGT("Reset BLTouch")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_FIRST                           _UxGT("først")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Z Offset")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -184,9 +184,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("PRINTER STOPPET")
 #define MSG_PLEASE_RESET                    _UxGT("Reset Venligst")
-#define MSG_SHORT_DAY                       _UxGT("d") // Kun et bogstav
-#define MSG_SHORT_HOUR                      _UxGT("h") // Kun et bogstav
-#define MSG_SHORT_MINUTE                    _UxGT("m") // Kun et bogstav
+#define  MSG_SHORT_DAY                       _UxGT("d") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Opvarmer...")
 #define MSG_BED_HEATING                     _UxGT("Opvarmer plade...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Delta Kalibrering")

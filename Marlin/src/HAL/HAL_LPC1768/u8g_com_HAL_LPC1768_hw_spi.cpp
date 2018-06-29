@@ -90,7 +90,7 @@ uint8_t u8g_com_HAL_LPC1768_hw_spi_fn(u8g_t *u8g, uint8_t msg, uint8_t arg_val, 
       u8g_Delay(5);
       spiBegin();
       #ifndef SPI_SPEED
-        #define SPI_SPEED SPI_FULL_SPEED  // use same SPI speed as SD card
+        #define  SPI_SPEED SPI_FULL_SPEED  
       #endif
       spiInit(SPI_SPEED);
       break;

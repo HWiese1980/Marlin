@@ -37,7 +37,7 @@
 #define MSG_BACK                            _UxGT("Назад")
 #define MSG_SD_INSERTED                     _UxGT("Карта вставлена")
 #define MSG_SD_REMOVED                      _UxGT("Карта извлечена")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Эндстопы") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Эндстопы") 
 #define MSG_LCD_SOFT_ENDSTOPS               _UxGT("Прогр. эндстопы")
 #define MSG_MAIN                            _UxGT("Меню")
 #define MSG_AUTOSTART                       _UxGT("Автостарт")
@@ -277,7 +277,7 @@
 #define MSG_BLTOUCH_RESET                   _UxGT("Сброс BLTouch")
 #define MSG_BLTOUCH_DEPLOY                  _UxGT("Установка BLTouch")
 #define MSG_BLTOUCH_STOW                    _UxGT("Набивка BLTouch")
-#define MSG_HOME                            _UxGT("Паркуй") // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Паркуй") 
 #define MSG_FIRST                           _UxGT("первый")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Смещение Z")
 #define MSG_BABYSTEP_X                      _UxGT("Микрошаг X")
@@ -296,9 +296,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("ПРИНТЕР ОСТАНОВЛЕН")
 #define MSG_PLEASE_RESET                    _UxGT("Сделайте сброс")
-#define MSG_SHORT_DAY                       _UxGT("д") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("ч") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("м") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("д") 
+#define  MSG_SHORT_HOUR                      _UxGT("ч") 
+#define  MSG_SHORT_MINUTE                    _UxGT("м") 
 #define MSG_HEATING                         _UxGT("Нагрев...")
 #define MSG_COOLING                         _UxGT("Охлаждение...")
 #define MSG_COOLING_COMPLETE                _UxGT("Охлаждение выполнено")

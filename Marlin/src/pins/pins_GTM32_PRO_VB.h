@@ -53,11 +53,11 @@
 
 #define Y_STEP_PIN         PA12
 #define Y_DIR_PIN          PA11
-#define Y_ENABLE_PIN       PA15   // core conflict?
+#define  Y_ENABLE_PIN       PA15   
 
 #define Z_STEP_PIN         PD6
 #define Z_DIR_PIN          PD3
-#define Z_ENABLE_PIN       PB3    // core conflict?
+#define  Z_ENABLE_PIN       PB3    
 
 #define E0_STEP_PIN        PC14
 #define E0_DIR_PIN         PC13
@@ -82,13 +82,13 @@
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       PB4   // EXTRUDER 1
-#define HEATER_1_PIN       PB5   // EXTRUDER 2
-#define HEATER_2_PIN       PB0   // EXTRUDER 3
-#define HEATER_BED_PIN     PB1   // BED
+#define  HEATER_0_PIN       PB4   
+#define  HEATER_1_PIN       PB5   
+#define  HEATER_2_PIN       PB0   
+#define  HEATER_BED_PIN     PB1   
 
 #ifndef FAN_PIN
-  #define FAN_PIN          PB7   // (Sprinter config)
+  #define  FAN_PIN          PB7   
 #endif
 #define FAN1_PIN           PB8
 #define FAN2_PIN           PB9

@@ -49,10 +49,10 @@
 //
 // Servos
 //
-#define SERVO0_PIN         22   // Motor header MX1
-#define SERVO1_PIN         23   // Motor header MX2
-#define SERVO2_PIN         24   // Motor header MX3
-#define SERVO3_PIN          5   // PWM header pin 5
+#define  SERVO0_PIN         22   
+#define  SERVO1_PIN         23   
+#define  SERVO2_PIN         24   
+#define  SERVO3_PIN          5   
 
 //
 // Limit Switches
@@ -107,17 +107,17 @@
 #define E1_MS2_PIN         64
 
 #define DIGIPOTSS_PIN      38
-#define DIGIPOT_CHANNELS  { 4,5,3,0,1 }   // X Y Z E0 E1 digipot channels to stepper driver mapping
+#define  DIGIPOT_CHANNELS  { 4,5,3,0,1 }   
 #ifndef DIGIPOT_MOTOR_CURRENT
-  #define DIGIPOT_MOTOR_CURRENT { 135,135,135,135,135 }   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
+  #define  DIGIPOT_MOTOR_CURRENT { 135,135,135,135,135 }   
 #endif
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          0   // Analog Input
-#define TEMP_1_PIN          1   // Analog Input
-#define TEMP_BED_PIN        2   // Analog Input
+#define  TEMP_0_PIN          0   
+#define  TEMP_1_PIN          1   
+#define  TEMP_BED_PIN        2   
 
 //
 // Heaters / Fans
@@ -142,14 +142,14 @@
 #define CASE_LIGHT_PIN     46
 
 #ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN      3   // Analog Input
+  #define  FILWIDTH_PIN      3   
 #endif
 
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN    45   // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN 31   // Pin should have a pullup!
+#define  SPINDLE_LASER_PWM_PIN    45   
+#define  SPINDLE_LASER_ENABLE_PIN 31   
 #define SPINDLE_DIR_PIN          32
 
 //
@@ -157,7 +157,7 @@
 //
 #define E_MUX0_PIN         17
 #define E_MUX1_PIN         16
-#define E_MUX2_PIN         84   // 84 in MK2 Firmware
+#define  E_MUX2_PIN         84   
 
 //
 // LCD / Controller
@@ -189,14 +189,14 @@
       #define BTN_EN2      84
       #define BTN_ENC      83
 
-      #define SD_DETECT_PIN -1   // Pin 72 if using easy adapter board
+      #define  SD_DETECT_PIN -1   
 
       #define STAT_LED_RED_PIN 22
       #define STAT_LED_BLUE_PIN 32
 
     #else // !VIKI2 && !miniVIKI
 
-      #define BEEPER_PIN   79   // AUX-4
+      #define  BEEPER_PIN   79   
 
       // AUX-2
       #define BTN_EN1      76

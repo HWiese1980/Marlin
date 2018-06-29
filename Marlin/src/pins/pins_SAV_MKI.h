@@ -66,62 +66,62 @@
 #endif
 
 #define DEFAULT_MACHINE_NAME    "SAV MkI"
-#define DEFAULT_SOURCE_CODE_URL "https://github.com/fmalpartida/Marlin/tree/SAV-MkI-config"
+#define  DEFAULT_SOURCE_CODE_URL "https:
 #define BOARD_NAME              "SAV MkI"
 
 //
 // Servos
 //
-#define SERVO0_PIN         39   // F1  In teensy's pin definition for pinMode (in servo.cpp)
+#define  SERVO0_PIN         39   
 
 //
 // Limit Switches
 //
-#define X_STOP_PIN         25   // B5
-#define Y_STOP_PIN         26   // B6
-//#define Z_STOP_PIN         27   // B7
-#define Z_STOP_PIN         36   // E4 For inductive sensor.
-//#define E_STOP_PIN         36   // E4
+#define  X_STOP_PIN         25   
+#define  Y_STOP_PIN         26   
+//#define  Z_STOP_PIN         27   
+#define  Z_STOP_PIN         36   
+//#define  E_STOP_PIN         36   
 
 //
 // Steppers
 //
-#define X_STEP_PIN         28   // A0
-#define X_DIR_PIN          29   // A1
-#define X_ENABLE_PIN       19   // E7
+#define  X_STEP_PIN         28   
+#define  X_DIR_PIN          29   
+#define  X_ENABLE_PIN       19   
 
-#define Y_STEP_PIN         30   // A2
-#define Y_DIR_PIN          31   // A3
-#define Y_ENABLE_PIN       18   // E6
+#define  Y_STEP_PIN         30   
+#define  Y_DIR_PIN          31   
+#define  Y_ENABLE_PIN       18   
 
-#define Z_STEP_PIN         32   // A4
-#define Z_DIR_PIN          33   // A5
-#define Z_ENABLE_PIN       17   // C7
+#define  Z_STEP_PIN         32   
+#define  Z_DIR_PIN          33   
+#define  Z_ENABLE_PIN       17   
 
-#define E0_STEP_PIN        34   // A6
-#define E0_DIR_PIN         35   // A7
-#define E0_ENABLE_PIN      13   // C3
+#define  E0_STEP_PIN        34   
+#define  E0_DIR_PIN         35   
+#define  E0_ENABLE_PIN      13   
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          7   // F7  Analog Input (Extruder)
-#define TEMP_BED_PIN        6   // F6  Analog Input (Bed)
+#define  TEMP_0_PIN          7   
+#define  TEMP_BED_PIN        6   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       15   // C5 PWM3B - Extruder
-#define HEATER_BED_PIN     14   // C4 PWM3C - Bed
+#define  HEATER_0_PIN       15   
+#define  HEATER_BED_PIN     14   
 
 #ifndef FAN_PIN
-  #define FAN_PIN          16   // C6 PWM3A
+  #define  FAN_PIN          16   
 #endif
 
 //
 // Misc. Functions
 //
-#define SDSS               20   // B0
+#define  SDSS               20   
 
 // Extension header pin mapping
 // ----------------------------
@@ -132,21 +132,21 @@
 //  PWM-D24         A4 (An), IO
 //  5V              GND
 //  12V             GND
-#define EXT_AUX_SCL_D0      0   // D0  PWM0B
-#define EXT_AUX_SDA_D1      1   // D1
-#define EXT_AUX_RX1_D2      2   // D2
-#define EXT_AUX_TX1_D3      3   // D3
-#define EXT_AUX_PWM_D24    24   // B4  PWM2A
-#define EXT_AUX_A0          0   // F0  Analog Input
-#define EXT_AUX_A0_IO      38   // F0  Digital IO
-#define EXT_AUX_A1          1   // F1  Analog Input
-#define EXT_AUX_A1_IO      39   // F1  Digital IO
-#define EXT_AUX_A2          2   // F2  Analog Input
-#define EXT_AUX_A2_IO      40   // F2  Digital IO
-#define EXT_AUX_A3          3   // F3  Analog Input
-#define EXT_AUX_A3_IO      41   // F3  Digital IO
-#define EXT_AUX_A4          4   // F4  Analog Input
-#define EXT_AUX_A4_IO      42   // F4  Digital IO
+#define  EXT_AUX_SCL_D0      0   
+#define  EXT_AUX_SDA_D1      1   
+#define  EXT_AUX_RX1_D2      2   
+#define  EXT_AUX_TX1_D3      3   
+#define  EXT_AUX_PWM_D24    24   
+#define  EXT_AUX_A0          0   
+#define  EXT_AUX_A0_IO      38   
+#define  EXT_AUX_A1          1   
+#define  EXT_AUX_A1_IO      39   
+#define  EXT_AUX_A2          2   
+#define  EXT_AUX_A2_IO      40   
+#define  EXT_AUX_A3          3   
+#define  EXT_AUX_A3_IO      41   
+#define  EXT_AUX_A4          4   
+#define  EXT_AUX_A4_IO      42   
 
 //
 // LCD / Controller
@@ -175,10 +175,10 @@
   //
   // M3/M4/M5 - Spindle/Laser Control
   //
-  #define SPINDLE_LASER_PWM_PIN    24   // B4  PWM2A
-  #define SPINDLE_LASER_ENABLE_PIN 39   // F1  Pin should have a pullup!
-  #define SPINDLE_DIR_PIN          40   // F2
+  #define  SPINDLE_LASER_PWM_PIN    24   
+  #define  SPINDLE_LASER_ENABLE_PIN 39   
+  #define  SPINDLE_DIR_PIN          40   
 
-  #define CASE_LIGHT_PIN            0   // D0  PWM0B
+  #define  CASE_LIGHT_PIN            0   
 
 #endif

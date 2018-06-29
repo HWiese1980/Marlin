@@ -77,28 +77,28 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          3   // Analog Input
-#define TEMP_1_PIN          2   // Analog Input
-#define TEMP_2_PIN          1   // Analog Input
-#define TEMP_BED_PIN        0   // Analog Input
+#define  TEMP_0_PIN          3   
+#define  TEMP_1_PIN          2   
+#define  TEMP_2_PIN          1   
+#define  TEMP_BED_PIN        0   
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       45   // 12V PWM1
-#define HEATER_1_PIN       46   // 12V PWM2
-#define HEATER_2_PIN       17   // 12V PWM3
-#define HEATER_BED_PIN     44   // DOUBLE 12V PWM
+#define  HEATER_0_PIN       45   
+#define  HEATER_1_PIN       46   
+#define  HEATER_2_PIN       17   
+#define  HEATER_BED_PIN     44   
 
 #ifndef FAN_PIN
-  #define FAN_PIN          16   // 5V PWM
+  #define  FAN_PIN          16   
 #endif
 
 //
 // Misc. Functions
 //
-#define PS_ON_PIN          10   // Set to -1 if using a manual switch on the PWRSW Connector
-#define SLEEP_WAKE_PIN     26   // This feature still needs work
+#define  PS_ON_PIN          10   
+#define  SLEEP_WAKE_PIN     26   
 #define PHOTOGRAPH_PIN     29
 
 //
@@ -146,6 +146,6 @@
   // These TRANS_ARRAY values let you change the order the LEDs on the lighting modules will animate for chase functions.
   // Modify them according to your specific situation.
   // NOTE: the array should be 8 long for every TLC you have. These defaults assume (2) TLCs.
-  #define TRANS_ARRAY { 0, 1, 2, 3, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }    // forward
-  //#define TRANS_ARRAY { 7, 6, 5, 4, 3, 2, 1, 0, 8, 9, 10, 11, 12, 13, 14, 15 }  // backward
+  #define  TRANS_ARRAY { 0, 1, 2, 3, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }    
+  //#define  TRANS_ARRAY { 7, 6, 5, 4, 3, 2, 1, 0, 8, 9, 10, 11, 12, 13, 14, 15 }  
 #endif // RA_DISCO

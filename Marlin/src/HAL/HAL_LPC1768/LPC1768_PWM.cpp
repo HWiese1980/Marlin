@@ -105,12 +105,12 @@ PWM_map *active_table = PWM1_map_A;
 PWM_map *work_table = PWM1_map_B;
 PWM_map *temp_table;
 
-#define P1_18_PWM_channel  1  // servo 3
-#define P1_20_PWM_channel  2  // servo 0
-#define P1_21_PWM_channel  3  // servo 1
-#define P1_23_PWM_channel  4  // servo 0 for MKS Sbase
-#define P2_04_PWM_channel  5  // D9
-#define P2_05_PWM_channel  6  // D10
+#define  P1_18_PWM_channel  1  
+#define  P1_20_PWM_channel  2  
+#define  P1_21_PWM_channel  3  
+#define  P1_23_PWM_channel  4  
+#define  P2_04_PWM_channel  5  
+#define  P2_05_PWM_channel  6  
 
 typedef struct {
   uint32_t min;
@@ -157,9 +157,9 @@ void LPC1768_PWM_init(void) {
 
   /////  directly controlled PWM pins (interrupts not used for these)
 
-  #define SBIT_CNTEN      0  // PWM1 counter & pre-scaler enable/disable
-  #define SBIT_CNTRST     1  // reset counters to known state
-  #define SBIT_PWMEN      3  // 1 - PWM, 0 - timer
+  #define  SBIT_CNTEN      0  
+  #define  SBIT_CNTRST     1  
+  #define  SBIT_PWMEN      3  
   #define SBIT_PWMMR0R    1
   #define PCPWM1          6
   #define PCLK_PWM1      12
@@ -490,7 +490,7 @@ bool useable_hardware_PWM(pin_t pin) {
 ////////////////////////////////////////////////////////////////////////////////
 
 
-#define PWM_LPC1768_ISR_SAFETY_FACTOR 5  // amount of time needed to guarantee MR1 count will be above TC
+#define  PWM_LPC1768_ISR_SAFETY_FACTOR 5  
 volatile bool in_PWM_isr = false;
 
 HAL_PWM_TIMER_ISR {

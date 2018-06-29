@@ -84,7 +84,7 @@
 
 uint8_t SCL_pin_HAL_LPC1768_sw_I2C, SCL_port_HAL_LPC1768_sw_I2C, SDA_pin_HAL_LPC1768_sw_I2C, SDA_port_HAL_LPC1768_sw_I2C;
 
-#define SPI_SPEED 2  //20: 200KHz 5:750KHz 2:3-4MHz
+#define  SPI_SPEED 2  
 
 uint8_t u8g_i2c_send_byte_sw(uint8_t data) {
   for (uint8_t i = 0; i < 9; i++) {   // 1 extra bit for the ack/nak

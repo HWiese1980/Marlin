@@ -70,7 +70,7 @@ extern "C" {
 
 #define NR_PLLS             2
 #define PLLA_ID             0
-#define UPLL_ID             1   //!< USB UTMI PLL.
+#define  UPLL_ID             1   
 
 #define PLL_UPLL_HZ     480000000
 

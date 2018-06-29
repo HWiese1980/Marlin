@@ -53,7 +53,7 @@
   #define MSG_SD_REMOVED                      _UxGT("Card removed")
 #endif
 #ifndef MSG_LCD_ENDSTOPS
-  #define MSG_LCD_ENDSTOPS                    _UxGT("Endstops") // Max length 8 characters
+  #define  MSG_LCD_ENDSTOPS                    _UxGT("Endstops") 
 #endif
 #ifndef MSG_LCD_SOFT_ENDSTOPS
   #define MSG_LCD_SOFT_ENDSTOPS               _UxGT("Soft Endstops")
@@ -763,7 +763,7 @@
   #define MSG_BLTOUCH_STOW                    _UxGT("Stow BLTouch")
 #endif
 #ifndef MSG_HOME
-  #define MSG_HOME                            _UxGT("Home") // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+  #define  MSG_HOME                            _UxGT("Home") 
 #endif
 #ifndef MSG_FIRST
   #define MSG_FIRST                           _UxGT("first")
@@ -820,13 +820,13 @@
   #define MSG_PLEASE_RESET                    _UxGT("Please reset")
 #endif
 #ifndef MSG_SHORT_DAY
-  #define MSG_SHORT_DAY                       _UxGT("d") // One character only
+  #define  MSG_SHORT_DAY                       _UxGT("d") 
 #endif
 #ifndef MSG_SHORT_HOUR
-  #define MSG_SHORT_HOUR                      _UxGT("h") // One character only
+  #define  MSG_SHORT_HOUR                      _UxGT("h") 
 #endif
 #ifndef MSG_SHORT_MINUTE
-  #define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+  #define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #endif
 #ifndef MSG_HEATING
   #define MSG_HEATING                         _UxGT("Heating...")

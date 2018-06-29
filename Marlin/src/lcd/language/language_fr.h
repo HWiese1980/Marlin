@@ -37,7 +37,7 @@
 #define MSG_BACK                            _UxGT("Retour")
 #define MSG_SD_INSERTED                     _UxGT("Carte insérée")
 #define MSG_SD_REMOVED                      _UxGT("Carte retirée")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Butées") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Butées") 
 #define MSG_MAIN                            _UxGT("Menu principal")
 #define MSG_AUTOSTART                       _UxGT("Demarrage auto")
 #define MSG_DISABLE_STEPPERS                _UxGT("Arrêter moteurs")
@@ -278,7 +278,7 @@
 #define MSG_BLTOUCH_RESET                   _UxGT("RaZ BLTouch")
 #define MSG_BLTOUCH_DEPLOY                  _UxGT("Déployer BLTouch")
 #define MSG_BLTOUCH_STOW                    _UxGT("Ranger BLTouch")
-#define MSG_HOME                            _UxGT("Origine")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Origine")  
 #define MSG_FIRST                           _UxGT("Premier")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Décalage Z")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -296,9 +296,9 @@
 
 #define MSG_HALTED                          _UxGT("IMPR. STOPPÉE")
 #define MSG_PLEASE_RESET                    _UxGT("RàZ. SVP")
-#define MSG_SHORT_DAY                       _UxGT("j") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("h") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("j") 
+#define  MSG_SHORT_HOUR                      _UxGT("h") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 
 #define MSG_HEATING                         _UxGT("En chauffe...")
 #define MSG_BED_HEATING                     _UxGT("Lit en chauffe...")

@@ -46,7 +46,7 @@
 #define MSG_AUTOSTART                       _UxGT("Autostart")
 #define MSG_DISABLE_STEPPERS                _UxGT("Desabi. motores")
 #define MSG_DEBUG_MENU                      _UxGT("Menu Debug")
-#define MSG_PROGRESS_BAR_TEST               _UxGT("Testar Barra de Prog")//resso
+#define  MSG_PROGRESS_BAR_TEST               _UxGT("Testar Barra de Prog")
 #define MSG_AUTO_HOME_X                     _UxGT("Ir na origem X")
 #define MSG_AUTO_HOME_Y                     _UxGT("Ir na origem Y")
 #define MSG_AUTO_HOME_Z                     _UxGT("Ir na origem Z")

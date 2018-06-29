@@ -103,7 +103,7 @@ bool useable_hardware_PWM(pin_t pin);
 // hg42: instead use PWM bit from the #define
 
 /// check if pin is a timer
-#define _GET_TIMER(IO)    TRUE  // could be LPC1768_PIN_PWM(IO), but there
+#define  _GET_TIMER(IO)    TRUE  
 // hg42: could be this:
 // #define _GET_TIMER(IO)        LPC1768_PIN_PWM(IO)
 // but this is an incomplete check (12 pins are PWMable, but only 6 can be used at the same time)

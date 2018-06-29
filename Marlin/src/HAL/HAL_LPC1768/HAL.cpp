@@ -124,14 +124,14 @@ bool HAL_adc_finished(void) {
 }
 
 // possible config options if something similar is extended to more platforms.
-#define ADC_USE_MEDIAN_FILTER          // Filter out erroneous readings
-#define ADC_MEDIAN_FILTER_SIZE    (23) // Higher values increase step delay (phase shift),
+#define  ADC_USE_MEDIAN_FILTER          
+#define  ADC_MEDIAN_FILTER_SIZE    (23) 
                                        // (ADC_MEDIAN_FILTER_SIZE + 1) / 2 sample step delay (12 samples @ 500Hz: 24ms phase shift)
                                        // Memory usage per ADC channel (bytes): (6 * ADC_MEDIAN_FILTER_SIZE) + 16
                                        // 8 * ((6 * 23) + 16 ) = 1232 Bytes for 8 channels
 
-#define ADC_USE_LOWPASS_FILTER         // Filter out high frequency noise
-#define ADC_LOWPASS_K_VALUE       (6)  // Higher values increase rise time
+#define  ADC_USE_LOWPASS_FILTER         
+#define  ADC_LOWPASS_K_VALUE       (6)  
                                        // Rise time sample delays for 100% signal convergence on full range step
                                        // (1 : 13, 2 : 32, 3 : 67, 4 : 139, 5 : 281, 6 : 565, 7 : 1135, 8 : 2273)
                                        // K = 6, 565 samples, 500Hz sample rate, 1.13s convergence on full range step
@@ -140,7 +140,7 @@ bool HAL_adc_finished(void) {
 
 // Sourced from https://embeddedgurus.com/stack-overflow/tag/median-filter/
 struct MedianFilter {
-  #define STOPPER 0                // Smaller than any datum
+  #define  STOPPER 0                
   struct Pair {
     Pair   *point;                 // Pointers forming list linked in sorted order
     uint16_t  value;               // Values to sort
@@ -255,12 +255,12 @@ uint16_t HAL_adc_get_result(void) {
 #define SBIT_PWMEN     2
 #define SBIT_PWMMR0R   1
 
-#define PWM_1          0  //P2_00 (0-1 Bits of PINSEL4)
-#define PWM_2          2  //P2_01 (2-3 Bits of PINSEL4)
-#define PWM_3          4  //P2_02 (4-5 Bits of PINSEL4)
-#define PWM_4          6  //P2_03 (6-7 Bits of PINSEL4)
-#define PWM_5          8  //P2_04 (8-9 Bits of PINSEL4)
-#define PWM_6          10 //P2_05 (10-11 Bits of PINSEL4)
+#define  PWM_1          0  
+#define  PWM_2          2  
+#define  PWM_3          4  
+#define  PWM_4          6  
+#define  PWM_5          8  
+#define  PWM_6          10 
 
 void HAL_pwm_init(void) {
   LPC_PINCON->PINSEL4 = _BV(PWM_5) | _BV(PWM_6);

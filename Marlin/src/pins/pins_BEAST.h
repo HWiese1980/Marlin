@@ -95,13 +95,13 @@
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       PD12   // EXTRUDER 1
+#define  HEATER_0_PIN       PD12   
 #define HEATER_1_PIN       PD13
 #define HEATER_2_PIN       PD14
 
-#define HEATER_BED_PIN     PB9   // BED
-#define HEATER_BED2_PIN    -1    // BED2
-#define HEATER_BED3_PIN    -1    // BED3
+#define  HEATER_BED_PIN     PB9   
+#define  HEATER_BED2_PIN    -1    
+#define  HEATER_BED3_PIN    -1    
 
 #ifndef FAN_PIN
   #define FAN_PIN          PB10
@@ -112,10 +112,10 @@
 //
 // Temperature Sensors
 //
-#define TEMP_BED_PIN       PA0   // ANALOG NUMBERING
-#define TEMP_0_PIN         PA1   // ANALOG NUMBERING
-#define TEMP_1_PIN         PA2   // ANALOG NUMBERING
-#define TEMP_2_PIN         PA3   // ANALOG NUMBERING
+#define  TEMP_BED_PIN       PA0   
+#define  TEMP_0_PIN         PA1   
+#define  TEMP_1_PIN         PA2   
+#define  TEMP_2_PIN         PA3   
 
 //
 // LCD Pins
@@ -123,9 +123,9 @@
 #if ENABLED(ULTRA_LCD)
 
   #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
-    #define LCD_PINS_RS         49   // CS chip select /SS chip slave select
-    #define LCD_PINS_ENABLE     51   // SID (MOSI)
-    #define LCD_PINS_D4         52   // SCK (CLK) clock
+    #define  LCD_PINS_RS         49   
+    #define  LCD_PINS_ENABLE     51   
+    #define  LCD_PINS_D4         52   
   #elif ENABLED(NEWPANEL) && ENABLED(PANEL_ONE)
     #define LCD_PINS_RS         PB8
     #define LCD_PINS_ENABLE     PD2
@@ -186,8 +186,8 @@
 
     #elif ENABLED(LCD_I2C_VIKI)
 
-      #define BTN_EN1           22   // http://files.panucatt.com/datasheets/viki_wiring_diagram.pdf explains 40/42.
-      #define BTN_EN2            7   // 22/7 are unused on RAMPS_14. 22 is unused and 7 the SERVO0_PIN on RAMPS_13.
+      #define  BTN_EN1           22   
+      #define  BTN_EN2            7   
 
       #define BTN_ENC           -1
       #define LCD_SDSS          53
@@ -207,7 +207,7 @@
       #define BTN_ENC           39
 
       #define SDSS              53
-      #define SD_DETECT_PIN     -1   // Pin 49 for display sd interface, 72 for easy adapter board
+      #define  SD_DETECT_PIN     -1   
 
       #define KILL_PIN          31
 
@@ -233,7 +233,7 @@
       // Pins for DOGM SPI LCD Support
       #define DOGLCD_A0         44
       #define DOGLCD_CS         66
-      #define LCD_BACKLIGHT_PIN 65   // backlight LED on A11/D65
+      #define  LCD_BACKLIGHT_PIN 65   
       #define SDSS              53
 
       #define KILL_PIN          64
@@ -264,9 +264,9 @@
         #define SHIFT_CLK       44
         #define SHIFT_LD        42
       #elif ENABLED(PANEL_ONE)
-        #define BTN_EN1         59   // AUX2 PIN 3
-        #define BTN_EN2         63   // AUX2 PIN 4
-        #define BTN_ENC         49   // AUX3 PIN 7
+        #define  BTN_EN1         59   
+        #define  BTN_EN2         63   
+        #define  BTN_ENC         49   
       #else
         #define BTN_EN1         37
         #define BTN_EN2         35
@@ -277,7 +277,7 @@
         #define SD_DETECT_PIN   49
         #define KILL_PIN        41
       #else
-        //#define SD_DETECT_PIN -1   // Ramps doesn't use this
+        //#define  SD_DETECT_PIN -1   
       #endif
 
     #endif

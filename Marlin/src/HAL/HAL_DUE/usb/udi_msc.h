@@ -200,7 +200,7 @@ bool udi_msc_trans_block(bool b_read, uint8_t * block, iram_size_t block_size,
  * \subsection udi_msc_basic_use_case_usage_code Example code
  * Content of conf_usb.h:
  * \code
-	#define  USB_DEVICE_SERIAL_NAME  "12...EF" // Disk SN for MSC
+	#define   USB_DEVICE_SERIAL_NAME  "12...EF" 
 	#define UDI_MSC_GLOBAL_VENDOR_ID \
 	   'A', 'T', 'M', 'E', 'L', ' ', ' ', ' '
 	#define UDI_MSC_GLOBAL_PRODUCT_VERSION \
@@ -234,7 +234,7 @@ bool udi_msc_trans_block(bool b_read, uint8_t * block, iram_size_t block_size,
  * \subsection udi_msc_basic_use_case_setup_flow Workflow
  * -# Ensure that conf_usb.h is available and contains the following configuration,
  * which is the USB device MSC configuration:
- *   - \code #define USB_DEVICE_SERIAL_NAME  "12...EF" // Disk SN for MSC \endcode
+ *   - \code #define  USB_DEVICE_SERIAL_NAME  "12...EF" 
  *     \note The USB serial number is mandatory when a MSC interface is used.
  *   - \code //! Vendor name and Product version of MSC interface
 	#define UDI_MSC_GLOBAL_VENDOR_ID \

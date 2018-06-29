@@ -34,7 +34,7 @@
 #define WELCOME_MSG                         MACHINE_NAME _UxGT(" gotowy.")
 #define MSG_SD_INSERTED                     _UxGT("Karta włożona")
 #define MSG_SD_REMOVED                      _UxGT("Karta usunięta")
-#define MSG_LCD_ENDSTOPS                    _UxGT("Kranców.") // Max length 8 characters
+#define  MSG_LCD_ENDSTOPS                    _UxGT("Kranców.") 
 #define MSG_MAIN                            _UxGT("Menu główne")
 #define MSG_AUTOSTART                       _UxGT("Autostart")
 #define MSG_DISABLE_STEPPERS                _UxGT("Wyłącz silniki")
@@ -166,7 +166,7 @@
 #define MSG_ZPROBE_OUT                      _UxGT("Sonda Z za stołem")
 #define MSG_BLTOUCH_SELFTEST                _UxGT("BLTouch Self-Test")
 #define MSG_BLTOUCH_RESET                   _UxGT("Reset BLTouch")
-#define MSG_HOME                            _UxGT("Home")  // Used as MSG_HOME " " MSG_X MSG_Y MSG_Z " " MSG_FIRST
+#define  MSG_HOME                            _UxGT("Home")  
 #define MSG_FIRST                           _UxGT("first")
 #define MSG_ZPROBE_ZOFFSET                  _UxGT("Offset Z")
 #define MSG_BABYSTEP_X                      _UxGT("Babystep X")
@@ -183,9 +183,9 @@
 #define MSG_ERR_Z_HOMING                    MSG_HOME _UxGT(" ") MSG_X MSG_Y _UxGT(" ") MSG_FIRST
 #define MSG_HALTED                          _UxGT("Drukarka zatrzym.")
 #define MSG_PLEASE_RESET                    _UxGT("Proszę zresetować")
-#define MSG_SHORT_DAY                       _UxGT("d") // One character only
-#define MSG_SHORT_HOUR                      _UxGT("g") // One character only
-#define MSG_SHORT_MINUTE                    _UxGT("m") // One character only
+#define  MSG_SHORT_DAY                       _UxGT("d") 
+#define  MSG_SHORT_HOUR                      _UxGT("g") 
+#define  MSG_SHORT_MINUTE                    _UxGT("m") 
 #define MSG_HEATING                         _UxGT("Rozgrzewanie...")
 #define MSG_BED_HEATING                     _UxGT("Rozgrzewanie stołu...")
 #define MSG_DELTA_CALIBRATE                 _UxGT("Kalibrowanie Delty")

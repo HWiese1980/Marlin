@@ -62,13 +62,13 @@ static void _I2C_Stop (LPC_I2C_TypeDef *I2Cx) {
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-#define U8G_I2C_OPT_FAST 16  // from u8g.h
+#define  U8G_I2C_OPT_FAST 16  
 
 #define USEDI2CDEV_M            1
 
-#define I2CDEV_S_ADDR   0x78  // from SSD1306  //actual address is 0x3C - shift left 1 with LSB set to 0 to indicate write
+#define  I2CDEV_S_ADDR   0x78  
 
-#define BUFFER_SIZE                     0x1  // only do single byte transfers with LCDs
+#define  BUFFER_SIZE                     0x1  
 
 #if (USEDI2CDEV_M == 0)
   #define I2CDEV_M LPC_I2C0
